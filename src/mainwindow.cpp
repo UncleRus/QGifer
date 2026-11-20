@@ -51,12 +51,12 @@ MainWindow::MainWindow() : translator(NULL), locked(false), nextFrameButton(NULL
     nextFrameButton = new QPressAction(this);
     nextFrameButton->setObjectName(QString::fromUtf8("nextFrameButton"));
     QIcon icon4;
-    icon4.addFile(QString::fromUtf8(":/res/next.png"), QSize(), QIcon::Normal, QIcon::Off);
+    icon4.addFile(QString::fromUtf8(":/res/next.svg"), QSize(), QIcon::Normal, QIcon::Off);
     nextFrameButton->setIcon(icon4);
     prevFrameButton = new QPressAction(this);
     prevFrameButton->setObjectName(QString::fromUtf8("prevFrameButton"));
     QIcon icon5;
-    icon5.addFile(QString::fromUtf8(":/res/prev.png"), QSize(), QIcon::Normal, QIcon::Off);
+    icon5.addFile(QString::fromUtf8(":/res/prev.svg"), QSize(), QIcon::Normal, QIcon::Off);
     prevFrameButton->setIcon(icon5);
 
     playerToolBar->addAction(prevFrameButton);

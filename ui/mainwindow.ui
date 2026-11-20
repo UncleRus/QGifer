@@ -861,7 +861,7 @@
   <action name="actionOpenVideo">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/openvideo.png</normaloff>:/res/openvideo.png</iconset>
+     <normaloff>:/res/openvideo.svg</normaloff>:/res/openvideo.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Open video...</string>
@@ -873,7 +873,7 @@
   <action name="actionPlay">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/start.png</normaloff>:/res/start.png</iconset>
+     <normaloff>:/res/start.svg</normaloff>:/res/start.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Play</string>
@@ -885,7 +885,7 @@
   <action name="actionPause">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/pause.png</normaloff>:/res/pause.png</iconset>
+     <normaloff>:/res/pause.svg</normaloff>:/res/pause.svg</iconset>
    </property>
    <property name="text">
     <string>Pa&amp;use</string>
@@ -897,7 +897,7 @@
   <action name="actionStop">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/stop.png</normaloff>:/res/stop.png</iconset>
+     <normaloff>:/res/stop.svg</normaloff>:/res/stop.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Stop</string>
@@ -909,7 +909,7 @@
   <action name="actionNextFrame">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/next.png</normaloff>:/res/next.png</iconset>
+     <normaloff>:/res/next.svg</normaloff>:/res/next.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Next frame</string>
@@ -921,7 +921,7 @@
   <action name="actionPrevFrame">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/prev.png</normaloff>:/res/prev.png</iconset>
+     <normaloff>:/res/prev.svg</normaloff>:/res/prev.svg</iconset>
    </property>
    <property name="text">
     <string>Pre&amp;vious frame</string>
@@ -933,7 +933,7 @@
   <action name="actionCloseVideo">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/eject.png</normaloff>:/res/eject.png</iconset>
+     <normaloff>:/res/eject.svg</normaloff>:/res/eject.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Close video</string>
@@ -942,7 +942,7 @@
   <action name="actionExit">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/exit.png</normaloff>:/res/exit.png</iconset>
+     <normaloff>:/res/exit.svg</normaloff>:/res/exit.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Exit</string>
@@ -954,7 +954,7 @@
   <action name="actionAbout">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/about.png</normaloff>:/res/about.png</iconset>
+     <normaloff>:/res/about.svg</normaloff>:/res/about.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;About QGifer...</string>
@@ -973,7 +973,7 @@
   <action name="actionExtractGif">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/extract.png</normaloff>:/res/extract.png</iconset>
+     <normaloff>:/res/extract.svg</normaloff>:/res/extract.svg</iconset>
    </property>
    <property name="text">
     <string>E&amp;xtract GIF...</string>
@@ -985,7 +985,7 @@
   <action name="actionUpdatePalette">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/palette.png</normaloff>:/res/palette.png</iconset>
+     <normaloff>:/res/palette.svg</normaloff>:/res/palette.svg</iconset>
    </property>
    <property name="text">
     <string>Update &amp;palette</string>
@@ -1000,7 +1000,7 @@
   <action name="actionSetAsStart">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/setasstart.png</normaloff>:/res/setasstart.png</iconset>
+     <normaloff>:/res/setasstart.svg</normaloff>:/res/setasstart.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Start from current frame</string>
@@ -1012,7 +1012,7 @@
   <action name="actionSetAsStop">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/setasstop.png</normaloff>:/res/setasstop.png</iconset>
+     <normaloff>:/res/setasstop.svg</normaloff>:/res/setasstop.svg</iconset>
    </property>
    <property name="text">
     <string>S&amp;top at current frame</string>
@@ -1034,7 +1034,7 @@
   <action name="actionOptimizer">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/optimizer.png</normaloff>:/res/optimizer.png</iconset>
+     <normaloff>:/res/optimizer.svg</normaloff>:/res/optimizer.svg</iconset>
    </property>
    <property name="text">
     <string>GIF opti&amp;mizer...</string>
@@ -1043,7 +1043,7 @@
   <action name="actionConverter">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/converter.png</normaloff>:/res/converter.png</iconset>
+     <normaloff>:/res/converter.svg</normaloff>:/res/converter.svg</iconset>
    </property>
    <property name="text">
     <string>MJPEG &amp;converter...</string>
@@ -1052,7 +1052,7 @@
   <action name="actionRestoreDefault">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/restore.png</normaloff>:/res/restore.png</iconset>
+     <normaloff>:/res/restore.svg</normaloff>:/res/restore.svg</iconset>
    </property>
    <property name="text">
     <string>Restore &amp;default settings</string>
@@ -1061,7 +1061,7 @@
   <action name="actionOpenPalette">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/palette-open.png</normaloff>:/res/palette-open.png</iconset>
+     <normaloff>:/res/palette-open.svg</normaloff>:/res/palette-open.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Open palette...</string>
@@ -1070,7 +1070,7 @@
   <action name="actionSavePalette">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/palette-save.png</normaloff>:/res/palette-save.png</iconset>
+     <normaloff>:/res/palette-save.svg</normaloff>:/res/palette-save.svg</iconset>
    </property>
    <property name="text">
     <string>Sa&amp;ve palette...</string>
@@ -1079,7 +1079,7 @@
   <action name="actionInsertObject">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/insert-object.png</normaloff>:/res/insert-object.png</iconset>
+     <normaloff>:/res/insert-object.svg</normaloff>:/res/insert-object.svg</iconset>
    </property>
    <property name="text">
     <string>Insert &amp;object...</string>
@@ -1091,7 +1091,7 @@
   <action name="actionInsertText">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/insert-text.png</normaloff>:/res/insert-text.png</iconset>
+     <normaloff>:/res/insert-text.svg</normaloff>:/res/insert-text.svg</iconset>
    </property>
    <property name="text">
     <string>Insert &amp;text...</string>
@@ -1103,7 +1103,7 @@
   <action name="actionOpenProject">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/open.png</normaloff>:/res/open.png</iconset>
+     <normaloff>:/res/open.svg</normaloff>:/res/open.svg</iconset>
    </property>
    <property name="text">
     <string>Open &amp;project...</string>
@@ -1115,7 +1115,7 @@
   <action name="actionSaveProject">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/save.png</normaloff>:/res/save.png</iconset>
+     <normaloff>:/res/save.svg</normaloff>:/res/save.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Save project</string>
@@ -1127,7 +1127,7 @@
   <action name="actionSaveProjectAs">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/saveas.png</normaloff>:/res/saveas.png</iconset>
+     <normaloff>:/res/saveas.svg</normaloff>:/res/saveas.svg</iconset>
    </property>
    <property name="text">
     <string>Save project &amp;as...</string>
@@ -1139,7 +1139,7 @@
   <action name="actionNewProject">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/new.png</normaloff>:/res/new.png</iconset>
+     <normaloff>:/res/new.svg</normaloff>:/res/new.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;New project</string>
@@ -1151,7 +1151,7 @@
   <action name="actionOutputProp">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/output-prop.png</normaloff>:/res/output-prop.png</iconset>
+     <normaloff>:/res/output-prop.svg</normaloff>:/res/output-prop.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Output properties</string>
@@ -1163,7 +1163,7 @@
   <action name="actionFilters">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/filters.png</normaloff>:/res/filters.png</iconset>
+     <normaloff>:/res/filters.svg</normaloff>:/res/filters.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Filters</string>
@@ -1175,7 +1175,7 @@
   <action name="actionMargins">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/margins.png</normaloff>:/res/margins.png</iconset>
+     <normaloff>:/res/margins.svg</normaloff>:/res/margins.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Margins</string>
@@ -1187,7 +1187,7 @@
   <action name="actionPreviewProp">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/preview-props.png</normaloff>:/res/preview-props.png</iconset>
+     <normaloff>:/res/preview-props.svg</normaloff>:/res/preview-props.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Preview properties</string>
@@ -1199,7 +1199,7 @@
   <action name="actionUndock">
    <property name="icon">
     <iconset resource="../res.qrc">
-     <normaloff>:/res/undock.png</normaloff>:/res/undock.png</iconset>
+     <normaloff>:/res/undock.svg</normaloff>:/res/undock.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Undock toolbox</string>

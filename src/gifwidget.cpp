@@ -68,17 +68,17 @@ void GifWidget::addFrame(const QImage &f, ColorMapObject *map, bool dither)
 void GifWidget::createActions()
 {
     QAction *a = new QAction(tr("Save gif..."), this);
-    a->setIcon(QIcon(":/res/save.png"));
+    a->setIcon(QIcon(":/res/save.svg"));
     saveButton->setDefaultAction(a);
     connect(a, SIGNAL(triggered()), this, SLOT(save()));
 
     a = new QAction(tr("Play"), this);
-    a->setIcon(QIcon(":/res/start.png"));
+    a->setIcon(QIcon(":/res/start.svg"));
     playButton->setDefaultAction(a);
     connect(a, SIGNAL(triggered()), this, SLOT(play()));
 
     a = new QAction(tr("Pause"), this);
-    a->setIcon(QIcon(":/res/pause.png"));
+    a->setIcon(QIcon(":/res/pause.svg"));
     pauseButton->setDefaultAction(a);
     connect(a, SIGNAL(triggered()), this, SLOT(pause()));
 }

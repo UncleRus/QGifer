@@ -58,13 +58,14 @@ Install the build dependencies:
 ```bash
 sudo apt update
 sudo apt install build-essential cmake ninja-build \
-    qt6-base-dev qt6-base-dev-tools \
+    qt6-base-dev qt6-base-dev-tools qt6-svg-plugins \
     libavformat-dev libavcodec-dev libavutil-dev libswscale-dev \
     libgif-dev
 ```
 
-`qt6-base-dev-tools` provides `moc`, `uic` and `rcc`. To regenerate the translation
-files (`./tsupdate`) also install `qt6-l10n-tools` (`lupdate6`, `lrelease6`).
+`qt6-base-dev-tools` provides `moc`, `uic` and `rcc`, and `qt6-svg-plugins` is
+needed to load the SVG icons. To regenerate the translation files (`./tsupdate`)
+also install `qt6-l10n-tools` (`lupdate6`, `lrelease6`).
 
 Configure and build:
 
