@@ -73,12 +73,20 @@ public:
     }
     const WOPos &posAt(int i) const
     {
-        return pos.at(i - start);
+        const int idx = i - start;
+        if (idx < 0 || idx >= pos.size()) {
+            static const WOPos empty;
+            return empty;
+        }
+        return pos.at(idx);
     }
     void setPosAt(int i, double x, double y)
     {
-        pos[i - start].x = x;
-        pos[i - start].y = y;
+        const int idx = i - start;
+        if (idx < 0 || idx >= pos.size())
+            return;
+        pos[idx].x = x;
+        pos[idx].y = y;
     }
     /* void setStartFrame(int s) {start = s;adjustPosList();} */
     /* void setStopFrame(int s) {stop = s;adjustPosList();} */
@@ -106,12 +114,17 @@ public:
     }
     QSize sizeAt(int i) const
     {
-        return QSize(img.size().width() * scale.at(i - start).w,
-            img.size().height() * scale.at(i - start).h);
+        const WOSize &s = scaleAt(i);
+        return QSize(img.size().width() * s.w, img.size().height() * s.h);
     }
     const WOSize &scaleAt(int i) const
     {
-        return scale.at(i - start);
+        const int idx = i - start;
+        if (idx < 0 || idx >= scale.size()) {
+            static const WOSize empty;
+            return empty;
+        }
+        return scale.at(idx);
     }
     void setScaleAt(int i, float xs, float ys);
     void setPreviewRect(const QRect &r)

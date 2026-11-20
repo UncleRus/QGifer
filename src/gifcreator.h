@@ -50,6 +50,10 @@ public:
 
     // Saves the results in a gif file
     bool save(const char *filename, int every = 1);
+    bool wasCanceled() const
+    {
+        return canceled;
+    }
     void setColorRes(int res)
     {
         colorRes = res;
@@ -69,7 +73,7 @@ protected:
     virtual bool savingProgress(int)
     {
         return true;
-    }                              // procentowy postep w zapisie, false jesli przerwac prace
+    } // procentowy postep w zapisie, false jesli przerwac prace
     virtual void endProgress() {}; // zakonczenie pracy
     vector<Frame> frames;
     // vector<int> delay; //na razie rezygnujemy z roznych opoznien
@@ -78,6 +82,8 @@ protected:
     int h;
     int colorRes;
     float duration;
-    int revStart; // indeks klatki od ktorej zaczyna sie odwrocone powtorzenie
+    int revStart;     // indeks klatki od ktorej zaczyna sie odwrocone powtorzenie
+    int revCmapStart; // indeks palety od ktorej zaczyna sie odwrocone powtorzenie
+    bool canceled;
     // int paletteSize;
 };

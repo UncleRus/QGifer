@@ -2,6 +2,9 @@
 
 #include <QPainterPath>
 
+#include <algorithm>
+#include <cmath>
+
 QImage TextRenderer::renderText(const QString &text, const QFont &font, const QColor &textColor,
     const QColor &outlineColor, int outlineWidth)
 {
@@ -10,20 +13,24 @@ QImage TextRenderer::renderText(const QString &text, const QFont &font, const QC
     QPen pen;
     pen.setColor(outlineColor);
     pen.setWidthF(outlineWidth);
-
-    QFontMetrics fm(font);
-    QRect r = fm.boundingRect(text);
+    pen.setJoinStyle(Qt::RoundJoin);
 
     QPainterPath path;
-    path.addText(r.width() * 0.05, fm.height(), font, text);
+    path.addText(0, 0, font, text);
+    const QRectF bounds = path.boundingRect();
+    if (bounds.isEmpty())
+        return QImage();
 
-    // QPixmap pix(QSize(path.boundingRect().width(), path.boundingRect().height()));
-    QPixmap pix(QSize(r.width() * 1.1f, r.height() * 1.3f));
-    pix.fill(Qt::transparent);
-    QImage img = pix.toImage();
+    const qreal margin = std::max<qreal>(0.0, outlineWidth) + 2.0;
+    const int width = static_cast<int>(std::ceil(bounds.width() + 2.0 * margin));
+    const int height = static_cast<int>(std::ceil(bounds.height() + 2.0 * margin));
+
+    QImage img(width, height, QImage::Format_ARGB32_Premultiplied);
+    img.fill(Qt::transparent);
 
     QPainter p(&img);
     p.setRenderHints(QPainter::TextAntialiasing | QPainter::Antialiasing, true);
+    p.translate(margin - bounds.left(), margin - bounds.top());
 
     p.setFont(font);
     p.setPen(pen);

@@ -92,9 +92,11 @@ const QRect &WorkspaceObject::updatePreviewRect(int frame, const QSize &previewS
 void WorkspaceObject::setScaleAt(int i, float xs, float ys)
 {
     i -= start;
-    if (xs <= 0)
+    if (i < 0 || i >= scale.size())
+        return;
+    if (xs <= 0 && img.width() > 0)
         xs = 1 / (float)img.width();
-    if (ys <= 0)
+    if (ys <= 0 && img.height() > 0)
         ys = 1 / (float)img.height();
     scale[i].w = xs;
     scale[i].h = ys;
@@ -104,6 +106,8 @@ void WorkspaceObject::clonePosAt(int i, WO::Direction d)
 {
     qDebug() << "cloning pos at " << i << "(" << i - start << ")";
     i = i - start;
+    if (i < 0 || i >= pos.size())
+        return;
     if (d == WO::Further)
         for (int j = i + 1; j < pos.size(); j++)
             pos[j] = pos[i];
@@ -116,6 +120,8 @@ void WorkspaceObject::cloneScaleAt(int i, WO::Direction d)
 {
     qDebug() << "cloning scale at " << i << "(" << i - start << ")";
     i = i - start;
+    if (i < 0 || i >= scale.size())
+        return;
     if (d == WO::Further)
         for (int j = i + 1; j < scale.size(); j++)
             scale[j] = scale[i];

@@ -23,6 +23,7 @@
 #include <QFileDialog>
 #include <QProcess>
 #include <QMessageBox>
+#include <cmath>
 
 GifWidget::GifWidget(QSettings *s) : timerId(-1), currentFrame(-1), reversePlay(false)
 {
@@ -85,6 +86,9 @@ void GifWidget::createActions()
 
 void GifWidget::play()
 {
+    if (prevFrames.isEmpty())
+        return;
+
     if (timerId == -1) {
         timerId = startTimer(intervalBox->value());
         skipped = 0;
@@ -99,8 +103,10 @@ void GifWidget::play()
 
 void GifWidget::pause()
 {
-    killTimer(timerId);
-    timerId = -1;
+    if (timerId != -1) {
+        killTimer(timerId);
+        timerId = -1;
+    }
     intervalBox->setEnabled(true);
 }
 
@@ -108,11 +114,13 @@ void GifWidget::updateInterval()
 {
     if (calculateIntervalForFPS->isChecked()) {
         uint visibleFps = visibleFPSBox->value();
+        if (visibleFps == 0)
+            return;
         uint skipFrame = 1;
         if (saveEveryBox->isChecked()) {
             skipFrame = seBox->value();
         }
-        uint newInterval = (1000 / visibleFps) * (visibleFps / (visibleFps / skipFrame));
+        uint newInterval = static_cast<uint>(std::lround(1000.0 * skipFrame / visibleFps));
         intervalBox->setValue(newInterval);
 
         pause();
@@ -145,12 +153,15 @@ void GifWidget::saveGif(const QString &filename)
     if (reverseBox->isChecked()) {
         gif->appendReversedCopy();
     }
-    if (!gif->save(
-            filename.toStdString().c_str(), saveEveryBox->isChecked() ? seBox->value() : 1)) {
-        QMessageBox::critical(this, tr("Error"), tr("Unexpected error while saving GIF file!"));
-        // PrintGifError(); przeniesione do save
-    }
+    const bool saved =
+        gif->save(filename.toStdString().c_str(), saveEveryBox->isChecked() ? seBox->value() : 1);
     gif->removeReversedCopy();
+    if (!saved) {
+        if (!gif->wasCanceled()) {
+            QMessageBox::critical(this, tr("Error"), tr("Unexpected error while saving GIF file!"));
+        }
+        return;
+    }
     emit gifSaved(filename);
 }
 
@@ -165,6 +176,12 @@ unsigned long GifWidget::getEstimateSize()
 
 void GifWidget::timerEvent(QTimerEvent *)
 {
+    if (prevFrames.isEmpty()) {
+        pause();
+        return;
+    }
+    if (currentFrame < 0 || currentFrame >= prevFrames.size())
+        currentFrame = 0;
 
     preview->setImage(prevFrames.at(currentFrame));
     int d = saveEveryBox->isChecked() ? seBox->value() : 1;

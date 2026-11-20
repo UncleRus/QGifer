@@ -32,7 +32,7 @@ void PrintGifError()
     qDebug() << "Something wrong whith GIF";
 }
 
-GifCreator::GifCreator() : duration(0.1), revStart(-1)
+GifCreator::GifCreator() : duration(0.1), revStart(-1), revCmapStart(-1), canceled(false)
 {
 }
 
@@ -51,11 +51,15 @@ GifCreator::~GifCreator()
 
 bool GifCreator::save(const char *filename, int every)
 {
+    canceled = false;
     if (!frames.size() || !cmaps.size()) {
         cerr << "ERROR: no frames or color map found!";
         cerr << "frames: " << frames.size() << "\nmaps: " << cmaps.size() << endl;
         return false;
     }
+
+    if (every < 1)
+        every = 1;
 
     int err;
     GifFileType *GifFile = EGifOpenFileName(filename, false, &err);
@@ -65,10 +69,16 @@ bool GifCreator::save(const char *filename, int every)
         return false;
     }
 
+    auto fail = [&]() {
+        PrintGifError();
+        EGifCloseFile(GifFile, &err);
+        endProgress();
+        return false;
+    };
+
     if (EGifPutScreenDesc(GifFile, w, h, colorRes, 0, cmaps.size() > 1 ? NULL : cmaps.at(0))
         == GIF_ERROR) {
-        PrintGifError();
-        return false;
+        return fail();
     }
 
     // ------ loop ------
@@ -79,32 +89,36 @@ bool GifCreator::save(const char *filename, int every)
         char subblock[3];
         // if (EGifPutExtensionFirst(GifFile, APPLICATION_EXT_FUNC_CODE, 11, nsle) == GIF_ERROR) {
         if (EGifPutExtensionLeader(GifFile, APPLICATION_EXT_FUNC_CODE) == GIF_ERROR) {
-            PrintGifError();
-            return false;
+            return fail();
         }
         if (EGifPutExtensionBlock(GifFile, 11, nsle) == GIF_ERROR) {
-            PrintGifError();
-            return false;
+            return fail();
         }
         subblock[0] = 1;
         subblock[2] = loop_count % 256;
         subblock[1] = loop_count / 256;
         if (EGifPutExtensionBlock(GifFile, 3, subblock) == GIF_ERROR) {
-            PrintGifError();
-            return false;
+            return fail();
         }
 
         // if (EGifPutExtensionLast(GifFile, APPLICATION_EXT_FUNC_CODE, 3, subblock) == GIF_ERROR) {
         if (EGifPutExtensionTrailer(GifFile) == GIF_ERROR) {
-            PrintGifError();
-            return false;
+            return fail();
         }
     }
     //------------------
 
-    for (int ni = 0; ni < frames.size(); ni += every) {
-        if (!savingProgress((float)ni / (frames.size() / every) * 100)) {
-            return true; // przerwanie przez usera
+    const int frameCount = static_cast<int>(frames.size());
+    const int totalToSave = (frameCount + every - 1) / every;
+    int savedCount = 0;
+
+    for (int ni = 0; ni < frameCount; ni += every, ++savedCount) {
+        const int progress = totalToSave > 0 ? (savedCount * 100) / totalToSave : 100;
+        if (!savingProgress(progress)) {
+            canceled = true;
+            EGifCloseFile(GifFile, &err);
+            endProgress();
+            return false; // przerwanie przez usera
         }
 
         unsigned char ExtStr[4] = {0x04, 0x00, 0x00, 0xff};
@@ -121,28 +135,21 @@ bool GifCreator::save(const char *filename, int every)
         EGifPutExtension(GifFile, GRAPHICS_EXT_FUNC_CODE, 4, ExtStr);
 
         if (EGifPutImageDesc(GifFile, 0, 0, w, h, false,
-                cmaps.size() > ni ? cmaps.at(ni) : cmaps.at(cmaps.size() - 1))
+                static_cast<int>(cmaps.size()) > ni ? cmaps.at(ni) : cmaps.at(cmaps.size() - 1))
             == GIF_ERROR) {
-
-            PrintGifError();
-            endProgress();
-            return false;
+            return fail();
         }
 
         for (int y = 0, j = (h - 1) * w; y < h; y++, j -= w) {
             if (EGifPutLine(GifFile, &(frames[ni][j]), w) == GIF_ERROR) {
-                PrintGifError();
-                endProgress();
-                return false;
+                return fail();
             }
         }
     }
 
     // comment
     if (EGifPutComment(GifFile, "This GIF file was created using QGifer") == GIF_ERROR) {
-        PrintGifError();
-        endProgress();
-        return false;
+        return fail();
     }
 
     if (EGifCloseFile(GifFile, &err) == GIF_ERROR) {
@@ -165,7 +172,8 @@ void GifCreator::appendReversedCopy()
             << "WARNING: going to append reversed copy of frames but palettes probably won't match!"
             << endl;
     }
-    revStart = frames.size();
+    revStart = static_cast<int>(frames.size());
+    revCmapStart = static_cast<int>(cmaps.size());
     for (int i = frames.size() - 2; i > 0; i--) {
         frames.push_back(frames.at(i));
     }
@@ -181,8 +189,12 @@ void GifCreator::removeReversedCopy()
     if (revStart < 0)
         return;
 
-    while (frames.size() > revStart)
-        frames.erase(frames.begin() + frames.size() - 1);
-    while (cmaps.size() > revStart)
-        cmaps.erase(cmaps.begin() + cmaps.size() - 1);
+    while (static_cast<int>(frames.size()) > revStart)
+        frames.pop_back();
+    if (revCmapStart >= 0) {
+        while (static_cast<int>(cmaps.size()) > revCmapStart)
+            cmaps.pop_back();
+    }
+    revStart = -1;
+    revCmapStart = -1;
 }

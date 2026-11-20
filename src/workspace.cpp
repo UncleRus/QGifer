@@ -245,7 +245,8 @@ void Workspace::mousePressEvent(QMouseEvent *e)
 {
     drag = canDrag;
     lmbPressed = true;
-    if (hoveredObject && e->button() == Qt::LeftButton) {
+    if (hoveredObject && e->button() == Qt::LeftButton && frameIndex >= hoveredObject->getStart()
+        && frameIndex <= hoveredObject->getStop()) {
         dx = (float)cpos.x() / (float)image.width() - hoveredObject->posAt(frameIndex).x;
         dy = (float)cpos.y() / (float)image.height() - hoveredObject->posAt(frameIndex).y;
         hoveredObject->setMode((WO::Mode)((int)hoveredObject->currentMode() + 1));
@@ -296,9 +297,25 @@ void Workspace::updateMargins()
 void Workspace::clear()
 {
     PreviewWidget::clear();
-    for (int i = 0; i < objects.size(); i++)
-        delete objects[i];
+    clearObjects();
+}
+
+void Workspace::clearObjects()
+{
+    hoverObject(-1, Qt::ArrowCursor);
+    qDeleteAll(objects);
     objects.clear();
+}
+
+void Workspace::removeObjectAt(int i)
+{
+    if (i < 0 || i >= objects.size())
+        return;
+    if (hoveredObject == objects.at(i))
+        hoverObject(-1, Qt::ArrowCursor);
+    else if (hoIndex > i)
+        --hoIndex;
+    delete objects.takeAt(i);
 }
 
 void Workspace::addObject(const QString &imgPath, int startFrame, int stopFrame)
@@ -498,8 +515,7 @@ void Workspace::execObjectMenu(const QPoint &p)
         if (QMessageBox::question(this, tr("Question"),
                 tr("Do you really want to delete this object?"), QMessageBox::Yes | QMessageBox::No)
             == QMessageBox::Yes) {
-            objects.removeAt(hoIndex);
-            hoverObject(-1, Qt::ArrowCursor);
+            removeObjectAt(hoIndex);
         }
 
     if (a)

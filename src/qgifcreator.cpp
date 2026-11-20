@@ -84,7 +84,7 @@ void QGifCreator::prepareFrame(QImage *img, ColorMapObject *map, bool dither)
                 // 7/16*qerror[2];
 
                 // prawy
-                if (i + 2 + step < img->bytesPerLine()) {
+                if (i + 2 + step < bytesPerLine) {
                     line[i + step] =
                         qBound(0, (int)(line[i + step] + (float)7 / 16 * qerror[0]), 255);
                     line[i + 1 + step] =
@@ -112,8 +112,7 @@ void QGifCreator::prepareFrame(QImage *img, ColorMapObject *map, bool dither)
                 // dolny
                 if (rw + 1 < img->height()) {
                     uchar *nextLine = img->scanLine(rw + 1);
-                    nextLine[i] =
-                        qBound(0, (int)(nextLine[i + step] + (float)5 / 16 * qerror[0]), 255);
+                    nextLine[i] = qBound(0, (int)(nextLine[i] + (float)5 / 16 * qerror[0]), 255);
                     nextLine[i + 1] =
                         qBound(0, (int)(nextLine[i + 1] + (float)5 / 16 * qerror[1]), 255);
                     nextLine[i + 2] =

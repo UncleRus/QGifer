@@ -129,7 +129,7 @@ void PreviewWidget::applyCorrection(QImage *img, int h, int s, int v, bool toRGB
     for (int y = 0; y < img->height(); y++) {
         // qDebug() << "correcting row: " << rw;
         uchar *data = img->scanLine(y);
-        for (int i = 0, x = 0; i < img->bytesPerLine(); i += step, x++) {
+        for (int x = 0, i = 0; x < img->width(); x++, i += step) {
             if (!rect.isNull() && !rect.contains(x, y))
                 continue;
 
