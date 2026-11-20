@@ -927,7 +927,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../ui/gifwidget.ui" line="114"/>
         <source>Save only every </source>
-        <translation>Сохрать каждый </translation>
+        <translation>Сохранять каждый </translation>
     </message>
     <message>
         <location filename="../ui/gifwidget.ui" line="121"/>
