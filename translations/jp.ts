@@ -4,7 +4,7 @@
 <context>
     <name>APPLICATION</name>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1278"/>
+        <location filename="../src/mainwindow.cpp" line="1289"/>
         <source>LANGUAGE_NAME</source>
         <translation>日本語</translation>
     </message>
@@ -12,7 +12,7 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <location filename="../ui/aboutdialog.ui" line="861"/>
+        <location filename="../ui/aboutdialog.ui" line="862"/>
         <source>Close</source>
         <translation>閉じる</translation>
     </message>
@@ -32,6 +32,7 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;This software is licensed under GPL version 3. See &amp;quot;License&amp;quot; tab for details.&lt;/span&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Lukasz Chodyla &amp;lt;chodak166@op.pl&amp;gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Arkadii Ivanov &amp;lt;apkawa@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Ruslan V. Uss &amp;lt;unclerus@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Translator: Aleksey Yagur &amp;lt;asyagur@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Copyright (c) 2013 Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;
@@ -39,12 +40,12 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/aboutdialog.ui" line="72"/>
+        <location filename="../ui/aboutdialog.ui" line="73"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
     <message>
-        <location filename="../ui/aboutdialog.ui" line="87"/>
+        <location filename="../ui/aboutdialog.ui" line="88"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -726,7 +727,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/aboutdialog.ui" line="818"/>
+        <location filename="../ui/aboutdialog.ui" line="819"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -744,7 +745,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/aboutdialog.ui" line="772"/>
+        <location filename="../ui/aboutdialog.ui" line="773"/>
         <source>Project support</source>
         <translation>プロジェクトを支援</translation>
     </message>
@@ -1061,7 +1062,7 @@ p, li { white-space: pre-wrap; }
         <translation>上:</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="386"/>
+        <location filename="../src/mainwindow.cpp" line="390"/>
         <source>Zoom</source>
         <translation>拡大</translation>
     </message>
@@ -1101,20 +1102,20 @@ p, li { white-space: pre-wrap; }
         <translation>表示(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="198"/>
-        <location filename="../src/mainwindow.cpp" line="250"/>
-        <location filename="../src/mainwindow.cpp" line="260"/>
-        <location filename="../src/mainwindow.cpp" line="895"/>
-        <location filename="../src/mainwindow.cpp" line="1027"/>
-        <location filename="../src/mainwindow.cpp" line="1044"/>
-        <location filename="../src/mainwindow.cpp" line="1131"/>
-        <location filename="../src/mainwindow.cpp" line="1145"/>
-        <location filename="../src/mainwindow.cpp" line="1173"/>
+        <location filename="../src/mainwindow.cpp" line="202"/>
+        <location filename="../src/mainwindow.cpp" line="254"/>
+        <location filename="../src/mainwindow.cpp" line="264"/>
+        <location filename="../src/mainwindow.cpp" line="901"/>
+        <location filename="../src/mainwindow.cpp" line="1033"/>
+        <location filename="../src/mainwindow.cpp" line="1050"/>
+        <location filename="../src/mainwindow.cpp" line="1137"/>
+        <location filename="../src/mainwindow.cpp" line="1151"/>
+        <location filename="../src/mainwindow.cpp" line="1179"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="459"/>
+        <location filename="../src/mainwindow.cpp" line="463"/>
         <source>Hue (</source>
         <translation>色相 (</translation>
     </message>
@@ -1164,7 +1165,7 @@ p, li { white-space: pre-wrap; }
         <translation>パレットを保存(&amp;V)...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="207"/>
+        <location filename="../src/mainwindow.cpp" line="211"/>
         <source>&quot; will not be visible. What do you want to do?</source>
         <translation>&quot; は表示できません. どうしますか?</translation>
     </message>
@@ -1204,12 +1205,12 @@ p, li { white-space: pre-wrap; }
         <translation>オブジェクトを作成</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1232"/>
+        <location filename="../src/mainwindow.cpp" line="1238"/>
         <source>Undock &amp;toolbox</source>
         <translation>ツールボックスの格納を解除</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1232"/>
+        <location filename="../src/mainwindow.cpp" line="1238"/>
         <source>Dock &amp;toolbox</source>
         <translation>ツールボックスを格納</translation>
     </message>
@@ -1234,7 +1235,7 @@ p, li { white-space: pre-wrap; }
         <translation>テキストを挿入</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1211"/>
+        <location filename="../src/mainwindow.cpp" line="1217"/>
         <source>The project has changed - do you want to save the changes before exiting?</source>
         <translation>プロジェクトに変更があります -  終了する前に変更を保存しますか?</translation>
     </message>
@@ -1270,12 +1271,12 @@ p, li { white-space: pre-wrap; }
         <translation>スムース プレビュー</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1319"/>
+        <location filename="../src/mainwindow.cpp" line="1330"/>
         <source> to open a video</source>
         <translation>  で動画を開く</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1145"/>
+        <location filename="../src/mainwindow.cpp" line="1151"/>
         <source>Error reading file: </source>
         <translation>ファイル読み込みエラー: </translation>
     </message>
@@ -1290,13 +1291,13 @@ p, li { white-space: pre-wrap; }
         <translation>YouTube 動画(&amp;Y)...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1173"/>
+        <location filename="../src/mainwindow.cpp" line="1179"/>
         <source>Error writing file: </source>
         <translation>ファイル書き込みエラー: </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1087"/>
-        <location filename="../src/mainwindow.cpp" line="1118"/>
+        <location filename="../src/mainwindow.cpp" line="1093"/>
+        <location filename="../src/mainwindow.cpp" line="1124"/>
         <source>The project has changed - do you want to save the changes?</source>
         <translation>プロジェクトが変更されています -  変更を保存しますか?</translation>
     </message>
@@ -1351,7 +1352,7 @@ p, li { white-space: pre-wrap; }
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="198"/>
+        <location filename="../src/mainwindow.cpp" line="202"/>
         <source>The player failed to load the video file!</source>
         <translation>プレイヤーによる動画の読み込みに失敗!</translation>
     </message>
@@ -1361,7 +1362,7 @@ p, li { white-space: pre-wrap; }
         <translation>MJPEG 変換(&amp;C)...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1027"/>
+        <location filename="../src/mainwindow.cpp" line="1033"/>
         <source>The palette file can not be loaded!</source>
         <translation>パレットファイルが読み込めません!</translation>
     </message>
@@ -1371,7 +1372,7 @@ p, li { white-space: pre-wrap; }
         <translation>新規プロジェクト</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="987"/>
+        <location filename="../src/mainwindow.cpp" line="993"/>
         <source>Median blur (</source>
         <translation>メディアンぼかし (</translation>
     </message>
@@ -1391,7 +1392,7 @@ p, li { white-space: pre-wrap; }
         <translation>一時停止</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1319"/>
+        <location filename="../src/mainwindow.cpp" line="1330"/>
         <source>Press </source>
         <translation>&gt;&gt; </translation>
     </message>
@@ -1421,7 +1422,7 @@ p, li { white-space: pre-wrap; }
         <translation>横幅:</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="250"/>
+        <location filename="../src/mainwindow.cpp" line="254"/>
         <source>The range is invalid!</source>
         <translation>無効な範囲です!</translation>
     </message>
@@ -1446,7 +1447,7 @@ p, li { white-space: pre-wrap; }
         <translation>終点フレーム:</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="210"/>
+        <location filename="../src/mainwindow.cpp" line="214"/>
         <source>Delete this object</source>
         <translation>このオブジェクトを削除</translation>
     </message>
@@ -1466,12 +1467,12 @@ p, li { white-space: pre-wrap; }
         <translation>ファイル(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="211"/>
+        <location filename="../src/mainwindow.cpp" line="215"/>
         <source>Change frame range...</source>
         <translation>フレーム範囲を変更...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="192"/>
+        <location filename="../src/mainwindow.cpp" line="196"/>
         <source>Open video file</source>
         <translation>ビデオファイルを開く</translation>
     </message>
@@ -1486,7 +1487,7 @@ p, li { white-space: pre-wrap; }
         <translation>言語</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1203"/>
+        <location filename="../src/mainwindow.cpp" line="1209"/>
         <source>QGifer - video-based GIF creator</source>
         <translation>QGifer - video-based GIF creator</translation>
     </message>
@@ -1496,7 +1497,7 @@ p, li { white-space: pre-wrap; }
         <translation>現在のフレームから</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1044"/>
+        <location filename="../src/mainwindow.cpp" line="1050"/>
         <source>The palette file can not be saved!</source>
         <translation>このパレットファイルを保存できません!</translation>
     </message>
@@ -1556,7 +1557,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="895"/>
+        <location filename="../src/mainwindow.cpp" line="901"/>
         <source>The project cannot be loaded: </source>
         <translation>プロジェクトを読み込めません: </translation>
     </message>
@@ -1571,7 +1572,7 @@ p, li { white-space: pre-wrap; }
         <translation>出力プロパティ</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1131"/>
+        <location filename="../src/mainwindow.cpp" line="1137"/>
         <source>Project was not entirely loaded.</source>
         <translation>プロジェクトが完全に読み込まれていません.</translation>
     </message>
@@ -1591,7 +1592,7 @@ p, li { white-space: pre-wrap; }
         <translation>ツールボックス</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="813"/>
+        <location filename="../src/mainwindow.cpp" line="819"/>
         <source>Source video file: </source>
         <translation>ソース動画ファイル:</translation>
     </message>
@@ -1606,10 +1607,10 @@ p, li { white-space: pre-wrap; }
         <translation>色相 (0):</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="206"/>
-        <location filename="../src/mainwindow.cpp" line="1086"/>
-        <location filename="../src/mainwindow.cpp" line="1117"/>
-        <location filename="../src/mainwindow.cpp" line="1210"/>
+        <location filename="../src/mainwindow.cpp" line="210"/>
+        <location filename="../src/mainwindow.cpp" line="1092"/>
+        <location filename="../src/mainwindow.cpp" line="1123"/>
+        <location filename="../src/mainwindow.cpp" line="1216"/>
         <source>Question</source>
         <translation>質問</translation>
     </message>
@@ -1619,7 +1620,7 @@ p, li { white-space: pre-wrap; }
         <translation>デフォルト設定に戻す(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="260"/>
+        <location filename="../src/mainwindow.cpp" line="264"/>
         <source>Invalid color map!</source>
         <translation>無効なカラーマップ!</translation>
     </message>
@@ -1630,12 +1631,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../ui/mainwindow.ui" line="1213"/>
-        <location filename="../src/mainwindow.cpp" line="1266"/>
+        <location filename="../src/mainwindow.cpp" line="1277"/>
         <source>English</source>
         <translation>English</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="363"/>
+        <location filename="../src/mainwindow.cpp" line="367"/>
         <source>The range seems to be invalid!</source>
         <translation>範囲が無効です!</translation>
     </message>
@@ -1655,13 +1656,13 @@ p, li { white-space: pre-wrap; }
         <translation>パレットを更新</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="460"/>
+        <location filename="../src/mainwindow.cpp" line="464"/>
         <source>Saturation (</source>
         <translation>彩度 (</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1180"/>
-        <location filename="../src/mainwindow.cpp" line="1190"/>
+        <location filename="../src/mainwindow.cpp" line="1186"/>
+        <location filename="../src/mainwindow.cpp" line="1196"/>
         <source>Save project file</source>
         <translation>プロジェクトファイルを保存</translation>
     </message>
@@ -1701,12 +1702,12 @@ p, li { white-space: pre-wrap; }
         <translation>Ctrl+Shift+V</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1128"/>
+        <location filename="../src/mainwindow.cpp" line="1134"/>
         <source>Open project file</source>
         <translation>プロジェクトファイルを開く</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1037"/>
+        <location filename="../src/mainwindow.cpp" line="1043"/>
         <source>Save QGifer palette file</source>
         <translation>QGifer パレットファイルを保存</translation>
     </message>
@@ -1716,23 +1717,23 @@ p, li { white-space: pre-wrap; }
         <translation>プロジェクトツールバー</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="363"/>
-        <location filename="../src/mainwindow.cpp" line="813"/>
+        <location filename="../src/mainwindow.cpp" line="367"/>
+        <location filename="../src/mainwindow.cpp" line="819"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1023"/>
+        <location filename="../src/mainwindow.cpp" line="1029"/>
         <source>Open QGifer palette file</source>
         <translation>QGifer パレットファイルを開く</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1204"/>
+        <location filename="../src/mainwindow.cpp" line="1210"/>
         <source> [modified] </source>
         <translation> [変更有] </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="207"/>
+        <location filename="../src/mainwindow.cpp" line="211"/>
         <source>The object &quot;</source>
         <translation>オブジェクト &quot;</translation>
     </message>
@@ -1762,7 +1763,7 @@ p, li { white-space: pre-wrap; }
         <translation>彩度 (0):</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="461"/>
+        <location filename="../src/mainwindow.cpp" line="465"/>
         <source>Brightness (</source>
         <translation>明るさ (</translation>
     </message>
