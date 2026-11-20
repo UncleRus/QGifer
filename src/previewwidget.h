@@ -11,7 +11,7 @@
 ** but WITHOUT ANY WARRANTY; without even the implied warranty of
 ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ** GNU General Public License for more details.
-** 
+**
 ** You should have received a copy of the GNU General Public License
 ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
 **
@@ -32,53 +32,91 @@
 
 class PreviewWidget : public QWidget
 {
-     Q_OBJECT;
+    Q_OBJECT;
+
 public:
-     PreviewWidget(QWidget* parent=0, Qt::WindowFlags f=0);
-     virtual ~PreviewWidget();
-     void setImage(const QImage& img, const QSize& size = QSize(0,0), 
-		   bool forceRatio = false, bool forceSmooth = false);
-     virtual QImage* getImage() {return &image;}
-     const QPoint* getCursorPos() const {return underMouse() ? &cpos : NULL;}
-     const double normalizedX() const 
-     {return image.isNull() ? -1 : (double)(cpos.x()-((1-zoom)/2*width()))/(double)image.width();}
-     const double normalizedY() const 
-     {return image.isNull() ? -1 : (double)(cpos.y()-((1-zoom)/2*height()))/(double)image.height();}
-     void enableAntialiasing(bool enable) {smooth = enable;}
-     virtual void clear();
-     void keepAspectRatio(bool keep){
-         ratio = keep;
-     }
-     void setZoom(double z) {zoom = z;}
-     double getZoom() const {return zoom;}
-     static void applyCorrection(QImage* img, int h, int s, int v, 
-				 bool toRGB888 = true, QRect rect = QRect());
-     void enableBackground(bool e){drawBkg=e;}
-     void updateBackground(){updateBkg=true;}
+    PreviewWidget(QWidget *parent = nullptr, Qt::WindowFlags f = {});
+    virtual ~PreviewWidget();
+    void setImage(const QImage &img, const QSize &size = QSize(0, 0), bool forceRatio = false,
+        bool forceSmooth = false);
+    virtual QImage *getImage()
+    {
+        return &image;
+    }
+    const QPoint *getCursorPos() const
+    {
+        return underMouse() ? &cpos : NULL;
+    }
+    const double normalizedX() const
+    {
+        return image.isNull()
+                   ? -1
+                   : (double)(cpos.x() - ((1 - zoom) / 2 * width())) / (double)image.width();
+    }
+    const double normalizedY() const
+    {
+        return image.isNull()
+                   ? -1
+                   : (double)(cpos.y() - ((1 - zoom) / 2 * height())) / (double)image.height();
+    }
+    void enableAntialiasing(bool enable)
+    {
+        smooth = enable;
+    }
+    virtual void clear();
+    void keepAspectRatio(bool keep)
+    {
+        ratio = keep;
+    }
+    void setZoom(double z)
+    {
+        zoom = z;
+    }
+    double getZoom() const
+    {
+        return zoom;
+    }
+    static void
+    applyCorrection(QImage *img, int h, int s, int v, bool toRGB888 = true, QRect rect = QRect());
+    void enableBackground(bool e)
+    {
+        drawBkg = e;
+    }
+    void updateBackground()
+    {
+        updateBkg = true;
+    }
+
 protected:
-     virtual void paintEvent(QPaintEvent*);
-     virtual void drawBackground(QPaintDevice*);
-     double fit01(double v){if(v<0)return 0;else if(v>1) return 1; else return v;}
-     QSize imsize;
-     QSize origSize;
-     QImage image;
-     QPoint cpos;
-     bool smooth;
-     bool ratio;
-     double zoom; //0 - 1
-     int drawnX;
-     int drawnY;
-     bool updateBkg;
-     bool drawBkg;
-     QImage bkgCache;
+    virtual void paintEvent(QPaintEvent *);
+    virtual void drawBackground(QPaintDevice *);
+    double fit01(double v)
+    {
+        if (v < 0)
+            return 0;
+        else if (v > 1)
+            return 1;
+        else
+            return v;
+    }
+    QSize imsize;
+    QSize origSize;
+    QImage image;
+    QPoint cpos;
+    bool smooth;
+    bool ratio;
+    double zoom; // 0 - 1
+    int drawnX;
+    int drawnY;
+    bool updateBkg;
+    bool drawBkg;
+    QImage bkgCache;
 
 private slots:
-      
+
 signals:
-     void clicked(double x, double y);
-     void marginsChanged();
+    void clicked(double x, double y);
+    void marginsChanged();
 };
 
 #endif
-
-

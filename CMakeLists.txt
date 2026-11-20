@@ -1,20 +1,15 @@
-CMAKE_MINIMUM_REQUIRED (VERSION 2.6)
+cmake_minimum_required(VERSION 3.21)
 
+PROJECT(QGifer LANGUAGES CXX)
 
-#------------------------------------------------------
-#-------------------- GENERAL -------------------------
-#------------------------------------------------------
-
-PROJECT(QGifer)
 SET(TARGET_NAME qgifer)
 
-
 SET(QGIFER_VERSION_MAJOR 0)
-SET(QGIFER_VERSION_MINOR 2)
-SET(QGIFER_VERSION_PATCH 3)
+SET(QGIFER_VERSION_MINOR 3)
+SET(QGIFER_VERSION_PATCH 0)
 # choices between "a", "b", "rc" and empty string for release
-SET(QGIFER_VERSION_PRERELEASE_TAG rc)
-SET(QGIFER_VERSION_PRERELEASE_VERSION 2)
+SET(QGIFER_VERSION_PRERELEASE_TAG "")
+SET(QGIFER_VERSION_PRERELEASE_VERSION 0)
 SET(QGIFER_VERSION "${QGIFER_VERSION_MAJOR}.${QGIFER_VERSION_MINOR}.${QGIFER_VERSION_PATCH}")
 
 IF(QGIFER_VERSION_PRERELEASE_TAG)
@@ -22,71 +17,44 @@ IF(QGIFER_VERSION_PRERELEASE_TAG)
 ENDIF(QGIFER_VERSION_PRERELEASE_TAG)
 
 OPTION(QUIET_MODE "quiet mode" OFF)
-OPTION(RELEASE_MODE "release mode" OFF)
 
-SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+SET(CMAKE_CXX_STANDARD 17)
+SET(CMAKE_CXX_STANDARD_REQUIRED ON)
+SET(CMAKE_CXX_EXTENSIONS OFF)
 
+SET(CMAKE_AUTOMOC ON)
+SET(CMAKE_AUTOUIC ON)
+SET(CMAKE_AUTORCC ON)
+SET(CMAKE_AUTOUIC_SEARCH_PATHS "${CMAKE_CURRENT_SOURCE_DIR}/ui")
 
-IF(UNIX)
-    SET(CMAKE_INSTALL_PREFIX "/usr/")
-	SET(BIN_INSTALL_DIR "bin")
-	SET(DATA_INSTALL_DIR "share/qgifer")
-	SET(ICON_INSTALL_DIR "share/icons")
-	SET(DESKTOP_INSTALL_DIR "share/applications")
-	SET(MENU_INSTALL_DIR "share/menu")
-	SET(DOC_INSTALL_DIR "share/doc/qgifer")
-ENDIF(UNIX)
+IF(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
+    SET(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
+ENDIF()
 
+INCLUDE(GNUInstallDirs)
 
-SET(W32_EXEC )
-IF(WIN32)
-	SET(W32_EXEC WIN32)
-	SET(OpenCV_DIR "C:/opencv/build")
-	SET(GIF_LIBRARY "C:/Program Files/GnuWin32/lib")
-	SET(GIF_INCLUDE_DIR "C:/Program Files/GnuWin32/include")
-	INCLUDE_DIRECTORIES(SYSTEM "C:/Program Files/GnuWin32/include")
-	SET(CMAKE_INSTALL_PREFIX "${TARGET_NAME}")
-ENDIF(WIN32)
+SET(QGIFER_DATA_DIR "${CMAKE_INSTALL_FULL_DATADIR}/qgifer")
 
-FIND_PACKAGE(OpenCV REQUIRED core highgui imgproc videoio)
-FIND_PACKAGE(Qt4 REQUIRED QtCore QtGui)
+#------------------------------------------------------
+#-------------------- DEPENDENCIES --------------------
+#------------------------------------------------------
+
+FIND_PACKAGE(Qt6 6.5 REQUIRED COMPONENTS Core Gui Widgets)
 FIND_PACKAGE(GIF REQUIRED)
 
-INCLUDE(${QT_USE_FILE})
-ADD_DEFINITIONS(${QT_DEFINITIONS})
+FIND_PACKAGE(PkgConfig REQUIRED)
+PKG_CHECK_MODULES(LIBAV REQUIRED IMPORTED_TARGET
+    libavformat
+    libavcodec
+    libavutil
+    libswscale
+)
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -Wall -Wno-reorder -Wno-sign-compare" )
-# TODO Crosscompile
-#SET(CMAKE_SYSTEM_PROCESSOR "i686")
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=i686 -march=pentium" )
-#SET(CMAKE_SYSTEM_PROCESSOR "x86_64")
-
-
-SET(WINDOWS_EXEC )
-
-IF( QUIET_MODE )
-    SET(WINDOWS_EXEC ${W32_EXEC})
-    MESSAGE("Quiet mode is ON, no debug output will be shown")
-    ADD_DEFINITIONS(-DQT_NO_DEBUG_OUTPUT -DQT_NO_WARNING_OUTPUT)
-ENDIF( QUIET_MODE )
-
-IF( RELEASE_MODE )
-    MESSAGE("Release mode is ON")
-    ADD_DEFINITIONS(-DQT_NO_DEBUG)
-    SET(CMAKE_BUILD_TYPE Release)
-ELSE( RELEASE_MODE )
-      MESSAGE("Release mode is OFF")
-    SET(CMAKE_BUILD_TYPE Debug)
-ENDIF( RELEASE_MODE )
-
-# uninstall target
-configure_file(
-    "cmake/cmake_uninstall.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
-    IMMEDIATE @ONLY)
-add_custom_target(uninstall
-    COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake)
-
+IF(TARGET GIF::GIF)
+    SET(GIF_TARGET GIF::GIF)
+ELSE()
+    SET(GIF_TARGET ${GIF_LIBRARIES})
+ENDIF()
 
 #------------------------------------------------------
 #-------------------- APP BUILD -----------------------
@@ -97,16 +65,11 @@ CONFIGURE_FILE(
   "${CMAKE_CURRENT_BINARY_DIR}/version.h"
   )
 
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR}
-	src
-	src/widgets
-        src/utils
-	ui
-)
-
 SET(HEADERS
         src/gifcreator.h
+        src/imageutils.h
         src/textrenderer.h
+        src/videodecoder.h
         src/utils/qgiferformatter.h
 )
 
@@ -127,15 +90,15 @@ SET(QT_HEADERS
         src/textwidget.h
         src/interpolationdialog.h
         src/textobject.h
+        src/retranslatable.h
 
         src/widgets/QJumpSlider.h
         src/widgets/QPressAction.h
-
-
 )
 
 SET(SOURCES
         src/frameplayer.cpp
+        src/videodecoder.cpp
         src/main.cpp
         src/previewwidget.cpp
         src/mainwindow.cpp
@@ -176,7 +139,6 @@ SET(FORMS
         ui/interpolationdialog.ui
 )
 
-
 FILE(GLOB LOCALES
         "${CMAKE_CURRENT_SOURCE_DIR}/locale/*.qm"
 )
@@ -188,106 +150,74 @@ SET(DOCS
         doc/README
 )
 
-QT4_WRAP_CPP(HEADERS_MOC ${QT_HEADERS})
-QT4_WRAP_UI(FORMS_HEADERS ${FORMS})
-QT4_ADD_RESOURCES(RESOURCES_RCC ${RESOURCES})
-
+SET(WINDOWS_EXEC )
 IF(WIN32)
+    SET(WINDOWS_EXEC WIN32)
+    SET(CMAKE_INSTALL_PREFIX "${TARGET_NAME}" CACHE PATH "Install prefix" FORCE)
+ENDIF()
 
-	SET(OPENCV_LIBS "-lopencv_core${CVLIB_SUFFIX} -lopencv_highgui${CVLIB_SUFFIX} -lopencv_imgproc${CVLIB_SUFFIX} -lopencv_videoio${CVLIB_SUFFIX}" )
-ELSE(WIN32)
-	SET(OPENCV_LIBS "-lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_videoio" )
-ENDIF(WIN32)
+SET(RES_FILES "")
+IF(MINGW)
+    SET(RES_FILES "icon.rc")
+    SET(CMAKE_RC_COMPILER_INIT windres)
+    ENABLE_LANGUAGE(RC)
 
-SET(GIF_LIBS "-lgif" )
+    SET(CMAKE_RC_COMPILE_OBJECT
+      "<CMAKE_RC_COMPILER> <FLAGS> -O coff <DEFINES> -i <SOURCE> -o <OBJECT>")
+ENDIF()
 
+ADD_EXECUTABLE(${TARGET_NAME} ${WINDOWS_EXEC}
+    ${SOURCES} ${HEADERS} ${QT_HEADERS} ${FORMS} ${RESOURCES} ${RES_FILES})
 
-set(RES_FILES "")
-if(MINGW)
-  set(RES_FILES "icon.rc")
-  set(CMAKE_RC_COMPILER_INIT windres)
-  ENABLE_LANGUAGE(RC)
+TARGET_INCLUDE_DIRECTORIES(${TARGET_NAME} PRIVATE
+    ${CMAKE_CURRENT_BINARY_DIR}
+    src
+    src/widgets
+    src/utils
+    ui
+)
 
-  SET(GIF_LIBRARIES
-  ${GIF_LIBRARIES}
-  "${GIF_LIBRARIES}/libgif.dll.a"
-  )
-  SET(CMAKE_RC_COMPILE_OBJECT
-    "<CMAKE_RC_COMPILER> <FLAGS> -O coff <DEFINES> -i <SOURCE> -o <OBJECT>")
-endif(MINGW)
+TARGET_LINK_LIBRARIES(${TARGET_NAME} PRIVATE
+    Qt6::Widgets
+    ${GIF_TARGET}
+    PkgConfig::LIBAV
+)
 
-ADD_EXECUTABLE(${TARGET_NAME} ${WINDOWS_EXEC} ${SOURCES} ${HEADERS_MOC} ${FORMS_HEADERS} ${RESOURCES_RCC} ${RES_FILES})
-TARGET_LINK_LIBRARIES(${TARGET_NAME} ${QT_LIBRARIES} ${OpenCV_LIBS} ${GIF_LIBRARIES})
+IF(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    TARGET_COMPILE_OPTIONS(${TARGET_NAME} PRIVATE
+        -Wall -Wno-reorder -Wno-sign-compare)
+ENDIF()
+
+TARGET_COMPILE_DEFINITIONS(${TARGET_NAME} PRIVATE
+    QGIFER_DATA_DIR="${QGIFER_DATA_DIR}")
+
+IF(QUIET_MODE)
+    MESSAGE(STATUS "Quiet mode is ON, no debug output will be shown")
+    TARGET_COMPILE_DEFINITIONS(${TARGET_NAME} PRIVATE
+        QT_NO_DEBUG_OUTPUT QT_NO_WARNING_OUTPUT)
+ENDIF()
+
+# uninstall target
+CONFIGURE_FILE(
+    "cmake/cmake_uninstall.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
+    IMMEDIATE @ONLY)
+ADD_CUSTOM_TARGET(uninstall
+    COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake)
 
 IF(UNIX)
-	INSTALL(TARGETS ${TARGET_NAME} DESTINATION ${BIN_INSTALL_DIR})
-	INSTALL(FILES "doc/menu/qgifer" DESTINATION ${MENU_INSTALL_DIR})
-	INSTALL(FILES "doc/qgifer.desktop" DESTINATION ${DESKTOP_INSTALL_DIR})
-	INSTALL(FILES "doc/qgifer.xpm" DESTINATION ${ICON_INSTALL_DIR})
-        INSTALL(FILES ${LOCALES} DESTINATION ${DATA_INSTALL_DIR}/locale/)
-        INSTALL(FILES ${DOCS} DESTINATION ${DOC_INSTALL_DIR})
+    INSTALL(TARGETS ${TARGET_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+    INSTALL(FILES "doc/menu/qgifer" DESTINATION ${CMAKE_INSTALL_DATADIR}/menu)
+    INSTALL(FILES "doc/qgifer.desktop" DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
+    INSTALL(FILES "doc/qgifer.xpm" DESTINATION ${CMAKE_INSTALL_DATADIR}/icons)
+    INSTALL(FILES ${LOCALES} DESTINATION ${CMAKE_INSTALL_DATADIR}/qgifer/locale/)
+    INSTALL(FILES ${DOCS} DESTINATION ${CMAKE_INSTALL_DATADIR}/doc/qgifer)
 ENDIF(UNIX)
 
 IF(WIN32)
-    SET(OpenCV_SUFFIX "${OpenCV_VERSION_MAJOR}${OpenCV_VERSION_MINOR}${OpenCV_VERSION_PATCH}")
-
-    FILE(GLOB _QT_DLL_FILES
-      ${QT_BINARY_DIR}/QtCore4.dll
-      ${QT_BINARY_DIR}/QtGui4.dll
-    )
-    FILE(GLOB _OPENCV_DLL_FILES
-        ${OpenCV_DIR}/bin/libopencv_core*.dll
-        ${OpenCV_DIR}/bin/libopencv_highgui*.dll
-        ${OpenCV_DIR}/bin/libopencv_imgproc*.dll
-        ${OpenCV_DIR}/bin/opencv_ffmpeg.dll
-    )
-    FILE(GLOB_RECURSE _OPENCV_DLL_FILES
-        ${OpenCV_DIR}/bin/libopencv_core*.dll
-        ${OpenCV_DIR}/bin/libopencv_highgui*.dll
-        ${OpenCV_DIR}/bin/libopencv_imgproc*.dll
-    )
-
-    FILE(GLOB_RECURSE _OPENCV_FFMPEG_DLL_FILE
-        ${OpenCV_DIR}/../source/*/opencv_ffmpeg.dll
-    )
-
-    FILE(GLOB_RECURSE _GIF_DLL_FILES
-        ${GIF_LIBRARY}/../*/giflib4.dll
-    )
-    FILE(GLOB _MINGW_DLL_FILES
-        ${CMAKE_CXX_COMPILER}/../libstdc++-6.dll
-        ${CMAKE_CXX_COMPILER}/../libwinpthread-1.dll
-        ${CMAKE_CXX_COMPILER}/../libgcc_s_dw2-1.dll
-    )
-
-    INSTALL(TARGETS ${TARGET_NAME}
-        DESTINATION .
-        )
-
-    INSTALL(FILES
-        ${DOCS}
-        ${_QT_DLL_FILES}
-        ${_OPENCV_DLL_FILES}
-        ${_GIF_DLL_FILES}
-        ${_MINGW_DLL_FILES}
-        DESTINATION .
-        )
-    INSTALL(FILES
-        ${_OPENCV_FFMPEG_DLL_FILE}
-        DESTINATION .
-        RENAME "opencv_ffmpeg${OpenCV_SUFFIX}.dll"
-        )
-
-    INSTALL(FILES
-        ${QT_QGIF_PLUGIN_RELEASE}
-        ${QT_QJPEG_PLUGIN_RELEASE}
-        DESTINATION imageformats/
-        )
-
-    INSTALL(FILES ${LOCALES}
-        DESTINATION locale/)
-
+    INSTALL(TARGETS ${TARGET_NAME} DESTINATION .)
+    INSTALL(FILES ${DOCS} DESTINATION .)
+    INSTALL(FILES ${LOCALES} DESTINATION locale/)
 ENDIF(WIN32)
-
 
 INCLUDE(cmake/CMakeCPack.cmake)

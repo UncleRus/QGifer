@@ -29,19 +29,17 @@ IF(EXISTS "${CMAKE_ROOT}/Modules/CPack.cmake")
     ENDIF(WIN32)
 
     IF(UNIX)
-        SET(CPACK_SET_DESTDIR "on")
         SET(CPACK_GENERATOR "DEB")
 
         SET(CPACK_DEBIAN_PACKAGE_DESCRIPTION "${CPACK_PACKAGE_DESCRIPTION_SUMMARY}")
 
-
-        SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6 (>= 2.1.3), libc6 (>= 2.3.6-6~), libgcc1 (>= 1:4.1.1), libgif4 (>= 4.1.4), libopencv-core2.4, libopencv-highgui2.4, libopencv-imgproc2.4, libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.6.1), libstdc++6 (>= 4.1.1)")
+        # Runtime dependencies are computed from the linked shared objects
+        # (Qt 6, giflib, libav*), so they follow the distribution versions.
+        SET(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
 
         SET(CPACK_DEBIAN_PACKAGE_PRIORITY "optional")
         SET(CPACK_DEBIAN_PACKAGE_SECTION "video")
         SET(CPACK_DEBIAN_ARCHITECTURE ${CMAKE_SYSTEM_PROCESSOR})
-
-        SET(CPACK_COMPONENTS_ALL Libraries ApplicationData)
     ENDIF(UNIX)
 
 

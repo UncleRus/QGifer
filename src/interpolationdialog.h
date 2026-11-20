@@ -10,23 +10,29 @@ class Workspace;
 
 class InterpolationDialog : public QDialog, public Ui::InterpolationDialog, public Retranslatable
 {
-     Q_OBJECT;
-public:
-     enum Mode{Position=1,Size=2};
+    Q_OBJECT;
 
-     InterpolationDialog(Workspace* workspace, WorkspaceObject* object, 
-			 int mode = (int)InterpolationDialog::Position);
-     virtual ~InterpolationDialog();
-     void retranslate(){retranslateUi(this);setWindowTitle();}
+public:
+    enum Mode { Position = 1, Size = 2 };
+
+    InterpolationDialog(Workspace *workspace, WorkspaceObject *object,
+        int mode = (int)InterpolationDialog::Position);
+    virtual ~InterpolationDialog();
+    void retranslate()
+    {
+        retranslateUi(this);
+        setWindowTitle();
+    }
+
 private:
-     void setWindowTitle();
-     WorkspaceObject* object;
-     Workspace* workspace;
-     int mode;
-     private slots:
-	  void interpolate();
-	  void toUpdate();
-	  void fromUpdate();
+    void setWindowTitle();
+    WorkspaceObject *object;
+    Workspace *workspace;
+    int mode;
+private slots:
+    void interpolate();
+    void toUpdate();
+    void fromUpdate();
 };
 
 #endif

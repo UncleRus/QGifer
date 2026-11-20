@@ -4,12 +4,10 @@
 #include <QtCore>
 
 namespace QGifer {
-    namespace utils {
-        extern QString humanSizeFormat(unsigned long byteSize);
-    }
-
+namespace utils {
+extern QString humanSizeFormat(unsigned long byteSize);
 }
 
-
+} // namespace QGifer
 
 #endif // QGIFERFORMATTER_H
