@@ -11,7 +11,7 @@
 ** but WITHOUT ANY WARRANTY; without even the implied warranty of
 ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ** GNU General Public License for more details.
-** 
+**
 ** You should have received a copy of the GNU General Public License
 ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
 **
@@ -29,27 +29,28 @@
 
 class QGifCreator : public QObject, public GifCreator
 {
-     Q_OBJECT;
-public:
-     QGifCreator();
-     virtual ~QGifCreator();
-     
-     Byte* imageData(const QImage& img);
-     void prepareFrame(QImage* img, ColorMapObject* map, bool dither = true);
-private:
-     bool savingProgress(int p);
-     void endProgress() {
-         if(progressDialog)
-         {
-             progressDialog->close();
-             delete progressDialog;
-             progressDialog = NULL;
-         }
-     }
-     QProgressDialog* progressDialog;
-     QList<QImage*> cache;
-     private slots:
+    Q_OBJECT;
 
+public:
+    QGifCreator();
+    virtual ~QGifCreator();
+
+    Byte *imageData(const QImage &img);
+    void prepareFrame(QImage *img, ColorMapObject *map, bool dither = true);
+
+private:
+    bool savingProgress(int p);
+    void endProgress()
+    {
+        if (progressDialog) {
+            progressDialog->close();
+            delete progressDialog;
+            progressDialog = NULL;
+        }
+    }
+    QProgressDialog *progressDialog;
+    QList<QImage *> cache;
+private slots:
 };
 
 #endif

@@ -1,12 +1,12 @@
-QGifer
-======
+# QGifer
 
 QGifer is a tool for extracting part of a video to an animated GIF file.
 
 http://sourceforge.net/projects/qgifer/
 
-    Author:  	Lukasz Chodyla <chodak166@op.pl>
-    Author:		Arkadii Ivanov <apkawa@gmail.com>
+    Author:	Lukasz Chodyla <chodak166@op.pl>
+    Author:	Arkadii Ivanov <apkawa@gmail.com>
+    Author:	Ruslan V. Uss <unclerus@gmail.com>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -40,40 +40,78 @@ http://sourceforge.net/projects/qgifer/
     Place, Fifth Floor, Boston, MA  02110-1301  USA
 
 
-Requirements
-============
+## Requirements
 
- * Qt version 4.8.0, or higher.
- * OpenCV (core, highgui, imgproc) version 2.3 or higher.
- * giflib version 4.1 or higher.
- * CMake version 2.6 or higher.
-
-
-Compilation and installation
-============
-
-    cd qgifer_source_dir
-    mkdir build && cd build
-    cmake .. -DCMAKE_INSTALL_PREFIX="/usr/local/" -DQUIET_MODE=ON
-    make
-    sudo make install
-    
-
-note: use
-
-    cmake .. -G "MinGW Makefiles" -DQUIET_MODE=ON
-
-for Windows with MinGW.
-
-For debugging you can add cmake option *RELEASE_MODE=OFF* 
-As example:
-    
-    cmake .. -DRELEASE_MODE=OFF
+ * Qt version 6.5 or higher (Core, Gui, Widgets).
+ * FFmpeg development libraries (libavformat, libavcodec, libavutil, libswscale) version 5.0 or higher.
+ * giflib version 5.1 or higher.
+ * CMake version 3.21 or higher and a C++17 compiler.
 
 
-Build debian package
-=============
+## Building on Debian-based distributions
 
-    cmake .. -DCMAKE_INSTALL_PREFIX="/usr/local/" -DQUIET_MODE=ON
-    make package
-    
+The build is tested on Debian 13 (trixie) with Qt 6.11. Debian 13 and Ubuntu 25.04
+(or newer) are required, because earlier releases ship Qt 6.4 while QGifer needs Qt 6.5+.
+
+Install the build dependencies:
+
+```bash
+sudo apt update
+sudo apt install build-essential cmake ninja-build \
+    qt6-base-dev qt6-base-dev-tools qt6-svg-plugins \
+    libavformat-dev libavcodec-dev libavutil-dev libswscale-dev \
+    libgif-dev
+```
+
+`qt6-base-dev-tools` provides `moc`, `uic` and `rcc`, and `qt6-svg-plugins` is
+needed to load the SVG icons. To regenerate the translation files (`./tsupdate`)
+also install `qt6-l10n-tools` (`lupdate6`, `lrelease6`).
+
+Configure and build:
+
+```bash
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+```
+
+Run the freshly built binary without installing:
+
+```bash
+./build/qgifer
+```
+
+Install system-wide (the default prefix is `/usr/local`; add
+`-DCMAKE_INSTALL_PREFIX=/usr` to the configure step to install into `/usr`):
+
+```bash
+sudo cmake --install build
+```
+
+Two dialogs call external tools at runtime: `ffmpeg` (video conversion) and
+ImageMagick `convert` (GIF optimization). They are optional:
+
+```bash
+sudo apt install ffmpeg imagemagick
+```
+
+To build a `.deb` package see [Build debian package](#build-debian-package).
+
+
+## Compilation and installation
+
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j$(nproc)
+sudo cmake --install build
+```
+
+Add `-DQUIET_MODE=ON` to disable the application's debug output.
+For a debug build use `-DCMAKE_BUILD_TYPE=Debug`.
+
+
+## Build debian package
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+cd build && cpack -G DEB
+```

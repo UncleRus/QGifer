@@ -8,21 +8,23 @@
 #include <QtCore/QDebug>
 #include <QtCore/QTime>
 
-#include <QtGui/QSlider>
+#include <QtWidgets/QSlider>
 #include <QtGui/QMouseEvent>
-#include <QtGui/QWidget>
+#include <QtWidgets/QWidget>
 
-class QJumpSlider : public QSlider {
-Q_OBJECT
+class QJumpSlider : public QSlider
+{
+    Q_OBJECT
 
 public:
-    explicit QJumpSlider(QWidget *parent = 0) : QSlider(parent) {
+    explicit QJumpSlider(QWidget *parent = 0) : QSlider(parent)
+    {
         this->installEventFilter(this);
         this->setMouseTracking(true);
     };
 
-    explicit QJumpSlider(Qt::Orientation orientation, QWidget *parent = 0) : QSlider(orientation, parent) { };
-
+    explicit QJumpSlider(Qt::Orientation orientation, QWidget *parent = 0)
+        : QSlider(orientation, parent) {};
 
 protected:
     void mousePressEvent(QMouseEvent *event);
@@ -33,11 +35,10 @@ private:
 
 public slots:
 
-    void setVideoFps(double video_fps) {
+    void setVideoFps(double video_fps)
+    {
         this->video_fps = video_fps;
     };
-
 };
 
-
-#endif //QGIFER_QJUMPSLIDER_H
+#endif // QGIFER_QJUMPSLIDER_H

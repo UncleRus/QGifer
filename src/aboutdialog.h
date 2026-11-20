@@ -11,7 +11,7 @@
 ** but WITHOUT ANY WARRANTY; without even the implied warranty of
 ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ** GNU General Public License for more details.
-** 
+**
 ** You should have received a copy of the GNU General Public License
 ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
 **
@@ -27,15 +27,18 @@
 
 class AboutDialog : public QDialog, public Ui::AboutDialog, public Retranslatable
 {
-     Q_OBJECT;
+    Q_OBJECT;
+
 public:
-     AboutDialog();
-     virtual ~AboutDialog();
-     void retranslate(){retranslateUi(this);}
+    AboutDialog();
+    virtual ~AboutDialog();
+    void retranslate()
+    {
+        retranslateUi(this);
+    }
+
 private:
-
-     private slots:
-
+private slots:
 };
 
 #endif

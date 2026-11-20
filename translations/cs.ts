@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="cs_CZ" sourcelanguage="en">
+<TS version="2.1" language="cs_CZ" sourcelanguage="en">
 <context>
     <name>APPLICATION</name>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1275"/>
+        <location filename="../src/mainwindow.cpp" line="1289"/>
         <source>LANGUAGE_NAME</source>
         <translation>Čeština</translation>
     </message>
@@ -27,33 +27,25 @@
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;QGifer - A video-based GIF creator&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;This software is licensed under GPL version 3. See &amp;quot;License&amp;quot; tab for details.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Author: Lukasz Chodyla &amp;lt;chodak166@op.pl&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Translator: Aleksey Yagur &amp;lt;&lt;/span&gt;&lt;span style=&quot;font-size:12pt;&quot;&gt;asyagur@gmail.com&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Copyright (c) 2013 Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;QGifer - Tvůrce GIF založeých na videu&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Tento program je licencován pod GPL verze 3. Podívejte se na kartu &amp;quot;Povolení&amp;quot; na podrobnosti.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Autor: Lukasz Chodyla &amp;lt;chodak166@op.pl&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Překladatel: Pavel Fric &amp;lt;&lt;/span&gt;&lt;span style=&quot;font-size:12pt;&quot;&gt;pavelfric@seznam.cz&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&amp;gt; (http://fripohled.blogspot.cz)&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Autorské právo (c) 2013 Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt; font-weight:600;&quot;&gt;QGifer - A video-based GIF creator&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;This software is licensed under GPL version 3. See &amp;quot;License&amp;quot; tab for details.&lt;/span&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Lukasz Chodyla &amp;lt;chodak166@op.pl&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Arkadii Ivanov &amp;lt;apkawa@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Ruslan V. Uss &amp;lt;unclerus@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Translator: Aleksey Yagur &amp;lt;asyagur@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Icons: Breeze Icons, LGPL-3.0-or-later&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Copyright (c) 2013 Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Copyright (c) 2015 Arkadii Ivanov&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/aboutdialog.ui" line="69"/>
-        <source>License</source>
-        <translation>Povolení</translation>
-    </message>
-    <message>
-        <location filename="../ui/aboutdialog.ui" line="84"/>
+        <location filename="../ui/aboutdialog.ui" line="89"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;GNU GENERAL PUBLIC LICENSE&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;Version 3, 29 June 2007&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Courier New,courier&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -728,46 +720,38 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;the library.  If this is what you want to do, use the GNU Lesser General&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;Public License instead of this License.  But first, please read&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;&amp;lt;http://www.gnu.org/philosophy/why-not-lgpl.html&amp;gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/aboutdialog.ui" line="769"/>
+        <location filename="../ui/aboutdialog.ui" line="820"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;If you enjoy this program, and you appreciate all the work we have done in our spare time and you want to encourage us to further development, please send us a postcard with a photo of town you live in on the address below or &lt;/span&gt;&lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business=YKYEGBLZMUVW4&amp;amp;lc=US&amp;amp;item_name=QGifer&amp;amp;item_number=qgifer&amp;amp;currency_code=USD&amp;amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; text-decoration: underline; color:#0057ae;&quot;&gt;donate this project&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;Glinik, ul. Lipowa 22&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;66-446 Deszczno&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;POLAND&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;Thanks!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/aboutdialog.ui" line="74"/>
+        <source>License</source>
+        <translation>Povolení</translation>
+    </message>
+    <message>
+        <location filename="../ui/aboutdialog.ui" line="774"/>
         <source>Project support</source>
         <translation>Podpora projektu</translation>
     </message>
     <message>
-        <location filename="../ui/aboutdialog.ui" line="815"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If you enjoy this program, and you appreciate all the work we have done in our spare time and you want to encourage us to further development, please send us a postcard with a photo of town you live in on the address below or &lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business=YKYEGBLZMUVW4&amp;amp;lc=US&amp;amp;item_name=QGifer&amp;amp;item_number=qgifer&amp;amp;currency_code=USD&amp;amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;donate this project&lt;/span&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Lukasz Chodyla&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Glinik, ul. Lipowa 22&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;66-446 Deszczno&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;POLAND&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Thanks!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Pokud se vám tento program líbí, a oceňujete všechnu tu práci, kterou jsme vykonali ve svém volném čase a chcete nás povzbudit v dalším vývoji, pošlete nám, prosím, pohlednici města, ve kterém žijete na adresu níže, nebo &lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business=YKYEGBLZMUVW4&amp;amp;lc=US&amp;amp;item_name=QGifer&amp;amp;item_number=qgifer&amp;amp;currency_code=USD&amp;amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;tomuto projektu poskytněte finanční dar&lt;/span&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Lukasz Chodyla&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Glinik, ul. Lipowa 22&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;66-446 Deszczno&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;POLAND&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Díky!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../ui/aboutdialog.ui" line="858"/>
+        <location filename="../ui/aboutdialog.ui" line="863"/>
         <source>Close</source>
         <translation>Zavřít</translation>
     </message>
@@ -827,72 +811,49 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../src/converterdialog.cpp" line="58"/>
-        <location filename="../src/converterdialog.cpp" line="64"/>
+        <location filename="../src/converterdialog.cpp" line="63"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../src/converterdialog.cpp" line="59"/>
+        <location filename="../src/converterdialog.cpp" line="58"/>
         <source>The length is invalid!</source>
         <translation>Délka je neplatná!</translation>
     </message>
     <message>
-        <location filename="../src/converterdialog.cpp" line="65"/>
+        <location filename="../src/converterdialog.cpp" line="63"/>
         <source>The chosen source file does not exist!</source>
         <translation>Vybraný zdrojový soubor není!</translation>
     </message>
     <message>
-        <location filename="../src/converterdialog.cpp" line="74"/>
+        <location filename="../src/converterdialog.cpp" line="72"/>
         <source>Converting, please wait...</source>
         <translation>Převádí se, čekejte, prosím, ...</translation>
     </message>
     <message>
-        <location filename="../src/converterdialog.cpp" line="85"/>
+        <location filename="../src/converterdialog.cpp" line="82"/>
         <source>Open video file</source>
         <translation>Otevřít soubor s videem</translation>
     </message>
     <message>
-        <location filename="../src/converterdialog.cpp" line="101"/>
+        <location filename="../src/converterdialog.cpp" line="96"/>
         <source>Save AVI file</source>
         <translation>Uložit soubor AVI</translation>
     </message>
     <message>
-        <location filename="../src/converterdialog.cpp" line="113"/>
+        <location filename="../src/converterdialog.cpp" line="106"/>
         <source>Done!</source>
         <translation>Hotovo!</translation>
     </message>
     <message>
-        <location filename="../src/converterdialog.cpp" line="118"/>
+        <location filename="../src/converterdialog.cpp" line="109"/>
         <source>Can not write to destination file! (access denied?)</source>
         <translation>Nelze zapisovat do cílového souboru! (Přístup odepřen?)</translation>
     </message>
     <message>
-        <location filename="../src/converterdialog.cpp" line="123"/>
+        <location filename="../src/converterdialog.cpp" line="112"/>
         <source>Error: </source>
         <translation>Chyba: </translation>
-    </message>
-</context>
-<context>
-    <name>FramePlayer</name>
-    <message>
-        <location filename="../src/frameplayer.cpp" line="69"/>
-        <source>Error</source>
-        <translation>Chyba</translation>
-    </message>
-    <message>
-        <location filename="../src/frameplayer.cpp" line="69"/>
-        <source>This file is coded with &quot;</source>
-        <translation>Tento soubor je zakódován kodekem &quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/frameplayer.cpp" line="69"/>
-        <source>&quot; codec and contains more than </source>
-        <translation>&quot; a obsahuje více než </translation>
-    </message>
-    <message>
-        <location filename="../src/frameplayer.cpp" line="69"/>
-        <source> frames. This codec is not supported for full-length videos yet, please cut your video or use other codec like motion JPEG or YUV4.</source>
-        <translation> snímků. Tento kodek není ještě pro videa o plné délce podporován. Ořízněte, prosím, své video nebo použijte jiný kodek jako motion JPEG nebo YUV4.</translation>
     </message>
 </context>
 <context>
@@ -912,59 +873,84 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../ui/gifwidget.ui" line="29"/>
-        <location filename="../src/gifwidget.cpp" line="52"/>
+        <location filename="../src/gifwidget.cpp" line="70"/>
         <source>Save gif...</source>
         <translation>Uložit GIF...</translation>
     </message>
     <message>
         <location filename="../ui/gifwidget.ui" line="42"/>
-        <location filename="../src/gifwidget.cpp" line="57"/>
+        <location filename="../src/gifwidget.cpp" line="75"/>
         <source>Play</source>
         <translation>Přehrát</translation>
     </message>
     <message>
         <location filename="../ui/gifwidget.ui" line="55"/>
-        <location filename="../src/gifwidget.cpp" line="62"/>
+        <location filename="../src/gifwidget.cpp" line="80"/>
         <source>Pause</source>
         <translation>Pozastavit</translation>
     </message>
     <message>
-        <location filename="../ui/gifwidget.ui" line="84"/>
+        <location filename="../ui/gifwidget.ui" line="81"/>
+        <source>Estimate size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="88"/>
+        <source>0Kb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="134"/>
         <source>Interval:</source>
         <translation>Interval:</translation>
     </message>
     <message>
-        <location filename="../ui/gifwidget.ui" line="94"/>
+        <location filename="../ui/gifwidget.ui" line="189"/>
+        <source> FPS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="202"/>
+        <source>Calculate interval for FPS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="209"/>
+        <source>Visible FPS:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="98"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../ui/gifwidget.ui" line="110"/>
+        <location filename="../ui/gifwidget.ui" line="114"/>
         <source>Save only every </source>
         <translation>Uložit pouze každé</translation>
     </message>
     <message>
-        <location filename="../ui/gifwidget.ui" line="117"/>
+        <location filename="../ui/gifwidget.ui" line="121"/>
         <source> frame</source>
         <translation> snímky</translation>
     </message>
     <message>
-        <location filename="../ui/gifwidget.ui" line="168"/>
+        <location filename="../ui/gifwidget.ui" line="182"/>
         <source>Append reversed copy</source>
         <translation>Připojit obrácenou kopii</translation>
     </message>
     <message>
-        <location filename="../src/gifwidget.cpp" line="98"/>
+        <location filename="../src/gifwidget.cpp" line="127"/>
         <source>Save GIF file</source>
         <translation>Uložit soubor GIF</translation>
     </message>
     <message>
-        <location filename="../src/gifwidget.cpp" line="120"/>
+        <location filename="../src/gifwidget.cpp" line="150"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../src/gifwidget.cpp" line="120"/>
+        <location filename="../src/gifwidget.cpp" line="150"/>
         <source>Unexpected error while saving GIF file!</source>
         <translation>Neočekávaná chyba při ukládání souboru GIF!</translation>
     </message>
@@ -1004,27 +990,27 @@ p, li { white-space: pre-wrap; }
         <translation>Koncový snímek:</translation>
     </message>
     <message>
-        <location filename="../src/interpolationdialog.cpp" line="34"/>
+        <location filename="../src/interpolationdialog.cpp" line="32"/>
         <source>Interpolate object position and size</source>
         <translation>Interpolovat polohu a velikost předmětu</translation>
     </message>
     <message>
-        <location filename="../src/interpolationdialog.cpp" line="35"/>
+        <location filename="../src/interpolationdialog.cpp" line="33"/>
         <source>Interpolate object size</source>
         <translation>Interpolovat velikost předmětu</translation>
     </message>
     <message>
-        <location filename="../src/interpolationdialog.cpp" line="36"/>
+        <location filename="../src/interpolationdialog.cpp" line="34"/>
         <source>Interpolate object position</source>
         <translation>Interpolovat polohu předmětu</translation>
     </message>
     <message>
-        <location filename="../src/interpolationdialog.cpp" line="44"/>
+        <location filename="../src/interpolationdialog.cpp" line="41"/>
         <source>Warning</source>
         <translation>Varování</translation>
     </message>
     <message>
-        <location filename="../src/interpolationdialog.cpp" line="45"/>
+        <location filename="../src/interpolationdialog.cpp" line="42"/>
         <source>The given range seems to be invalid, make sure that the stop frame is at least higher by two than the start frame!</source>
         <translation>Zdá se, že zadaný rozsah je neplatný. Ujistěte se, že koncový snímek má číslo vyšší alespoň o dva než počáteční snímek!</translation>
     </message>
@@ -1037,671 +1023,681 @@ p, li { white-space: pre-wrap; }
         <translation>QGifer</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="67"/>
+        <location filename="../ui/mainwindow.ui" line="76"/>
         <source>&amp;Player</source>
         <translation>Pře&amp;hrávač</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="78"/>
+        <location filename="../ui/mainwindow.ui" line="90"/>
         <source>&amp;Help</source>
         <translation>&amp;Nápověda</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="84"/>
+        <location filename="../ui/mainwindow.ui" line="96"/>
         <source>&amp;Edit</source>
         <translation>Úp&amp;ravy</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="100"/>
+        <location filename="../ui/mainwindow.ui" line="112"/>
         <source>&amp;Program</source>
         <translation>Pro&amp;gram</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="118"/>
+        <location filename="../ui/mainwindow.ui" line="130"/>
         <source>&amp;View</source>
         <translation>&amp;Pohled</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="122"/>
+        <location filename="../ui/mainwindow.ui" line="134"/>
         <source>Language</source>
         <translation>Jazyk</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="144"/>
+        <location filename="../ui/mainwindow.ui" line="156"/>
         <source>Project toolbar</source>
         <translation>Pruh s nástroji pro projekt</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="164"/>
+        <location filename="../ui/mainwindow.ui" line="176"/>
         <source>Gif toolbar</source>
         <translation>Pruh s nástroji pro GIF</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="191"/>
+        <location filename="../ui/mainwindow.ui" line="203"/>
         <source>Player toolbar</source>
         <translation>Pruh s nástroji pro přehrávání</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="219"/>
+        <location filename="../ui/mainwindow.ui" line="229"/>
         <source>Toolbox</source>
         <translation>Nástroje</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="253"/>
+        <location filename="../ui/mainwindow.ui" line="263"/>
         <source>Preview properties</source>
         <translation>Vlastnosti náhledu</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="282"/>
+        <location filename="../ui/mainwindow.ui" line="292"/>
         <source>FPS:</source>
         <translation>Snímků za sekundu:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="302"/>
+        <location filename="../ui/mainwindow.ui" line="312"/>
         <source>Zoom:</source>
         <translation>Zvětšení:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="312"/>
+        <location filename="../ui/mainwindow.ui" line="322"/>
         <source>Loop</source>
         <translation>Smyčka</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="318"/>
+        <location filename="../ui/mainwindow.ui" line="328"/>
         <source>Do not loop</source>
         <translation>Nepřehrávat ve smyčce</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="328"/>
+        <location filename="../ui/mainwindow.ui" line="338"/>
         <source>Loop all</source>
         <translation>Přehrávat vše ve smyčce</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="335"/>
+        <location filename="../ui/mainwindow.ui" line="345"/>
         <source>Loop from start to stop frame</source>
         <translation>Přehrávat ve smyčce od počátečního do koncového snímku</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="345"/>
+        <location filename="../ui/mainwindow.ui" line="355"/>
         <source>Keep aspect ratio</source>
         <translation>Zachovat poměr stran</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="352"/>
+        <location filename="../ui/mainwindow.ui" line="362"/>
         <source>Smooth preview</source>
         <translation>Plynulý náhled</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="368"/>
-        <location filename="../ui/mainwindow.ui" line="381"/>
+        <location filename="../ui/mainwindow.ui" line="378"/>
+        <location filename="../ui/mainwindow.ui" line="391"/>
         <source>Margins</source>
         <translation>Okraje</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="374"/>
+        <location filename="../ui/mainwindow.ui" line="384"/>
         <source>Use margins</source>
         <translation>Použít okraje</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="387"/>
+        <location filename="../ui/mainwindow.ui" line="397"/>
         <source>Right:</source>
         <translation>Vpravo:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="394"/>
-        <location filename="../ui/mainwindow.ui" line="407"/>
-        <location filename="../ui/mainwindow.ui" line="434"/>
-        <location filename="../ui/mainwindow.ui" line="454"/>
-        <location filename="../ui/mainwindow.ui" line="746"/>
-        <location filename="../ui/mainwindow.ui" line="762"/>
+        <location filename="../ui/mainwindow.ui" line="404"/>
+        <location filename="../ui/mainwindow.ui" line="417"/>
+        <location filename="../ui/mainwindow.ui" line="444"/>
+        <location filename="../ui/mainwindow.ui" line="464"/>
+        <location filename="../ui/mainwindow.ui" line="756"/>
+        <location filename="../ui/mainwindow.ui" line="772"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="420"/>
+        <location filename="../ui/mainwindow.ui" line="430"/>
         <source>Left:</source>
         <translation>Vlevo:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="427"/>
+        <location filename="../ui/mainwindow.ui" line="437"/>
         <source>Bottom:</source>
         <translation>Dole:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="447"/>
+        <location filename="../ui/mainwindow.ui" line="457"/>
         <source>Top:</source>
         <translation>Nahoře:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="492"/>
+        <location filename="../ui/mainwindow.ui" line="502"/>
         <source>Filters</source>
         <translation>Filtry</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="511"/>
+        <location filename="../ui/mainwindow.ui" line="521"/>
         <source>Show on the preview (slow)</source>
         <translation>Ukázat v náhledu (pomalé)</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="518"/>
+        <location filename="../ui/mainwindow.ui" line="528"/>
         <source>Color correction</source>
         <translation>Oprava barvy</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="524"/>
+        <location filename="../ui/mainwindow.ui" line="534"/>
         <source>Hue (0):</source>
         <translation>Odstín (0):</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="544"/>
+        <location filename="../ui/mainwindow.ui" line="554"/>
         <source>Saturation (0):</source>
         <translation>Sytost (0):</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="564"/>
+        <location filename="../ui/mainwindow.ui" line="574"/>
         <source>Reset</source>
         <translation>Nastavit znovu</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="571"/>
+        <location filename="../ui/mainwindow.ui" line="581"/>
         <source>Brightness (0):</source>
         <translation>Jas (0):</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="594"/>
+        <location filename="../ui/mainwindow.ui" line="604"/>
         <source>Non-linear</source>
         <translation>Nelineární</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="600"/>
+        <location filename="../ui/mainwindow.ui" line="610"/>
         <source>Median blur (0):</source>
         <translation>Střední rozmazání (0):</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="620"/>
+        <location filename="../ui/mainwindow.ui" line="630"/>
         <source>Compose objects</source>
         <translation>Skládat předměty</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="636"/>
+        <location filename="../ui/mainwindow.ui" line="646"/>
         <source>Output properties</source>
         <translation>Vlastnosti výstupu</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="656"/>
+        <location filename="../ui/mainwindow.ui" line="666"/>
         <source>Stop frame:</source>
         <translation>Koncový snímek:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="663"/>
+        <location filename="../ui/mainwindow.ui" line="673"/>
         <source>Height:</source>
         <translation>Výška:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="704"/>
+        <location filename="../ui/mainwindow.ui" line="714"/>
         <source>Auto-update form start frame</source>
         <translation>Automaticky aktualizovat od počátečního snímku</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="711"/>
+        <location filename="../ui/mainwindow.ui" line="721"/>
         <source>Palette size:</source>
         <translation>Velikost palety:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="718"/>
+        <location filename="../ui/mainwindow.ui" line="728"/>
         <source>Start frame:</source>
         <translation>Počáteční snímek:</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="732"/>
+        <location filename="../ui/mainwindow.ui" line="742"/>
         <source>Width:</source>
         <translation>Šířka: </translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="642"/>
+        <location filename="../ui/mainwindow.ui" line="652"/>
         <source>Keep ratio</source>
         <translation>Zachovat poměr</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="778"/>
+        <location filename="../ui/mainwindow.ui" line="788"/>
         <source> bit</source>
         <translation> bitů</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="801"/>
+        <location filename="../ui/mainwindow.ui" line="811"/>
         <source>From current frame</source>
         <translation>Od nynějšího snímku</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="808"/>
+        <location filename="../ui/mainwindow.ui" line="818"/>
         <source>Variable palette</source>
         <translation>Proměnlivá paleta</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="818"/>
+        <location filename="../ui/mainwindow.ui" line="828"/>
         <source>The minimum difference between frames required to generate the new palette</source>
         <translation>Nejmenší rozdíl mezi snímky požadovaný pro vytvoření nové palety</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="821"/>
+        <location filename="../ui/mainwindow.ui" line="831"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="837"/>
+        <location filename="../ui/mainwindow.ui" line="847"/>
         <source>Dithering</source>
         <translation>Rozklad barev</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="857"/>
+        <location filename="../ui/mainwindow.ui" line="867"/>
         <source>&amp;Open video...</source>
         <translation>&amp;Otevřít video...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="860"/>
+        <location filename="../ui/mainwindow.ui" line="870"/>
         <source>Ctrl+Shift+V</source>
         <translation>Ctrl+Shift+V</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="869"/>
+        <location filename="../ui/mainwindow.ui" line="879"/>
         <source>&amp;Play</source>
         <translation>&amp;Přehrát</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="872"/>
+        <location filename="../ui/mainwindow.ui" line="882"/>
         <source>Space</source>
         <translation>Mezera</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="881"/>
+        <location filename="../ui/mainwindow.ui" line="891"/>
         <source>Pa&amp;use</source>
         <translation>Poza&amp;stavit</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="884"/>
+        <location filename="../ui/mainwindow.ui" line="894"/>
         <source>Esc</source>
         <translation>Esc</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="893"/>
+        <location filename="../ui/mainwindow.ui" line="903"/>
         <source>&amp;Stop</source>
         <translation>&amp;Zastavit</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="896"/>
+        <location filename="../ui/mainwindow.ui" line="906"/>
         <source>Backspace</source>
         <translation>Backspace</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="905"/>
+        <location filename="../ui/mainwindow.ui" line="915"/>
         <source>&amp;Next frame</source>
         <translation>&amp;Další snímek</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="908"/>
+        <location filename="../ui/mainwindow.ui" line="918"/>
         <source>Right</source>
         <translation>Šipka vpravo</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="917"/>
+        <location filename="../ui/mainwindow.ui" line="927"/>
         <source>Pre&amp;vious frame</source>
         <translation>Př&amp;edchozí snímek</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="920"/>
+        <location filename="../ui/mainwindow.ui" line="930"/>
         <source>Left</source>
         <translation>Šipka vlevo</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="929"/>
+        <location filename="../ui/mainwindow.ui" line="939"/>
         <source>&amp;Close video</source>
         <translation>&amp;Zavřít video</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="938"/>
+        <location filename="../ui/mainwindow.ui" line="948"/>
         <source>&amp;Exit</source>
         <translation>&amp;Ukončit</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="941"/>
+        <location filename="../ui/mainwindow.ui" line="951"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="950"/>
+        <location filename="../ui/mainwindow.ui" line="960"/>
         <source>&amp;About QGifer...</source>
         <translation>&amp;O programu QGifer...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="955"/>
+        <location filename="../ui/mainwindow.ui" line="965"/>
         <source>*.&amp;PNG files...</source>
         <translation>Soubory *.&amp;PNG...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="960"/>
+        <location filename="../ui/mainwindow.ui" line="970"/>
         <source>&amp;YouTube video...</source>
         <translation>Video &amp;YouTube...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="969"/>
+        <location filename="../ui/mainwindow.ui" line="979"/>
         <source>E&amp;xtract GIF...</source>
         <translation>Vy&amp;táhnout GIF...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="972"/>
+        <location filename="../ui/mainwindow.ui" line="982"/>
         <source>Ctrl+G</source>
         <translation>Ctrl+G</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="981"/>
+        <location filename="../ui/mainwindow.ui" line="991"/>
         <source>Update &amp;palette</source>
         <translation>Obnovit &amp;paletu</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="984"/>
+        <location filename="../ui/mainwindow.ui" line="994"/>
         <source>Update palette (from the current frame)</source>
         <translation>Obnovit paletu (od nynějšího snímku)</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="987"/>
+        <location filename="../ui/mainwindow.ui" line="997"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="996"/>
+        <location filename="../ui/mainwindow.ui" line="1006"/>
         <source>&amp;Start from current frame</source>
         <translation>&amp;Spustit od nynějšího snímku</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="999"/>
+        <location filename="../ui/mainwindow.ui" line="1009"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1008"/>
+        <location filename="../ui/mainwindow.ui" line="1018"/>
         <source>S&amp;top at current frame</source>
         <translation>&amp;Zastavit na nynějším snímku</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1011"/>
+        <location filename="../ui/mainwindow.ui" line="1021"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1016"/>
+        <location filename="../ui/mainwindow.ui" line="1026"/>
         <source>&amp;Export palette...</source>
         <translation>&amp;Vyvést paletu...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1021"/>
+        <location filename="../ui/mainwindow.ui" line="1031"/>
         <source>I&amp;mport palette...</source>
         <translation>&amp;Zavést paletu...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1030"/>
+        <location filename="../ui/mainwindow.ui" line="1040"/>
         <source>GIF opti&amp;mizer...</source>
         <translation>Zlepšovatel GIF...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1039"/>
+        <location filename="../ui/mainwindow.ui" line="1049"/>
         <source>MJPEG &amp;converter...</source>
         <translation>Převaděč &amp;MJPEG...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1048"/>
+        <location filename="../ui/mainwindow.ui" line="1058"/>
         <source>Restore &amp;default settings</source>
         <translation>Obnovit &amp;výchozí nastavení</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1057"/>
+        <location filename="../ui/mainwindow.ui" line="1067"/>
         <source>&amp;Open palette...</source>
         <translation>&amp;Otevřít paletu...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1066"/>
+        <location filename="../ui/mainwindow.ui" line="1076"/>
         <source>Sa&amp;ve palette...</source>
         <translation>&amp;Uložit paletu...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1075"/>
+        <location filename="../ui/mainwindow.ui" line="1085"/>
         <source>Insert &amp;object...</source>
         <translation>Vložit &amp;předmět...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1078"/>
+        <location filename="../ui/mainwindow.ui" line="1088"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1087"/>
+        <location filename="../ui/mainwindow.ui" line="1097"/>
         <source>Insert &amp;text...</source>
         <translation>Vložit &amp;text...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1090"/>
+        <location filename="../ui/mainwindow.ui" line="1100"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1099"/>
+        <location filename="../ui/mainwindow.ui" line="1109"/>
         <source>Open &amp;project...</source>
         <translation>Otevřít pr&amp;ojekt...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1102"/>
+        <location filename="../ui/mainwindow.ui" line="1112"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1111"/>
+        <location filename="../ui/mainwindow.ui" line="1121"/>
         <source>&amp;Save project</source>
         <translation>&amp;Uložit projekt</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1114"/>
+        <location filename="../ui/mainwindow.ui" line="1124"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1123"/>
+        <location filename="../ui/mainwindow.ui" line="1133"/>
         <source>Save project &amp;as...</source>
         <translation>Uložit projekt &amp;jako...</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1126"/>
+        <location filename="../ui/mainwindow.ui" line="1136"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1135"/>
+        <location filename="../ui/mainwindow.ui" line="1145"/>
         <source>&amp;New project</source>
         <translation>&amp;Nový projekt</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1138"/>
+        <location filename="../ui/mainwindow.ui" line="1148"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1147"/>
+        <location filename="../ui/mainwindow.ui" line="1157"/>
         <source>&amp;Output properties</source>
         <translation>Vlastnosti &amp;výstupu</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1150"/>
+        <location filename="../ui/mainwindow.ui" line="1160"/>
         <source>Ctrl+Shift+O</source>
         <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1159"/>
+        <location filename="../ui/mainwindow.ui" line="1169"/>
         <source>&amp;Filters</source>
         <translation>&amp;Filtry</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1162"/>
+        <location filename="../ui/mainwindow.ui" line="1172"/>
         <source>Ctrl+Shift+F</source>
         <translation>Ctrl+Shift+F</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1171"/>
+        <location filename="../ui/mainwindow.ui" line="1181"/>
         <source>&amp;Margins</source>
         <translation>&amp;Okraje</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1174"/>
+        <location filename="../ui/mainwindow.ui" line="1184"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1183"/>
+        <location filename="../ui/mainwindow.ui" line="1193"/>
         <source>&amp;Preview properties</source>
         <translation>Vlastnosti &amp;náhledu</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1186"/>
+        <location filename="../ui/mainwindow.ui" line="1196"/>
         <source>Ctrl+Shift+P</source>
         <translation>Ctrl+Shift+P</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1195"/>
+        <location filename="../ui/mainwindow.ui" line="1205"/>
         <source>&amp;Undock toolbox</source>
         <translation>Z&amp;rušit ukotvení panelu s nástroji</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1198"/>
+        <location filename="../ui/mainwindow.ui" line="1208"/>
         <source>Ctrl+Shift+T</source>
         <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1203"/>
-        <location filename="../src/mainwindow.cpp" line="1264"/>
+        <location filename="../ui/mainwindow.ui" line="1213"/>
+        <location filename="../src/mainwindow.cpp" line="1277"/>
         <source>English</source>
         <translation>Angličtina</translation>
     </message>
     <message>
-        <location filename="../ui/mainwindow.ui" line="1211"/>
+        <location filename="../ui/mainwindow.ui" line="1221"/>
         <source>Draw &amp;background</source>
         <translation>Kreslit &amp;pozadí</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1317"/>
+        <location filename="../ui/mainwindow.ui" line="1226"/>
+        <source>Jump to start fragment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1231"/>
+        <source>Jump to stop fragment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1330"/>
         <source>Press </source>
         <translation>Stisknout</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1317"/>
+        <location filename="../src/mainwindow.cpp" line="1330"/>
         <source> to open a video</source>
         <translation> pro otevření videa</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="160"/>
+        <location filename="../src/mainwindow.cpp" line="196"/>
         <source>Open video file</source>
         <translation>Otevřít soubor s videem</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="165"/>
-        <location filename="../src/mainwindow.cpp" line="216"/>
-        <location filename="../src/mainwindow.cpp" line="228"/>
-        <location filename="../src/mainwindow.cpp" line="905"/>
+        <location filename="../src/mainwindow.cpp" line="202"/>
+        <location filename="../src/mainwindow.cpp" line="254"/>
+        <location filename="../src/mainwindow.cpp" line="264"/>
+        <location filename="../src/mainwindow.cpp" line="901"/>
         <location filename="../src/mainwindow.cpp" line="1033"/>
-        <location filename="../src/mainwindow.cpp" line="1053"/>
-        <location filename="../src/mainwindow.cpp" line="1140"/>
-        <location filename="../src/mainwindow.cpp" line="1158"/>
+        <location filename="../src/mainwindow.cpp" line="1050"/>
+        <location filename="../src/mainwindow.cpp" line="1137"/>
+        <location filename="../src/mainwindow.cpp" line="1151"/>
         <location filename="../src/mainwindow.cpp" line="1179"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="165"/>
+        <location filename="../src/mainwindow.cpp" line="202"/>
         <source>The player failed to load the video file!</source>
         <translation>Přehrávači se nepodařilo nahrát soubor s videem!</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="173"/>
-        <location filename="../src/mainwindow.cpp" line="1100"/>
-        <location filename="../src/mainwindow.cpp" line="1128"/>
+        <location filename="../src/mainwindow.cpp" line="210"/>
+        <location filename="../src/mainwindow.cpp" line="1092"/>
+        <location filename="../src/mainwindow.cpp" line="1123"/>
         <location filename="../src/mainwindow.cpp" line="1216"/>
         <source>Question</source>
         <translation>Otázka</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="174"/>
+        <location filename="../src/mainwindow.cpp" line="211"/>
         <source>The object &quot;</source>
         <translation>Předmět &quot;</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="174"/>
+        <location filename="../src/mainwindow.cpp" line="211"/>
         <source>&quot; will not be visible. What do you want to do?</source>
         <translation>&quot; nebude viditelný. Co chcete dělat?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="175"/>
+        <location filename="../src/mainwindow.cpp" line="214"/>
         <source>Delete this object</source>
         <translation>Smazat tento předmět</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="175"/>
+        <location filename="../src/mainwindow.cpp" line="215"/>
         <source>Change frame range...</source>
         <translation>Změnit rozsah snímků...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="216"/>
+        <location filename="../src/mainwindow.cpp" line="254"/>
         <source>The range is invalid!</source>
         <translation>Rozsah je neplatný!</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="228"/>
+        <location filename="../src/mainwindow.cpp" line="264"/>
         <source>Invalid color map!</source>
         <translation>Neplatné přiřazení barev!</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="330"/>
-        <location filename="../src/mainwindow.cpp" line="794"/>
+        <location filename="../src/mainwindow.cpp" line="367"/>
+        <location filename="../src/mainwindow.cpp" line="819"/>
         <source>Warning</source>
         <translation>Varování</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="330"/>
+        <location filename="../src/mainwindow.cpp" line="367"/>
         <source>The range seems to be invalid!</source>
         <translation>Zdá se, že rozsah je neplatný!</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="355"/>
+        <location filename="../src/mainwindow.cpp" line="390"/>
         <source>Zoom</source>
         <translation>Zvětšení</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="427"/>
+        <location filename="../src/mainwindow.cpp" line="463"/>
         <source>Hue (</source>
         <translation>Odstín (</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="428"/>
+        <location filename="../src/mainwindow.cpp" line="464"/>
         <source>Saturation (</source>
         <translation>Sytost (</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="429"/>
+        <location filename="../src/mainwindow.cpp" line="465"/>
         <source>Brightness (</source>
         <translation>Jas (</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="794"/>
+        <location filename="../src/mainwindow.cpp" line="819"/>
         <source>Source video file: </source>
         <translation>Zdrojový soubor s videem: </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="905"/>
+        <location filename="../src/mainwindow.cpp" line="901"/>
         <source>The project cannot be loaded: </source>
         <translation>Projekt nelze nahrát: </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="989"/>
+        <location filename="../src/mainwindow.cpp" line="993"/>
         <source>Median blur (</source>
         <translation>Střední rozmazání (</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1027"/>
+        <location filename="../src/mainwindow.cpp" line="1029"/>
         <source>Open QGifer palette file</source>
         <translation>Otevřít soubor s paletou QGifer</translation>
     </message>
@@ -1711,54 +1707,33 @@ p, li { white-space: pre-wrap; }
         <translation>Soubor s paletou nelze nahrát!</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1045"/>
+        <location filename="../src/mainwindow.cpp" line="1043"/>
         <source>Save QGifer palette file</source>
         <translation>Uložit soubor s paletou QGifer</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1053"/>
+        <location filename="../src/mainwindow.cpp" line="1050"/>
         <source>The palette file can not be saved!</source>
         <translation>Soubor s paletou nelze uložit!</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1100"/>
-        <location filename="../src/mainwindow.cpp" line="1128"/>
+        <location filename="../src/mainwindow.cpp" line="1093"/>
+        <location filename="../src/mainwindow.cpp" line="1124"/>
         <source>The project has changed - do you want to save the changes?</source>
         <translation>Projekt byl změněn. Chcete uložit změny?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1100"/>
-        <location filename="../src/mainwindow.cpp" line="1128"/>
-        <location filename="../src/mainwindow.cpp" line="1216"/>
-        <source>Yes</source>
-        <translation>Ano</translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.cpp" line="1100"/>
-        <location filename="../src/mainwindow.cpp" line="1128"/>
-        <location filename="../src/mainwindow.cpp" line="1216"/>
-        <source>No</source>
-        <translation>Ne</translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.cpp" line="1100"/>
-        <location filename="../src/mainwindow.cpp" line="1128"/>
-        <location filename="../src/mainwindow.cpp" line="1216"/>
-        <source>Cancel</source>
-        <translation>Zrušit</translation>
-    </message>
-    <message>
-        <location filename="../src/mainwindow.cpp" line="1136"/>
+        <location filename="../src/mainwindow.cpp" line="1134"/>
         <source>Open project file</source>
         <translation>Otevřít soubor s projektem</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1140"/>
+        <location filename="../src/mainwindow.cpp" line="1137"/>
         <source>Project was not entirely loaded.</source>
         <translation>Projekt nebyl zcela nahrán.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1158"/>
+        <location filename="../src/mainwindow.cpp" line="1151"/>
         <source>Error reading file: </source>
         <translation>Chyba při čtení souboru: </translation>
     </message>
@@ -1768,33 +1743,33 @@ p, li { white-space: pre-wrap; }
         <translation>Chyba při zápisu souboru: </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1185"/>
-        <location filename="../src/mainwindow.cpp" line="1194"/>
+        <location filename="../src/mainwindow.cpp" line="1186"/>
+        <location filename="../src/mainwindow.cpp" line="1196"/>
         <source>Save project file</source>
         <translation>Uložit soubor s projektem</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1208"/>
+        <location filename="../src/mainwindow.cpp" line="1209"/>
         <source>QGifer - video-based GIF creator</source>
         <translation>QGifer - na videu založený tvůrce GIF</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1208"/>
+        <location filename="../src/mainwindow.cpp" line="1210"/>
         <source> [modified] </source>
         <translation> [změněno]</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1216"/>
+        <location filename="../src/mainwindow.cpp" line="1217"/>
         <source>The project has changed - do you want to save the changes before exiting?</source>
         <translation>Projekt byl změněn. Chcete před ukončením uložit změny?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1232"/>
+        <location filename="../src/mainwindow.cpp" line="1238"/>
         <source>Dock &amp;toolbox</source>
         <translation>Ukotvit &amp;panel s nástroji</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="1232"/>
+        <location filename="../src/mainwindow.cpp" line="1238"/>
         <source>Undock &amp;toolbox</source>
         <translation>Z&amp;rušit ukotvení panelu s nástroji</translation>
     </message>
@@ -1803,7 +1778,7 @@ p, li { white-space: pre-wrap; }
     <name>ObjectWidget</name>
     <message>
         <location filename="../ui/objectwidget.ui" line="14"/>
-        <location filename="../src/objectwidget.h" line="21"/>
+        <location filename="../src/objectwidget.h" line="32"/>
         <source>Insert object</source>
         <translation>Vložit předmět</translation>
     </message>
@@ -1851,22 +1826,22 @@ p, li { white-space: pre-wrap; }
         <translation>Použít</translation>
     </message>
     <message>
-        <location filename="../src/objectwidget.cpp" line="25"/>
+        <location filename="../src/objectwidget.cpp" line="24"/>
         <source>Insert</source>
         <translation>Vložit</translation>
     </message>
     <message>
-        <location filename="../src/objectwidget.cpp" line="26"/>
+        <location filename="../src/objectwidget.cpp" line="25"/>
         <source>Cancel</source>
         <translation>Zrušit</translation>
     </message>
     <message>
-        <location filename="../src/objectwidget.cpp" line="76"/>
+        <location filename="../src/objectwidget.cpp" line="71"/>
         <source>Open image</source>
         <translation>Otevřít obrázek</translation>
     </message>
     <message>
-        <location filename="../src/objectwidget.h" line="21"/>
+        <location filename="../src/objectwidget.h" line="32"/>
         <source>Object properties</source>
         <translation>Vlastnosti předmětu</translation>
     </message>
@@ -1935,53 +1910,53 @@ p, li { white-space: pre-wrap; }
         <translation>Ukázat tento dialog vždy, když ukládate GIF</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="58"/>
-        <location filename="../src/optimizerdialog.cpp" line="92"/>
+        <location filename="../src/optimizerdialog.cpp" line="67"/>
+        <location filename="../src/optimizerdialog.cpp" line="102"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="59"/>
+        <location filename="../src/optimizerdialog.cpp" line="67"/>
         <source>The chosen source file does not exist!</source>
         <translation>Vybraný zdrojový soubor není!</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="68"/>
+        <location filename="../src/optimizerdialog.cpp" line="76"/>
         <source>Optimizing, please wait...</source>
         <translation>Zlepšuje se, čekejte, prosím, ...</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="80"/>
+        <location filename="../src/optimizerdialog.cpp" line="88"/>
         <source>Select ImageMagick binary directory</source>
         <translation>Vybrat adresář se spustitelným souborem ImageMagick</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="93"/>
+        <location filename="../src/optimizerdialog.cpp" line="102"/>
         <source>The chosen directory does not contain &quot;convert&quot; executable!</source>
         <translation>Vybraný adresář neobsahuje se spustitelný soubor &quot;convert&quot;!</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="104"/>
+        <location filename="../src/optimizerdialog.cpp" line="112"/>
         <source>Open GIF file</source>
         <translation>Otevřít soubor GIF</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="117"/>
+        <location filename="../src/optimizerdialog.cpp" line="122"/>
         <source>Save GIF file</source>
         <translation>Uložit soubor GIF</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="136"/>
+        <location filename="../src/optimizerdialog.cpp" line="140"/>
         <source>Error: this operation requires the ImageMagick installed on your system. Please install ImageMagick or choose the directory with &quot;convert&quot; executable file.</source>
         <translation>Chyba: Tato operace vyžaduje, aby byl ve vašem systému nainstalován ImageMagick. Nainstalujte, prosím, ImageMagick, nebo vyberte adresář se spustitelným souborem &quot;convert&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="149"/>
+        <location filename="../src/optimizerdialog.cpp" line="153"/>
         <source>Done!</source>
         <translation>Hotovo!</translation>
     </message>
     <message>
-        <location filename="../src/optimizerdialog.cpp" line="154"/>
+        <location filename="../src/optimizerdialog.cpp" line="156"/>
         <source>Can not write to destination file! (access denied?)</source>
         <translation>Nelze zapisovat do cílového souboru! (Přístup odepřen?)</translation>
     </message>
@@ -1994,12 +1969,12 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>QGifCreator</name>
     <message>
-        <location filename="../src/qgifcreator.cpp" line="191"/>
+        <location filename="../src/qgifcreator.cpp" line="150"/>
         <source>Saving GIF file...</source>
         <translation>Ukládá se soubor GIF...</translation>
     </message>
     <message>
-        <location filename="../src/qgifcreator.cpp" line="191"/>
+        <location filename="../src/qgifcreator.cpp" line="150"/>
         <source>Cancel</source>
         <translation>Zrušit</translation>
     </message>
@@ -2096,12 +2071,12 @@ p, li { white-space: pre-wrap; }
         <translation>Zrušit</translation>
     </message>
     <message>
-        <location filename="../src/textwidget.cpp" line="124"/>
+        <location filename="../src/textwidget.cpp" line="121"/>
         <source>Set text color</source>
         <translation>Nastavit barvu textu</translation>
     </message>
     <message>
-        <location filename="../src/textwidget.cpp" line="131"/>
+        <location filename="../src/textwidget.cpp" line="128"/>
         <source>Set outline color</source>
         <translation>Nastavit barvu ohraničení</translation>
     </message>
@@ -2109,106 +2084,96 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Workspace</name>
     <message>
-        <location filename="../src/workspace.cpp" line="420"/>
+        <location filename="../src/workspace.cpp" line="373"/>
         <source>Bring to &amp;front</source>
         <translation>Přenést do &amp;popředí</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="423"/>
+        <location filename="../src/workspace.cpp" line="376"/>
         <source>Send to &amp;back</source>
         <translation>Přenést do po&amp;zadí</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="429"/>
+        <location filename="../src/workspace.cpp" line="382"/>
         <source>&amp;Position</source>
         <translation>&amp;Poloha</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="430"/>
-        <location filename="../src/workspace.cpp" line="443"/>
-        <location filename="../src/workspace.cpp" line="458"/>
+        <location filename="../src/workspace.cpp" line="383"/>
+        <location filename="../src/workspace.cpp" line="396"/>
+        <location filename="../src/workspace.cpp" line="411"/>
         <source>Apply to &amp;all frames</source>
         <translation>Použít na &amp;všechny snímky</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="432"/>
-        <location filename="../src/workspace.cpp" line="445"/>
-        <location filename="../src/workspace.cpp" line="460"/>
+        <location filename="../src/workspace.cpp" line="385"/>
+        <location filename="../src/workspace.cpp" line="398"/>
+        <location filename="../src/workspace.cpp" line="413"/>
         <source>Apply to &amp;further frames</source>
         <translation>Použít na d&amp;alší snímky</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="434"/>
-        <location filename="../src/workspace.cpp" line="447"/>
-        <location filename="../src/workspace.cpp" line="462"/>
+        <location filename="../src/workspace.cpp" line="387"/>
+        <location filename="../src/workspace.cpp" line="400"/>
+        <location filename="../src/workspace.cpp" line="415"/>
         <source>Apply to &amp;earlier frames</source>
         <translation>Použít na &amp;dřívější snímky</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="437"/>
-        <location filename="../src/workspace.cpp" line="452"/>
-        <location filename="../src/workspace.cpp" line="465"/>
+        <location filename="../src/workspace.cpp" line="390"/>
+        <location filename="../src/workspace.cpp" line="405"/>
+        <location filename="../src/workspace.cpp" line="418"/>
         <source>&amp;Interpolate...</source>
         <translation>&amp;Interpolovat...</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="442"/>
+        <location filename="../src/workspace.cpp" line="395"/>
         <source>&amp;Size</source>
         <translation>&amp;Velikost</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="449"/>
+        <location filename="../src/workspace.cpp" line="402"/>
         <source>&amp;Restore original size</source>
         <translation>&amp;Obnovit původní velikost</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="457"/>
+        <location filename="../src/workspace.cpp" line="410"/>
         <source>Position &amp;and size</source>
         <translation>Poloha &amp;a velikost</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="471"/>
+        <location filename="../src/workspace.cpp" line="424"/>
         <source>P&amp;roperties...</source>
         <translation>Vla&amp;stnosti...</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="474"/>
+        <location filename="../src/workspace.cpp" line="427"/>
         <source>&amp;Delete</source>
         <translation>S&amp;mazat</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="496"/>
-        <location filename="../src/workspace.cpp" line="518"/>
-        <location filename="../src/workspace.cpp" line="544"/>
+        <location filename="../src/workspace.cpp" line="447"/>
+        <location filename="../src/workspace.cpp" line="466"/>
+        <location filename="../src/workspace.cpp" line="487"/>
         <source>Information</source>
         <translation>Informace</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="497"/>
-        <location filename="../src/workspace.cpp" line="519"/>
-        <location filename="../src/workspace.cpp" line="545"/>
+        <location filename="../src/workspace.cpp" line="448"/>
+        <location filename="../src/workspace.cpp" line="467"/>
+        <location filename="../src/workspace.cpp" line="488"/>
         <source>There is no enough frames with this object to perform the interpolation</source>
         <translation>Není dost snímků s tímto předmětem, aby se mohla provést interpolace</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="556"/>
+        <location filename="../src/workspace.cpp" line="498"/>
         <source>Question</source>
         <translation>Otázka</translation>
     </message>
     <message>
-        <location filename="../src/workspace.cpp" line="557"/>
+        <location filename="../src/workspace.cpp" line="499"/>
         <source>Do you really want to delete this object?</source>
         <translation>Opravdu chcete smazat tento předmět?</translation>
-    </message>
-    <message>
-        <location filename="../src/workspace.cpp" line="558"/>
-        <source>Yes</source>
-        <translation>Ano</translation>
-    </message>
-    <message>
-        <location filename="../src/workspace.cpp" line="558"/>
-        <source>No</source>
-        <translation>Ne</translation>
     </message>
 </context>
 </TS>

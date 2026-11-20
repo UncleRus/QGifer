@@ -20,9 +20,6 @@
 #ifndef FRAMEPLAYER_H
 #define FRAMEPLAYER_H
 
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
 #include <QWidget>
 #include <QImage>
 #include <QStatusBar>
@@ -30,19 +27,16 @@
 #include <QMessageBox>
 
 #include "textrenderer.h"
+#include "videodecoder.h"
 #include "workspace.h"
 #include "ui_frameplayer.h"
 
-
-using namespace cv;
-
-class FramePlayer : public QWidget, public Ui::FramePlayerForm {
-Q_OBJECT;
+class FramePlayer : public QWidget, public Ui::FramePlayerForm
+{
+    Q_OBJECT;
 
 public:
-    enum Status {
-        Stopped, Playing
-    };
+    enum Status { Stopped, Playing };
 
     FramePlayer(QWidget *parent);
 
@@ -50,28 +44,34 @@ public:
 
     bool openSource(const QString &src);
 
-    long countFrames() const {
+    long countFrames() const
+    {
         return totalFrames;
     }
 
-    const long &getCurrentPos() const {
+    const long &getCurrentPos() const
+    {
         return currentPos;
     }
 
-    QImage *getCurrentFrame() {
+    QImage *getCurrentFrame()
+    {
         return &currentFrame;
     }
 
-    int estimateInterval() {
-        return vcap.isOpened() ? round(1000.0 / vcap.get(CV_CAP_PROP_FPS)) : 0;
+    int estimateInterval()
+    {
+        return isOpened() ? qRound(1000.0 / fps()) : 0;
     }
 
-    double fps() {
-        return vcap.isOpened() ? vcap.get(CV_CAP_PROP_FPS) : 0;
+    double fps()
+    {
+        return decoder.isOpened() ? decoder.fps() : 0;
     }
 
-    bool isOpened() {
-        return vcap.isOpened();
+    bool isOpened()
+    {
+        return decoder.isOpened();
     }
 
     void setStatusBar(QStatusBar *sb);
@@ -80,49 +80,55 @@ public:
 
     void slowSetPos(long pos);
 
-    Status getStatus() const {
+    Status getStatus() const
+    {
         return status;
     }
 
-    const QString &source() const {
+    const QString &source() const
+    {
         return filepath;
     }
 
-    void setDefaultImage(const QImage &img) {
+    void setDefaultImage(const QImage &img)
+    {
         defaultImg = img.copy();
     }
 
-    void enableAntialiasing(bool enable) {
+    void enableAntialiasing(bool enable)
+    {
         workspace->enableAntialiasing(enable);
         workspace->setImage(currentFrame, frame->size());
     }
 
     QString codecName();
 
-    void showDefaultScreen() {
+    void showDefaultScreen()
+    {
         currentFrame = defaultImg;
         workspace->setImage(defaultImg, frame->size(), true, true);
     }
 
-    Workspace *getWorkspace() {
+    Workspace *getWorkspace()
+    {
         return workspace;
     }
 
-    void setMedianBlur(int m) {
+    void setMedianBlur(int m)
+    {
         medianblur = m;
     }
 
     void renderDefaultTextImage(const QString &text);
 
-    Size getOriginalSize() const;
-
+    QSize getOriginalSize() const;
 
 private:
-    VideoCapture vcap;
+    VideoDecoder decoder;
     int medianblur;
     QString filepath;
     Status status;
-    Size originalSize;
+    QSize originalSize;
     QImage currentFrame;
     QImage defaultImg;
     Workspace *workspace;
@@ -131,7 +137,6 @@ private:
     int interval;
     int timerId;
     QStatusBar *statusbar;
-    bool raw;
     bool is_reverse_play = false;
 
     void timerEvent(QTimerEvent *);
@@ -142,21 +147,22 @@ private:
 
     void resizeEvent(QResizeEvent *);
 
-
 public slots:
 
-    void press_start_event() {
+    void press_start_event()
+    {
         qDebug() << this << "press_start event";
     }
 
-    void press_end_event() {
+    void press_end_event()
+    {
         qDebug() << this << "press_end event";
-
     }
 
     void nextFrame();
 
-    void prevFrame() {
+    void prevFrame()
+    {
         seek(currentPos - 1);
     }
 
@@ -171,7 +177,8 @@ public slots:
 
     void close();
 
-    void setInterval(int i) {
+    void setInterval(int i)
+    {
         interval = i;
         if (status == Playing) {
             pause();
@@ -179,7 +186,8 @@ public slots:
         }
     }
 
-    void setFps(double f) {
+    void setFps(double f)
+    {
         setInterval(1000 / f);
     }
 
@@ -188,7 +196,6 @@ signals:
     void frameChanged(long);
 
     void statusUpdated(FramePlayer::Status status);
-
 };
 
 #endif

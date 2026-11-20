@@ -11,7 +11,7 @@
 ** but WITHOUT ANY WARRANTY; without even the implied warranty of
 ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ** GNU General Public License for more details.
-** 
+**
 ** You should have received a copy of the GNU General Public License
 ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
 **
@@ -28,20 +28,25 @@
 
 class ConverterDialog : public QDialog, public Ui::ConverterDialog, public Retranslatable
 {
-     Q_OBJECT;
+    Q_OBJECT;
+
 public:
-     ConverterDialog(QSettings* s);
-     virtual ~ConverterDialog();
-     void retranslate(){retranslateUi(this);}
+    ConverterDialog(QSettings *s);
+    virtual ~ConverterDialog();
+    void retranslate()
+    {
+        retranslateUi(this);
+    }
+
 private:
-     QProcess* proc;
-     QSettings* set;
+    QProcess *proc;
+    QSettings *set;
 private slots:
-     void convert();
-     void setSrc();
-     void setDst();
-     void finished(int,QProcess::ExitStatus);
-     void timeChanged();
+    void convert();
+    void setSrc();
+    void setDst();
+    void finished(int, QProcess::ExitStatus);
+    void timeChanged();
 };
 
 #endif

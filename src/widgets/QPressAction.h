@@ -12,17 +12,17 @@
 
 #include <QtGui/QAction>
 #include <QtGui/QMouseEvent>
-#include <QtGui/QToolButton>
+#include <QtWidgets/QToolButton>
 
-
-class QPressAction : public QAction {
-Q_OBJECT
+class QPressAction : public QAction
+{
+    Q_OBJECT
 
 public:
-    explicit QPressAction(QObject *parent) : QAction(parent) {
+    explicit QPressAction(QObject *parent) : QAction(parent)
+    {
         pressTimer = new QTimer(this);
         connect(pressTimer, SIGNAL(timeout()), this, SLOT(press_timeout()));
-
     };
 
 signals:
@@ -34,7 +34,6 @@ signals:
     void press(bool start);
 
 protected:
-
     bool eventFilter(QObject *obj, QEvent *event);
 
 private:
@@ -46,5 +45,4 @@ private slots:
     void press_timeout();
 };
 
-
-#endif //QGIFER_QPRESSACTION_H
+#endif // QGIFER_QPRESSACTION_H

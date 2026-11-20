@@ -86,7 +86,7 @@
      </property>
      <property name="icon">
       <iconset resource="../res.qrc">
-       <normaloff>:/res/cancel.png</normaloff>:/res/cancel.png</iconset>
+       <normaloff>:/res/cancel.svg</normaloff>:/res/cancel.svg</iconset>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
      </property>
      <property name="icon">
       <iconset resource="../res.qrc">
-       <normaloff>:/res/ok.png</normaloff>:/res/ok.png</iconset>
+       <normaloff>:/res/ok.svg</normaloff>:/res/ok.svg</iconset>
      </property>
     </widget>
    </item>

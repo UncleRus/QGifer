@@ -104,3 +104,6 @@ Makefile*
 *.qmlproject.user.*
 
 # Created by .ignore support plugin (hsz.mobi)
+
+# Build directory
+/build/

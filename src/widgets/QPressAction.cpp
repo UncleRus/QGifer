@@ -4,11 +4,10 @@
 
 #include "QPressAction.h"
 
-bool QPressAction::eventFilter(QObject *obj, QEvent *event) {
-    if (
-            event->type() != QEvent::Type::MouseButtonPress &&
-            event->type() != QEvent::Type::MouseButtonRelease
-            ) {
+bool QPressAction::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() != QEvent::Type::MouseButtonPress
+        && event->type() != QEvent::Type::MouseButtonRelease) {
         return QAction::eventFilter(obj, event);
     }
     QString className = QString(obj->metaObject()->className());
@@ -32,17 +31,14 @@ bool QPressAction::eventFilter(QObject *obj, QEvent *event) {
                     }
                 }
             }
-
         }
-
     }
     return QAction::eventFilter(obj, event);
 }
 
-void QPressAction::press_timeout() {
+void QPressAction::press_timeout()
+{
     is_long_press = true;
     pressTimer->stop();
     emit press_start();
-
-
 }

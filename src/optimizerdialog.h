@@ -11,7 +11,7 @@
 ** but WITHOUT ANY WARRANTY; without even the implied warranty of
 ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ** GNU General Public License for more details.
-** 
+**
 ** You should have received a copy of the GNU General Public License
 ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
 **
@@ -28,27 +28,32 @@
 
 class OptimizerDialog : public QDialog, public Ui::OptimizerDialog, public Retranslatable
 {
-     Q_OBJECT;
+    Q_OBJECT;
+
 public:
-     OptimizerDialog(QSettings* s);
-     virtual ~OptimizerDialog();
-     void retranslate(){retranslateUi(this);}
+    OptimizerDialog(QSettings *s);
+    virtual ~OptimizerDialog();
+    void retranslate()
+    {
+        retranslateUi(this);
+    }
+
 private:
-     bool convertAvailable();
-     void checkIM();
-     QStringList sysEnv();
-     QString findConvert();
-     QProcess* proc;
-     QSettings* set;
+    bool convertAvailable();
+    void checkIM();
+    QStringList sysEnv();
+    QString findConvert();
+    QProcess *proc;
+    QSettings *set;
 
 private slots:
-	  void optimize();
-	  void setIMDir();
-	  void setSrc();
-	  void setDst();
-	  void finished(int,QProcess::ExitStatus);
-	  void showStateChanged(int);
-      void fuzzChanged(int);
+    void optimize();
+    void setIMDir();
+    void setSrc();
+    void setDst();
+    void finished(int, QProcess::ExitStatus);
+    void showStateChanged(int);
+    void fuzzChanged(int);
 };
 
 #endif

@@ -39,25 +39,20 @@ QGifer
 Requirements
 ============
 
- * Qt version 4.8.0, or higher.
- * OpenCV (core, highgui, imgproc) version 2.3 or higher.
- * giflib version 4.1 or higher.
- * CMake version 2.6 or higher.
+ * Qt version 6.5 or higher (Core, Gui, Widgets).
+ * FFmpeg development libraries (libavformat, libavcodec, libavutil,
+   libswscale) version 5.0 or higher.
+ * giflib version 5.1 or higher.
+ * CMake version 3.21 or higher and a C++17 compiler.
 
 
 Compilation and installation
 ============
 
-    cd qgifer_source_dir
-    mkdir build && cd build
-    cmake .. -DCMAKE_INSTALL_PREFIX="/usr/" -DQUIET_MODE=ON
-    make
-    sudo make install
+    cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+    cmake --build build -j$(nproc)
+    sudo cmake --install build
 
-note: use 
-
-cmake .. -G "MinGW Makefiles" -DQUIET_MODE=ON
-
-for Windows with MinGW.
+Add `-DQUIET_MODE=ON` to disable the application's debug output.
 
 

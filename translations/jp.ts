@@ -1,1102 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ja_JP">
+<TS version="2.1" language="ja_JP">
 <context>
-    <name>MainWindow</name>
-    <message>
-        <source>%</source>
-        <translation>%</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>いいえ</translation>
-    </message>
-    <message>
-        <source> px</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Esc</source>
-        <translation>Esc</translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation>はい</translation>
-    </message>
-    <message>
-        <source> bit</source>
-        <translation>ビット</translation>
-    </message>
-    <message>
-        <source>FPS:</source>
-        <translation>FPS:</translation>
-    </message>
-    <message>
-        <source>Left</source>
-        <translation>Left</translation>
-    </message>
-    <message>
-        <source>Loop</source>
-        <translation>ループ</translation>
-    </message>
-    <message>
-        <source>Top:</source>
-        <translation>上:</translation>
-    </message>
-    <message>
-        <source>Zoom</source>
-        <translation>拡大</translation>
-    </message>
-    <message>
-        <source>Save project &amp;as...</source>
-        <translation>プロジェクトを別名で保存</translation>
-    </message>
-    <message>
-        <source>&amp;Edit</source>
-        <translation>編集(&amp;E)</translation>
-    </message>
-    <message>
-        <source>&amp;Exit</source>
-        <translation>終了</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>ヘルプ(&amp;H)</translation>
-    </message>
-    <message>
-        <source>&amp;Play</source>
-        <translation>再生(&amp;P)</translation>
-    </message>
-    <message>
-        <source>&amp;Stop</source>
-        <translation>停止</translation>
-    </message>
-    <message>
-        <source>&amp;View</source>
-        <translation>表示(&amp;V)</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
-    </message>
-    <message>
-        <source>Hue (</source>
-        <translation>色相 (</translation>
-    </message>
-    <message>
-        <source>Left:</source>
-        <translation>左:</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>リセット</translation>
-    </message>
-    <message>
-        <source>Right</source>
-        <translation>Right</translation>
-    </message>
-    <message>
-        <source>Space</source>
-        <translation>スペース</translation>
-    </message>
-    <message>
-        <source>Zoom:</source>
-        <translation>拡大:</translation>
-    </message>
-    <message>
-        <source>Open &amp;project...</source>
-        <translation>プロジェクトを開く...</translation>
-    </message>
-    <message>
-        <source>Keep aspect ratio</source>
-        <translation>アスペクト比を保持</translation>
-    </message>
-    <message>
-        <source>&amp;Open palette...</source>
-        <translation>パレットを開く(&amp;O)</translation>
-    </message>
-    <message>
-        <source>Sa&amp;ve palette...</source>
-        <translation>パレットを保存(&amp;V)...</translation>
-    </message>
-    <message>
-        <source>&quot; will not be visible. What do you want to do?</source>
-        <translation>&quot; は表示できません. どうしますか?</translation>
-    </message>
-    <message>
-        <source>&amp;Preview properties</source>
-        <translation>プレビューのプロパティ</translation>
-    </message>
-    <message>
-        <source>Auto-update form start frame</source>
-        <translation>始点フレームから自動更新</translation>
-    </message>
-    <message>
-        <source>I&amp;mport palette...</source>
-        <translation>パレットをインポート(&amp;M)...</translation>
-    </message>
-    <message>
-        <source>Update palette (from the current frame)</source>
-        <translation>パレットを更新 (現在のフレームから)</translation>
-    </message>
-    <message>
-        <source>&amp;Start from current frame</source>
-        <translation>現在のフレームから開始</translation>
-    </message>
-    <message>
-        <source>Palette size:</source>
-        <translation>パレットのサイズ:</translation>
-    </message>
-    <message>
-        <source>Compose objects</source>
-        <translation>オブジェクトを作成</translation>
-    </message>
-    <message>
-        <source>Undock &amp;toolbox</source>
-        <translation>ツールボックスの格納を解除</translation>
-    </message>
-    <message>
-        <source>Dock &amp;toolbox</source>
-        <translation>ツールボックスを格納</translation>
-    </message>
-    <message>
-        <source>Keep ratio</source>
-        <translation>比率を保持</translation>
-    </message>
-    <message>
-        <source>Pre&amp;vious frame</source>
-        <translation>前のフレーム</translation>
-    </message>
-    <message>
-        <source>Show on the preview (slow)</source>
-        <translation>プレビューに適用する(低速)</translation>
-    </message>
-    <message>
-        <source>Insert &amp;text...</source>
-        <translation>テキストを挿入</translation>
-    </message>
-    <message>
-        <source>The project has changed - do you want to save the changes before exiting?</source>
-        <translation>プロジェクトに変更があります -  終了する前に変更を保存しますか?</translation>
-    </message>
-    <message>
-        <source>Start frame:</source>
-        <translation>始点フレーム:</translation>
-    </message>
-    <message>
-        <source>&amp;Margins</source>
-        <translation>余白</translation>
-    </message>
-    <message>
-        <source>Margins</source>
-        <translation>余白</translation>
-    </message>
-    <message>
-        <source>Median blur (0):</source>
-        <translation>メディアンぼかし (0):</translation>
-    </message>
-    <message>
-        <source>Use margins</source>
-        <translation>余白を使用</translation>
-    </message>
-    <message>
-        <source>Smooth preview</source>
-        <translation>スムース プレビュー</translation>
-    </message>
-    <message>
-        <source> to open a video</source>
-        <translation>  で動画を開く</translation>
-    </message>
-    <message>
-        <source>Error reading file: </source>
-        <translation>ファイル読み込みエラー: </translation>
-    </message>
-    <message>
-        <source>Non-linear</source>
-        <translation>非リニア</translation>
-    </message>
-    <message>
-        <source>&amp;YouTube video...</source>
-        <translation>YouTube 動画(&amp;Y)...</translation>
-    </message>
-    <message>
-        <source>Error writing file: </source>
-        <translation>ファイル書き込みエラー: </translation>
-    </message>
-    <message>
-        <source>The project has changed - do you want to save the changes?</source>
-        <translation>プロジェクトが変更されています -  変更を保存しますか?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
-    </message>
-    <message>
-        <source>Ctrl+B</source>
-        <translation>Ctrl+B</translation>
-    </message>
-    <message>
-        <source>Ctrl+E</source>
-        <translation>Ctrl+E</translation>
-    </message>
-    <message>
-        <source>Ctrl+G</source>
-        <translation>Ctrl+G</translation>
-    </message>
-    <message>
-        <source>Ctrl+I</source>
-        <translation>Ctrl+I</translation>
-    </message>
-    <message>
-        <source>Ctrl+N</source>
-        <translation>Ctrl+N</translation>
-    </message>
-    <message>
-        <source>Ctrl+O</source>
-        <translation>Ctrl+O</translation>
-    </message>
-    <message>
-        <source>Ctrl+P</source>
-        <translation>Ctrl+P</translation>
-    </message>
-    <message>
-        <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
-    </message>
-    <message>
-        <source>Ctrl+S</source>
-        <translation>Ctrl+S</translation>
-    </message>
-    <message>
-        <source>Ctrl+T</source>
-        <translation>Ctrl+T</translation>
-    </message>
-    <message>
-        <source>The player failed to load the video file!</source>
-        <translation>プレイヤーによる動画の読み込みに失敗!</translation>
-    </message>
-    <message>
-        <source>MJPEG &amp;converter...</source>
-        <translation>MJPEG 変換(&amp;C)...</translation>
-    </message>
-    <message>
-        <source>The palette file can not be loaded!</source>
-        <translation>パレットファイルが読み込めません!</translation>
-    </message>
-    <message>
-        <source>&amp;New project</source>
-        <translation>新規プロジェクト</translation>
-    </message>
-    <message>
-        <source>Median blur (</source>
-        <translation>メディアンぼかし (</translation>
-    </message>
-    <message>
-        <source>QGifer</source>
-        <translation>QGifer</translation>
-    </message>
-    <message>
-        <source>Loop from start to stop frame</source>
-        <translation>始点から終点フレームの間をループ</translation>
-    </message>
-    <message>
-        <source>Pa&amp;use</source>
-        <translation>一時停止</translation>
-    </message>
-    <message>
-        <source>Press </source>
-        <translation>&gt;&gt; </translation>
-    </message>
-    <message>
-        <source>*.&amp;PNG files...</source>
-        <translation>*.PNG ファイル(&amp;P)...</translation>
-    </message>
-    <message>
-        <source>Brightness (0):</source>
-        <translation>明るさ (0):</translation>
-    </message>
-    <message>
-        <source>Right:</source>
-        <translation>右:</translation>
-    </message>
-    <message>
-        <source>&amp;Close video</source>
-        <translation>ビデオを閉じる(&amp;C)</translation>
-    </message>
-    <message>
-        <source>Width:</source>
-        <translation>横幅:</translation>
-    </message>
-    <message>
-        <source>The range is invalid!</source>
-        <translation>無効な範囲です!</translation>
-    </message>
-    <message>
-        <source>Do not loop</source>
-        <translation>ループしない</translation>
-    </message>
-    <message>
-        <source>&amp;Next frame</source>
-        <translation>次のフレーム</translation>
-    </message>
-    <message>
-        <source>Loop all</source>
-        <translation>すべてループ</translation>
-    </message>
-    <message>
-        <source>Stop frame:</source>
-        <translation>終点フレーム:</translation>
-    </message>
-    <message>
-        <source>Delete this object</source>
-        <translation>このオブジェクトを削除</translation>
-    </message>
-    <message>
-        <source>GIF opti&amp;mizer...</source>
-        <translation>GIF を最適化(&amp;M)...</translation>
-    </message>
-    <message>
-        <source>&amp;Export palette...</source>
-        <translation>パレットをエクスポート(&amp;E)...</translation>
-    </message>
-    <message>
-        <source>&amp;Program</source>
-        <translation>ファイル(&amp;F)</translation>
-    </message>
-    <message>
-        <source>Change frame range...</source>
-        <translation>フレーム範囲を変更...</translation>
-    </message>
-    <message>
-        <source>Open video file</source>
-        <translation>ビデオファイルを開く</translation>
-    </message>
-    <message>
-        <source>&amp;Output properties</source>
-        <translation>出力プロパティ</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>言語</translation>
-    </message>
-    <message>
-        <source>QGifer - video-based GIF creator</source>
-        <translation>QGifer - video-based GIF creator</translation>
-    </message>
-    <message>
-        <source>From current frame</source>
-        <translation>現在のフレームから</translation>
-    </message>
-    <message>
-        <source>The palette file can not be saved!</source>
-        <translation>このパレットファイルを保存できません!</translation>
-    </message>
-    <message>
-        <source>Draw &amp;background</source>
-        <translation>背景を描画(&amp;B)</translation>
-    </message>
-    <message>
-        <source>&amp;About QGifer...</source>
-        <translation>QGifer について(&amp;A)...</translation>
-    </message>
-    <message>
-        <source>Variable palette</source>
-        <translation>変数パレット</translation>
-    </message>
-    <message>
-        <source>Bottom:</source>
-        <translation>下:</translation>
-    </message>
-    <message>
-        <source>Insert &amp;object...</source>
-        <translation>オブジェクトを挿入</translation>
-    </message>
-    <message>
-        <source>&amp;Open video...</source>
-        <translation>ビデオを開く...</translation>
-    </message>
-    <message>
-        <source>Player toolbar</source>
-        <translation>プレイヤーツールバー</translation>
-    </message>
-    <message>
-        <source>Backspace</source>
-        <translation>Backspace</translation>
-    </message>
-    <message>
-        <source>S&amp;top at current frame</source>
-        <translation>現在のフレームで終了</translation>
-    </message>
-    <message>
-        <source>The project cannot be loaded: </source>
-        <translation>プロジェクトを読み込めません: </translation>
-    </message>
-    <message>
-        <source>Dithering</source>
-        <translation>ディザリング</translation>
-    </message>
-    <message>
-        <source>Output properties</source>
-        <translation>出力プロパティ</translation>
-    </message>
-    <message>
-        <source>Project was not entirely loaded.</source>
-        <translation>プロジェクトが完全に読み込まれていません.</translation>
-    </message>
-    <message>
-        <source>E&amp;xtract GIF...</source>
-        <translation>GIF を抽出...</translation>
-    </message>
-    <message>
-        <source>Gif toolbar</source>
-        <translation>Gif ツールバー</translation>
-    </message>
-    <message>
-        <source>Toolbox</source>
-        <translation>ツールボックス</translation>
-    </message>
-    <message>
-        <source>Source video file: </source>
-        <translation>ソース動画ファイル:</translation>
-    </message>
-    <message>
-        <source>&amp;Player</source>
-        <translation>再生(&amp;P)</translation>
-    </message>
-    <message>
-        <source>Hue (0):</source>
-        <translation>色相 (0):</translation>
-    </message>
-    <message>
-        <source>Question</source>
-        <translation>質問</translation>
-    </message>
-    <message>
-        <source>Restore &amp;default settings</source>
-        <translation>デフォルト設定に戻す(&amp;D)</translation>
-    </message>
-    <message>
-        <source>Invalid color map!</source>
-        <translation>無効なカラーマップ!</translation>
-    </message>
-    <message>
-        <source>&amp;Save project</source>
-        <translation>プロジェクトを保存</translation>
-    </message>
-    <message>
-        <source>English</source>
-        <translation>English</translation>
-    </message>
-    <message>
-        <source>The range seems to be invalid!</source>
-        <translation>範囲が無効です!</translation>
-    </message>
-    <message>
-        <source>Filters</source>
-        <translation>フィルター</translation>
-    </message>
-    <message>
-        <source>&amp;Filters</source>
-        <translation>フィルター</translation>
-    </message>
-    <message>
-        <source>Update &amp;palette</source>
-        <translation>パレットを更新</translation>
-    </message>
-    <message>
-        <source>Saturation (</source>
-        <translation>彩度 (</translation>
-    </message>
-    <message>
-        <source>Save project file</source>
-        <translation>プロジェクトファイルを保存</translation>
-    </message>
-    <message>
-        <source>Ctrl+Shift+F</source>
-        <translation>Ctrl+Shift+F</translation>
-    </message>
-    <message>
-        <source>Ctrl+Shift+M</source>
-        <translation>Ctrl+Shift+M</translation>
-    </message>
-    <message>
-        <source>Ctrl+Shift+O</source>
-        <translation>Ctrl+Shift+O</translation>
-    </message>
-    <message>
-        <source>Ctrl+Shift+P</source>
-        <translation>Ctrl+Shift+P</translation>
-    </message>
-    <message>
-        <source>Ctrl+Shift+S</source>
-        <translation>Ctrl+Shift+S</translation>
-    </message>
-    <message>
-        <source>Ctrl+Shift+T</source>
-        <translation>Ctrl+Shift+T</translation>
-    </message>
-    <message>
-        <source>Ctrl+Shift+V</source>
-        <translation>Ctrl+Shift+V</translation>
-    </message>
-    <message>
-        <source>Open project file</source>
-        <translation>プロジェクトファイルを開く</translation>
-    </message>
-    <message>
-        <source>Save QGifer palette file</source>
-        <translation>QGifer パレットファイルを保存</translation>
-    </message>
-    <message>
-        <source>Project toolbar</source>
-        <translation>プロジェクトツールバー</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>警告</translation>
-    </message>
-    <message>
-        <source>Open QGifer palette file</source>
-        <translation>QGifer パレットファイルを開く</translation>
-    </message>
-    <message>
-        <source> [modified] </source>
-        <translation> [変更有] </translation>
-    </message>
-    <message>
-        <source>The object &quot;</source>
-        <translation>オブジェクト &quot;</translation>
-    </message>
-    <message>
-        <source>Height:</source>
-        <translation>高さ:</translation>
-    </message>
-    <message>
-        <source>Color correction</source>
-        <translation>色補正</translation>
-    </message>
-    <message>
-        <source>Preview properties</source>
-        <translation>プレビューのプロパティ</translation>
-    </message>
-    <message>
-        <source>The minimum difference between frames required to generate the new palette</source>
-        <translation>新規パレットを作成するには、フレーム間に最小限の差異が存在する必要があります</translation>
-    </message>
-    <message>
-        <source>Saturation (0):</source>
-        <translation>彩度 (0):</translation>
-    </message>
-    <message>
-        <source>Brightness (</source>
-        <translation>明るさ (</translation>
-    </message>
-    <message>
-        <source>&amp;Undock toolbox</source>
-        <translation>ツールボックスの格納を解除</translation>
-    </message>
-</context>
-<context>
-    <name>OptimizerDialog</name>
-    <message>
-        <source>%</source>
-        <translation>%</translation>
-    </message>
-    <message>
-        <source>...</source>
-        <translation>...</translation>
-    </message>
-    <message>
-        <source>Can not write to destination file! (access denied?)</source>
-        <translation>対象ファイルに書き込めません! (アクセス違反?)</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>閉じる</translation>
-    </message>
-    <message>
-        <source>Done!</source>
-        <translation>完了!</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
-    </message>
-    <message>
-        <source>The chosen directory does not contain &quot;convert&quot; executable!</source>
-        <translation>選択されたディレクトリには &quot;変換&quot; を実行するファイルが含まれていません!</translation>
-    </message>
-    <message>
-        <source>Choose the ImageMagick directory with &quot;convert&quot; executable</source>
-        <translation>&quot;変換&quot; を実行するための ImageMagick ディレクトリを選択</translation>
-    </message>
-    <message>
-        <source>Error: this operation requires the ImageMagick installed on your system. Please install ImageMagick or choose the directory with &quot;convert&quot; executable file.</source>
-        <translation>エラー: この操作を行うためには、システムに ImageMagick が存在する必要があります。  ImageMagick をインストールするか、または &quot;変換&quot; を実行するためのプログラムを選択してください。</translation>
-    </message>
-    <message>
-        <source>Save GIF file</source>
-        <translation>GIF ファイルを保存</translation>
-    </message>
-    <message>
-        <source>Set IM directory...</source>
-        <translation>IM ディレクトリの設定...</translation>
-    </message>
-    <message>
-        <source>Optimizing, please wait...</source>
-        <translation>最適化しています, お待ちください...</translation>
-    </message>
-    <message>
-        <source>Gif Optimizer</source>
-        <translation>GIF の最適化</translation>
-    </message>
-    <message>
-        <source>Optimize</source>
-        <translation>最適化</translation>
-    </message>
-    <message>
-        <source>Fuzz factor:</source>
-        <translation>あいまい係数:</translation>
-    </message>
-    <message>
-        <source>Source file</source>
-        <translation>ソースファイル</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;Message&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;メッセージ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Show this dialog whenever you save a GIF</source>
-        <translation>GIF を保存する度にこのメッセージを表示</translation>
-    </message>
-    <message>
-        <source>Open GIF file</source>
-        <translation>GIF ファイルを開く</translation>
-    </message>
-    <message>
-        <source>Error: </source>
-        <translation>エラー: </translation>
-    </message>
-    <message>
-        <source>Select ImageMagick binary directory</source>
-        <translation>ImageMagick 実行ファイルのディレクトリを選択</translation>
-    </message>
-    <message>
-        <source>Destination file</source>
-        <translation>出力ファイル</translation>
-    </message>
-    <message>
-        <source>The chosen source file does not exist!</source>
-        <translation>選択されたソースファイルが存在しません!</translation>
-    </message>
-</context>
-<context>
-    <name>Workspace</name>
-    <message>
-        <source>No</source>
-        <translation>いいえ</translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation>はい</translation>
-    </message>
-    <message>
-        <source>&amp;Size</source>
-        <translation>サイズ(&amp;S)</translation>
-    </message>
-    <message>
-        <source>Apply to &amp;all frames</source>
-        <translation>すべてのフレームに適用(&amp;A)</translation>
-    </message>
-    <message>
-        <source>Bring to &amp;front</source>
-        <translation>前に移動(&amp;F)</translation>
-    </message>
-    <message>
-        <source>&amp;Position</source>
-        <translation>位置(&amp;P)</translation>
-    </message>
-    <message>
-        <source>&amp;Interpolate...</source>
-        <translation>補間(&amp;I)...</translation>
-    </message>
-    <message>
-        <source>P&amp;roperties...</source>
-        <translation>プロパティ(&amp;R)...</translation>
-    </message>
-    <message>
-        <source>Do you really want to delete this object?</source>
-        <translation>本当にこのオブジェクトを削除しますか?</translation>
-    </message>
-    <message>
-        <source>Send to &amp;back</source>
-        <translation>後ろに送る(&amp;B)</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>インフォメーション</translation>
-    </message>
-    <message>
-        <source>Apply to &amp;further frames</source>
-        <translation>後続のフレームに適用(&amp;F)</translation>
-    </message>
-    <message>
-        <source>There is no enough frames with this object to perform the interpolation</source>
-        <translation>このオブジェクトへ補間するために必要なフレームが足りていません</translation>
-    </message>
-    <message>
-        <source>&amp;Delete</source>
-        <translation>削除(&amp;D)</translation>
-    </message>
-    <message>
-        <source>Question</source>
-        <translation>質問</translation>
-    </message>
-    <message>
-        <source>&amp;Restore original size</source>
-        <translation>オリジナルサイズに戻す(&amp;R)</translation>
-    </message>
-    <message>
-        <source>Apply to &amp;earlier frames</source>
-        <translation>前のフレームに適用(&amp;E)</translation>
-    </message>
-    <message>
-        <source>Position &amp;and size</source>
-        <translation>位置とサイズ(&amp;A)</translation>
-    </message>
-</context>
-<context>
-    <name>GifWidget</name>
-    <message>
-        <source> ms</source>
-        <translation> ミリ秒</translation>
-    </message>
-    <message>
-        <source>Form</source>
-        <translation>フォーム</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>再生</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation>一時停止</translation>
-    </message>
-    <message>
-        <source>Save only every </source>
-        <translation>指定フレーム毎に保存</translation>
-    </message>
-    <message>
-        <source> frame</source>
-        <translation> フレーム</translation>
-    </message>
-    <message>
-        <source>Save GIF file</source>
-        <translation>GIF ファイルを保存</translation>
-    </message>
-    <message>
-        <source>Append reversed copy</source>
-        <translation>反転コピーを付加</translation>
-    </message>
-    <message>
-        <source>Unexpected error while saving GIF file!</source>
-        <translation>GIF 保存中に予期しないエラーが発生!</translation>
-    </message>
-    <message>
-        <source>Save gif...</source>
-        <translation>GIF を保存...</translation>
-    </message>
-    <message>
-        <source>Interval:</source>
-        <translation>間隔:</translation>
-    </message>
-</context>
-<context>
-    <name>ConverterDialog</name>
-    <message>
-        <source>...</source>
-        <translation>...</translation>
-    </message>
-    <message>
-        <source>to:</source>
-        <translation>終点:</translation>
-    </message>
-    <message>
-        <source>Can not write to destination file! (access denied?)</source>
-        <translation>対象ファイルに書き込めません! (アクセス違反?)</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>閉じる</translation>
-    </message>
-    <message>
-        <source>Done!</source>
-        <translation>完了!</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
-    </message>
-    <message>
-        <source>From:</source>
-        <translation>始点:</translation>
-    </message>
-    <message>
-        <source>Save AVI file</source>
-        <translation>AVI ファイルを保存</translation>
-    </message>
-    <message>
-        <source>Auto-naming</source>
-        <translation>自動ネーミング</translation>
-    </message>
-    <message>
-        <source>Dialog</source>
-        <translation>ダイアログ</translation>
-    </message>
-    <message>
-        <source>Converting, please wait...</source>
-        <translation>変換しています, お待ちください...</translation>
-    </message>
-    <message>
-        <source>Destination MJPEG file</source>
-        <translation>対象 MJPEG ファイル</translation>
-    </message>
-    <message>
-        <source>Open video file</source>
-        <translation>ビデオファイルを開く</translation>
-    </message>
-    <message>
-        <source>The length is invalid!</source>
-        <translation>無効な長さです!</translation>
-    </message>
-    <message>
-        <source>Source file</source>
-        <translation>ソースファイル</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;Message&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;メッセージ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Convert</source>
-        <translation>変換</translation>
-    </message>
-    <message>
-        <source>Error: </source>
-        <translation>エラー:</translation>
-    </message>
-    <message>
-        <source>The chosen source file does not exist!</source>
-        <translation>選択されたソースファイルが存在しません!</translation>
-    </message>
-</context>
-<context>
-    <name>ObjectWidget</name>
-    <message>
-        <source>...</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>To:</source>
-        <translation>To:</translation>
-    </message>
-    <message>
-        <source>Apply</source>
-        <translation>適用</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>閉じる</translation>
-    </message>
-    <message>
-        <source>From:</source>
-        <translation>From:</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>イメージ</translation>
-    </message>
-    <message>
-        <source>Open image</source>
-        <translation>イメージを開く</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
-    </message>
-    <message>
-        <source>Frames</source>
-        <translation>フレーム</translation>
-    </message>
-    <message>
-        <source>Insert</source>
-        <translation>挿入</translation>
-    </message>
-    <message>
-        <source>Insert object</source>
-        <translation>オブジェクトを挿入</translation>
-    </message>
-    <message>
-        <source>Current</source>
-        <translation>現在</translation>
-    </message>
-    <message>
-        <source>Object properties</source>
-        <translation>オブジェクトのプロパティ</translation>
-    </message>
-</context>
-<context>
-    <name>TextWidget</name>
-    <message>
-        <source>...</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>To:</source>
-        <translation>終点:</translation>
-    </message>
-    <message>
-        <source>Bold</source>
-        <translation>太字</translation>
-    </message>
-    <message>
-        <source>Text</source>
-        <translation>テキスト</translation>
-    </message>
-    <message>
-        <source>Apply</source>
-        <translation>適用</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>閉じる</translation>
-    </message>
-    <message>
-        <source>From:</source>
-        <translation>始点:</translation>
-    </message>
-    <message>
-        <source>Set outline color</source>
-        <translation>輪郭の色設定</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
-    </message>
-    <message>
-        <source>Frames</source>
-        <translation>フレーム</translation>
-    </message>
-    <message>
-        <source>Insert</source>
-        <translation>挿入</translation>
-    </message>
-    <message>
-        <source>Italic</source>
-        <translation>斜体</translation>
-    </message>
-    <message>
-        <source>Font size:</source>
-        <translation>文字サイズ:</translation>
-    </message>
-    <message>
-        <source>Text color:</source>
-        <translation>テキストの色:</translation>
-    </message>
-    <message>
-        <source>Set text color</source>
-        <translation>テキストの色設定</translation>
-    </message>
-    <message>
-        <source>Outline color:</source>
-        <translation>輪郭の色:</translation>
-    </message>
-    <message>
-        <source>Current</source>
-        <translation>現在</translation>
-    </message>
-    <message>
-        <source>Outline width:</source>
-        <translation>輪郭の幅:</translation>
-    </message>
-    <message>
-        <source>Render text</source>
-        <translation>テキスト描画</translation>
-    </message>
-</context>
-<context>
-    <name>QGifCreator</name>
-    <message>
-        <source>Saving GIF file...</source>
-        <translation>GIF ファイルを保存中...</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
+    <name>APPLICATION</name>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1289"/>
+        <source>LANGUAGE_NAME</source>
+        <translation>日本語</translation>
     </message>
 </context>
 <context>
     <name>AboutDialog</name>
     <message>
+        <location filename="../ui/aboutdialog.ui" line="863"/>
         <source>Close</source>
         <translation>閉じる</translation>
     </message>
     <message>
+        <location filename="../ui/aboutdialog.ui" line="14"/>
+        <location filename="../ui/aboutdialog.ui" line="44"/>
         <source>About QGifer</source>
         <translation>QGifer について</translation>
     </message>
     <message>
+        <location filename="../ui/aboutdialog.ui" line="50"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt; font-weight:600;&quot;&gt;QGifer - A video-based GIF creator&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;This software is licensed under GPL version 3. See &amp;quot;License&amp;quot; tab for details.&lt;/span&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Lukasz Chodyla &amp;lt;chodak166@op.pl&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Arkadii Ivanov &amp;lt;apkawa@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Author: Ruslan V. Uss &amp;lt;unclerus@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Translator: Aleksey Yagur &amp;lt;asyagur@gmail.com&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Icons: Breeze Icons, LGPL-3.0-or-later&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Copyright (c) 2013 Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:12pt;&quot;&gt;Copyright (c) 2015 Arkadii Ivanov&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/aboutdialog.ui" line="74"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
     <message>
+        <location filename="../ui/aboutdialog.ui" line="89"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;QGifer - A video-based GIF creator&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;This software is licensed under GPL version 3. See &amp;quot;License&amp;quot; tab for details.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Author: Lukasz Chodyla &amp;lt;chodak166@op.pl&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Translator: Aleksey Yagur &amp;lt;&lt;/span&gt;&lt;span style=&quot;font-size:12pt;&quot;&gt;asyagur@gmail.com&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Copyright (c) 2013 Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;QGifer - A video-based GIF creator&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;This software is licensed under GPL version 3. See &amp;quot;License&amp;quot; tab for details.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Author: Lukasz Chodyla &amp;lt;chodak166@op.pl&amp;gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Translator: Tilt &amp;lt;&lt;/span&gt;&lt;span style=&quot;font-size:12pt;&quot;&gt;tiltstr@gmail.com&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Copyright (c) 2013 Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If you enjoy this program, and you appreciate all the work we have done in our spare time and you want to encourage us to further development, please send us a postcard with a photo of town you live in on the address below or &lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business=YKYEGBLZMUVW4&amp;amp;lc=US&amp;amp;item_name=QGifer&amp;amp;item_number=qgifer&amp;amp;currency_code=USD&amp;amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;donate this project&lt;/span&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Lukasz Chodyla&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Glinik, ul. Lipowa 22&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;66-446 Deszczno&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;POLAND&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Thanks!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;GNU GENERAL PUBLIC LICENSE&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;Version 3, 29 June 2007&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Courier New,courier&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1771,95 +725,1455 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;the library.  If this is what you want to do, use the GNU Lesser General&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;Public License instead of this License.  But first, please read&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New,courier&apos;;&quot;&gt;&amp;lt;http://www.gnu.org/philosophy/why-not-lgpl.html&amp;gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/aboutdialog.ui" line="820"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;If you enjoy this program, and you appreciate all the work we have done in our spare time and you want to encourage us to further development, please send us a postcard with a photo of town you live in on the address below or &lt;/span&gt;&lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business=YKYEGBLZMUVW4&amp;amp;lc=US&amp;amp;item_name=QGifer&amp;amp;item_number=qgifer&amp;amp;currency_code=USD&amp;amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;; text-decoration: underline; color:#0057ae;&quot;&gt;donate this project&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;Lukasz Chodyla&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;Glinik, ul. Lipowa 22&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;66-446 Deszczno&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;POLAND&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;DejaVu Sans&apos;;&quot;&gt;Thanks!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/aboutdialog.ui" line="774"/>
         <source>Project support</source>
         <translation>プロジェクトを支援</translation>
     </message>
     <message>
+        <location filename="../ui/aboutdialog.ui" line="26"/>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
     </message>
 </context>
 <context>
-    <name>FramePlayer</name>
+    <name>ConverterDialog</name>
     <message>
+        <location filename="../ui/converterdialog.ui" line="55"/>
+        <location filename="../ui/converterdialog.ui" line="88"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="../ui/converterdialog.ui" line="39"/>
+        <source>to:</source>
+        <translation>終点:</translation>
+    </message>
+    <message>
+        <location filename="../src/converterdialog.cpp" line="109"/>
+        <source>Can not write to destination file! (access denied?)</source>
+        <translation>対象ファイルに書き込めません! (アクセス違反?)</translation>
+    </message>
+    <message>
+        <location filename="../ui/converterdialog.ui" line="108"/>
+        <source>Close</source>
+        <translation>閉じる</translation>
+    </message>
+    <message>
+        <location filename="../src/converterdialog.cpp" line="106"/>
+        <source>Done!</source>
+        <translation>完了!</translation>
+    </message>
+    <message>
+        <location filename="../src/converterdialog.cpp" line="58"/>
+        <location filename="../src/converterdialog.cpp" line="63"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <source> frames. This codec is not supported for full-length videos yet, please cut your video or use other codec like motion JPEG or YUV4.</source>
-        <translation>. フレーム. このコーデックはフルレンジの動画には対応していません。動画をカットするか、コーデックに motion JPEG ,または YUV4 を使用してください。</translation>
+        <location filename="../ui/converterdialog.ui" line="32"/>
+        <source>From:</source>
+        <translation>始点:</translation>
     </message>
     <message>
-        <source>This file is coded with &quot;</source>
-        <translation>このファイルには &quot;</translation>
+        <location filename="../src/converterdialog.cpp" line="96"/>
+        <source>Save AVI file</source>
+        <translation>AVI ファイルを保存</translation>
     </message>
     <message>
-        <source>&quot; codec and contains more than </source>
-        <translation>&quot; コーデックとそれ以上が含まれています</translation>
-    </message>
-</context>
-<context>
-    <name>InterpolationDialog</name>
-    <message>
-        <source>Start frame:</source>
-        <translation>始点フレーム:</translation>
+        <location filename="../ui/converterdialog.ui" line="98"/>
+        <source>Auto-naming</source>
+        <translation>自動ネーミング</translation>
     </message>
     <message>
-        <source>Interpolate object size</source>
-        <translation>補間するオブジェクトサイズ</translation>
+        <location filename="../ui/converterdialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation>ダイアログ</translation>
     </message>
     <message>
-        <source>Interpolate object position</source>
-        <translation>補間するオブジェクト位置</translation>
+        <location filename="../src/converterdialog.cpp" line="72"/>
+        <source>Converting, please wait...</source>
+        <translation>変換しています, お待ちください...</translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <location filename="../ui/converterdialog.ui" line="82"/>
+        <source>Destination MJPEG file</source>
+        <translation>対象 MJPEG ファイル</translation>
     </message>
     <message>
-        <source>The given range seems to be invalid, make sure that the stop frame is at least higher by two than the start frame!</source>
-        <translation>与えられた範囲が無効なものです, 少なくとも停止フレームが開始フレームより 2 以上になるように設定する必要があります!</translation>
+        <location filename="../src/converterdialog.cpp" line="82"/>
+        <source>Open video file</source>
+        <translation>ビデオファイルを開く</translation>
     </message>
     <message>
-        <source>Interpolation key points</source>
-        <translation>補間するキーポイント</translation>
+        <location filename="../src/converterdialog.cpp" line="58"/>
+        <source>The length is invalid!</source>
+        <translation>無効な長さです!</translation>
     </message>
     <message>
-        <source>Stop frame:</source>
-        <translation>終点フレーム:</translation>
+        <location filename="../ui/converterdialog.ui" line="23"/>
+        <source>Source file</source>
+        <translation>ソースファイル</translation>
     </message>
     <message>
-        <source>Interpolate</source>
-        <translation>補間</translation>
+        <location filename="../ui/converterdialog.ui" line="65"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;Message&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;メッセージ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Current</source>
-        <translation>現在</translation>
+        <location filename="../ui/converterdialog.ui" line="75"/>
+        <source>Convert</source>
+        <translation>変換</translation>
     </message>
     <message>
-        <source>Interpolate object position and size</source>
-        <translation>補間するオブジェクトの位置とサイズ</translation>
+        <location filename="../src/converterdialog.cpp" line="112"/>
+        <source>Error: </source>
+        <translation>エラー:</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>警告</translation>
+        <location filename="../src/converterdialog.cpp" line="63"/>
+        <source>The chosen source file does not exist!</source>
+        <translation>選択されたソースファイルが存在しません!</translation>
     </message>
 </context>
 <context>
     <name>FramePlayerForm</name>
     <message>
+        <location filename="../ui/frameplayer.ui" line="14"/>
         <source>Player</source>
         <translation>プレイヤー</translation>
     </message>
 </context>
 <context>
-    <name>APPLICATION</name>
+    <name>GifWidget</name>
     <message>
-        <source>LANGUAGE_NAME</source>
-        <translation>日本語</translation>
+        <location filename="../ui/gifwidget.ui" line="98"/>
+        <source> ms</source>
+        <translation> ミリ秒</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="14"/>
+        <source>Form</source>
+        <translation>フォーム</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="42"/>
+        <location filename="../src/gifwidget.cpp" line="75"/>
+        <source>Play</source>
+        <translation>再生</translation>
+    </message>
+    <message>
+        <location filename="../src/gifwidget.cpp" line="150"/>
+        <source>Error</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="55"/>
+        <location filename="../src/gifwidget.cpp" line="80"/>
+        <source>Pause</source>
+        <translation>一時停止</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="81"/>
+        <source>Estimate size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="88"/>
+        <source>0Kb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="114"/>
+        <source>Save only every </source>
+        <translation>指定フレーム毎に保存</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="121"/>
+        <source> frame</source>
+        <translation> フレーム</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="189"/>
+        <source> FPS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="202"/>
+        <source>Calculate interval for FPS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="209"/>
+        <source>Visible FPS:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/gifwidget.cpp" line="127"/>
+        <source>Save GIF file</source>
+        <translation>GIF ファイルを保存</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="182"/>
+        <source>Append reversed copy</source>
+        <translation>反転コピーを付加</translation>
+    </message>
+    <message>
+        <location filename="../src/gifwidget.cpp" line="150"/>
+        <source>Unexpected error while saving GIF file!</source>
+        <translation>GIF 保存中に予期しないエラーが発生!</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="29"/>
+        <location filename="../src/gifwidget.cpp" line="70"/>
+        <source>Save gif...</source>
+        <translation>GIF を保存...</translation>
+    </message>
+    <message>
+        <location filename="../ui/gifwidget.ui" line="134"/>
+        <source>Interval:</source>
+        <translation>間隔:</translation>
+    </message>
+</context>
+<context>
+    <name>InterpolationDialog</name>
+    <message>
+        <location filename="../ui/interpolationdialog.ui" line="48"/>
+        <source>Start frame:</source>
+        <translation>始点フレーム:</translation>
+    </message>
+    <message>
+        <location filename="../src/interpolationdialog.cpp" line="33"/>
+        <source>Interpolate object size</source>
+        <translation>補間するオブジェクトサイズ</translation>
+    </message>
+    <message>
+        <location filename="../src/interpolationdialog.cpp" line="34"/>
+        <source>Interpolate object position</source>
+        <translation>補間するオブジェクト位置</translation>
+    </message>
+    <message>
+        <location filename="../ui/interpolationdialog.ui" line="31"/>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <location filename="../src/interpolationdialog.cpp" line="42"/>
+        <source>The given range seems to be invalid, make sure that the stop frame is at least higher by two than the start frame!</source>
+        <translation>与えられた範囲が無効なものです, 少なくとも停止フレームが開始フレームより 2 以上になるように設定する必要があります!</translation>
+    </message>
+    <message>
+        <location filename="../ui/interpolationdialog.ui" line="42"/>
+        <source>Interpolation key points</source>
+        <translation>補間するキーポイント</translation>
+    </message>
+    <message>
+        <location filename="../ui/interpolationdialog.ui" line="68"/>
+        <source>Stop frame:</source>
+        <translation>終点フレーム:</translation>
+    </message>
+    <message>
+        <location filename="../ui/interpolationdialog.ui" line="14"/>
+        <location filename="../ui/interpolationdialog.ui" line="20"/>
+        <source>Interpolate</source>
+        <translation>補間</translation>
+    </message>
+    <message>
+        <location filename="../ui/interpolationdialog.ui" line="61"/>
+        <location filename="../ui/interpolationdialog.ui" line="81"/>
+        <source>Current</source>
+        <translation>現在</translation>
+    </message>
+    <message>
+        <location filename="../src/interpolationdialog.cpp" line="32"/>
+        <source>Interpolate object position and size</source>
+        <translation>補間するオブジェクトの位置とサイズ</translation>
+    </message>
+    <message>
+        <location filename="../src/interpolationdialog.cpp" line="41"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+</context>
+<context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="831"/>
+        <source>%</source>
+        <translation>%</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="404"/>
+        <location filename="../ui/mainwindow.ui" line="417"/>
+        <location filename="../ui/mainwindow.ui" line="444"/>
+        <location filename="../ui/mainwindow.ui" line="464"/>
+        <location filename="../ui/mainwindow.ui" line="756"/>
+        <location filename="../ui/mainwindow.ui" line="772"/>
+        <source> px</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="894"/>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="788"/>
+        <source> bit</source>
+        <translation>ビット</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="292"/>
+        <source>FPS:</source>
+        <translation>FPS:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="930"/>
+        <source>Left</source>
+        <translation>Left</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="322"/>
+        <source>Loop</source>
+        <translation>ループ</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="457"/>
+        <source>Top:</source>
+        <translation>上:</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="390"/>
+        <source>Zoom</source>
+        <translation>拡大</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1133"/>
+        <source>Save project &amp;as...</source>
+        <translation>プロジェクトを別名で保存</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="96"/>
+        <source>&amp;Edit</source>
+        <translation>編集(&amp;E)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="948"/>
+        <source>&amp;Exit</source>
+        <translation>終了</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="90"/>
+        <source>&amp;Help</source>
+        <translation>ヘルプ(&amp;H)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="879"/>
+        <source>&amp;Play</source>
+        <translation>再生(&amp;P)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="903"/>
+        <source>&amp;Stop</source>
+        <translation>停止</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="130"/>
+        <source>&amp;View</source>
+        <translation>表示(&amp;V)</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="202"/>
+        <location filename="../src/mainwindow.cpp" line="254"/>
+        <location filename="../src/mainwindow.cpp" line="264"/>
+        <location filename="../src/mainwindow.cpp" line="901"/>
+        <location filename="../src/mainwindow.cpp" line="1033"/>
+        <location filename="../src/mainwindow.cpp" line="1050"/>
+        <location filename="../src/mainwindow.cpp" line="1137"/>
+        <location filename="../src/mainwindow.cpp" line="1151"/>
+        <location filename="../src/mainwindow.cpp" line="1179"/>
+        <source>Error</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="463"/>
+        <source>Hue (</source>
+        <translation>色相 (</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="430"/>
+        <source>Left:</source>
+        <translation>左:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="574"/>
+        <source>Reset</source>
+        <translation>リセット</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="918"/>
+        <source>Right</source>
+        <translation>Right</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="882"/>
+        <source>Space</source>
+        <translation>スペース</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="312"/>
+        <source>Zoom:</source>
+        <translation>拡大:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1109"/>
+        <source>Open &amp;project...</source>
+        <translation>プロジェクトを開く...</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="355"/>
+        <source>Keep aspect ratio</source>
+        <translation>アスペクト比を保持</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1067"/>
+        <source>&amp;Open palette...</source>
+        <translation>パレットを開く(&amp;O)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1076"/>
+        <source>Sa&amp;ve palette...</source>
+        <translation>パレットを保存(&amp;V)...</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="211"/>
+        <source>&quot; will not be visible. What do you want to do?</source>
+        <translation>&quot; は表示できません. どうしますか?</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1193"/>
+        <source>&amp;Preview properties</source>
+        <translation>プレビューのプロパティ</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="714"/>
+        <source>Auto-update form start frame</source>
+        <translation>始点フレームから自動更新</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1031"/>
+        <source>I&amp;mport palette...</source>
+        <translation>パレットをインポート(&amp;M)...</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="994"/>
+        <source>Update palette (from the current frame)</source>
+        <translation>パレットを更新 (現在のフレームから)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1006"/>
+        <source>&amp;Start from current frame</source>
+        <translation>現在のフレームから開始</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="721"/>
+        <source>Palette size:</source>
+        <translation>パレットのサイズ:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="630"/>
+        <source>Compose objects</source>
+        <translation>オブジェクトを作成</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1238"/>
+        <source>Undock &amp;toolbox</source>
+        <translation>ツールボックスの格納を解除</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1238"/>
+        <source>Dock &amp;toolbox</source>
+        <translation>ツールボックスを格納</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="652"/>
+        <source>Keep ratio</source>
+        <translation>比率を保持</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="927"/>
+        <source>Pre&amp;vious frame</source>
+        <translation>前のフレーム</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="521"/>
+        <source>Show on the preview (slow)</source>
+        <translation>プレビューに適用する(低速)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1097"/>
+        <source>Insert &amp;text...</source>
+        <translation>テキストを挿入</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1217"/>
+        <source>The project has changed - do you want to save the changes before exiting?</source>
+        <translation>プロジェクトに変更があります -  終了する前に変更を保存しますか?</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="728"/>
+        <source>Start frame:</source>
+        <translation>始点フレーム:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1181"/>
+        <source>&amp;Margins</source>
+        <translation>余白</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="378"/>
+        <location filename="../ui/mainwindow.ui" line="391"/>
+        <source>Margins</source>
+        <translation>余白</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="610"/>
+        <source>Median blur (0):</source>
+        <translation>メディアンぼかし (0):</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="384"/>
+        <source>Use margins</source>
+        <translation>余白を使用</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="362"/>
+        <source>Smooth preview</source>
+        <translation>スムース プレビュー</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1330"/>
+        <source> to open a video</source>
+        <translation>  で動画を開く</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1151"/>
+        <source>Error reading file: </source>
+        <translation>ファイル読み込みエラー: </translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="604"/>
+        <source>Non-linear</source>
+        <translation>非リニア</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="970"/>
+        <source>&amp;YouTube video...</source>
+        <translation>YouTube 動画(&amp;Y)...</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1179"/>
+        <source>Error writing file: </source>
+        <translation>ファイル書き込みエラー: </translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1093"/>
+        <location filename="../src/mainwindow.cpp" line="1124"/>
+        <source>The project has changed - do you want to save the changes?</source>
+        <translation>プロジェクトが変更されています -  変更を保存しますか?</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1009"/>
+        <source>Ctrl+B</source>
+        <translation>Ctrl+B</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1021"/>
+        <source>Ctrl+E</source>
+        <translation>Ctrl+E</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="982"/>
+        <source>Ctrl+G</source>
+        <translation>Ctrl+G</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1088"/>
+        <source>Ctrl+I</source>
+        <translation>Ctrl+I</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1148"/>
+        <source>Ctrl+N</source>
+        <translation>Ctrl+N</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1112"/>
+        <source>Ctrl+O</source>
+        <translation>Ctrl+O</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="997"/>
+        <source>Ctrl+P</source>
+        <translation>Ctrl+P</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="951"/>
+        <source>Ctrl+Q</source>
+        <translation>Ctrl+Q</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1124"/>
+        <source>Ctrl+S</source>
+        <translation>Ctrl+S</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1100"/>
+        <source>Ctrl+T</source>
+        <translation>Ctrl+T</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="202"/>
+        <source>The player failed to load the video file!</source>
+        <translation>プレイヤーによる動画の読み込みに失敗!</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1049"/>
+        <source>MJPEG &amp;converter...</source>
+        <translation>MJPEG 変換(&amp;C)...</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1033"/>
+        <source>The palette file can not be loaded!</source>
+        <translation>パレットファイルが読み込めません!</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1145"/>
+        <source>&amp;New project</source>
+        <translation>新規プロジェクト</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="993"/>
+        <source>Median blur (</source>
+        <translation>メディアンぼかし (</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="14"/>
+        <source>QGifer</source>
+        <translation>QGifer</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="345"/>
+        <source>Loop from start to stop frame</source>
+        <translation>始点から終点フレームの間をループ</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="891"/>
+        <source>Pa&amp;use</source>
+        <translation>一時停止</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1330"/>
+        <source>Press </source>
+        <translation>&gt;&gt; </translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="965"/>
+        <source>*.&amp;PNG files...</source>
+        <translation>*.PNG ファイル(&amp;P)...</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="581"/>
+        <source>Brightness (0):</source>
+        <translation>明るさ (0):</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="397"/>
+        <source>Right:</source>
+        <translation>右:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="939"/>
+        <source>&amp;Close video</source>
+        <translation>ビデオを閉じる(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="742"/>
+        <source>Width:</source>
+        <translation>横幅:</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="254"/>
+        <source>The range is invalid!</source>
+        <translation>無効な範囲です!</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="328"/>
+        <source>Do not loop</source>
+        <translation>ループしない</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="915"/>
+        <source>&amp;Next frame</source>
+        <translation>次のフレーム</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="338"/>
+        <source>Loop all</source>
+        <translation>すべてループ</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="666"/>
+        <source>Stop frame:</source>
+        <translation>終点フレーム:</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="214"/>
+        <source>Delete this object</source>
+        <translation>このオブジェクトを削除</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1040"/>
+        <source>GIF opti&amp;mizer...</source>
+        <translation>GIF を最適化(&amp;M)...</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1026"/>
+        <source>&amp;Export palette...</source>
+        <translation>パレットをエクスポート(&amp;E)...</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="112"/>
+        <source>&amp;Program</source>
+        <translation>ファイル(&amp;F)</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="215"/>
+        <source>Change frame range...</source>
+        <translation>フレーム範囲を変更...</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="196"/>
+        <source>Open video file</source>
+        <translation>ビデオファイルを開く</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1157"/>
+        <source>&amp;Output properties</source>
+        <translation>出力プロパティ</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="134"/>
+        <source>Language</source>
+        <translation>言語</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1209"/>
+        <source>QGifer - video-based GIF creator</source>
+        <translation>QGifer - video-based GIF creator</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="811"/>
+        <source>From current frame</source>
+        <translation>現在のフレームから</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1050"/>
+        <source>The palette file can not be saved!</source>
+        <translation>このパレットファイルを保存できません!</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1221"/>
+        <source>Draw &amp;background</source>
+        <translation>背景を描画(&amp;B)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="960"/>
+        <source>&amp;About QGifer...</source>
+        <translation>QGifer について(&amp;A)...</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="818"/>
+        <source>Variable palette</source>
+        <translation>変数パレット</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="437"/>
+        <source>Bottom:</source>
+        <translation>下:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1085"/>
+        <source>Insert &amp;object...</source>
+        <translation>オブジェクトを挿入</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="867"/>
+        <source>&amp;Open video...</source>
+        <translation>ビデオを開く...</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="203"/>
+        <source>Player toolbar</source>
+        <translation>プレイヤーツールバー</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="906"/>
+        <source>Backspace</source>
+        <translation>Backspace</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1018"/>
+        <source>S&amp;top at current frame</source>
+        <translation>現在のフレームで終了</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1226"/>
+        <source>Jump to start fragment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1231"/>
+        <source>Jump to stop fragment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="901"/>
+        <source>The project cannot be loaded: </source>
+        <translation>プロジェクトを読み込めません: </translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="847"/>
+        <source>Dithering</source>
+        <translation>ディザリング</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="646"/>
+        <source>Output properties</source>
+        <translation>出力プロパティ</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1137"/>
+        <source>Project was not entirely loaded.</source>
+        <translation>プロジェクトが完全に読み込まれていません.</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="979"/>
+        <source>E&amp;xtract GIF...</source>
+        <translation>GIF を抽出...</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="176"/>
+        <source>Gif toolbar</source>
+        <translation>Gif ツールバー</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="229"/>
+        <source>Toolbox</source>
+        <translation>ツールボックス</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="819"/>
+        <source>Source video file: </source>
+        <translation>ソース動画ファイル:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="76"/>
+        <source>&amp;Player</source>
+        <translation>再生(&amp;P)</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="534"/>
+        <source>Hue (0):</source>
+        <translation>色相 (0):</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="210"/>
+        <location filename="../src/mainwindow.cpp" line="1092"/>
+        <location filename="../src/mainwindow.cpp" line="1123"/>
+        <location filename="../src/mainwindow.cpp" line="1216"/>
+        <source>Question</source>
+        <translation>質問</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1058"/>
+        <source>Restore &amp;default settings</source>
+        <translation>デフォルト設定に戻す(&amp;D)</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="264"/>
+        <source>Invalid color map!</source>
+        <translation>無効なカラーマップ!</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1121"/>
+        <source>&amp;Save project</source>
+        <translation>プロジェクトを保存</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1213"/>
+        <location filename="../src/mainwindow.cpp" line="1277"/>
+        <source>English</source>
+        <translation>English</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="367"/>
+        <source>The range seems to be invalid!</source>
+        <translation>範囲が無効です!</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="502"/>
+        <source>Filters</source>
+        <translation>フィルター</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1169"/>
+        <source>&amp;Filters</source>
+        <translation>フィルター</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="991"/>
+        <source>Update &amp;palette</source>
+        <translation>パレットを更新</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="464"/>
+        <source>Saturation (</source>
+        <translation>彩度 (</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1186"/>
+        <location filename="../src/mainwindow.cpp" line="1196"/>
+        <source>Save project file</source>
+        <translation>プロジェクトファイルを保存</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1172"/>
+        <source>Ctrl+Shift+F</source>
+        <translation>Ctrl+Shift+F</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1184"/>
+        <source>Ctrl+Shift+M</source>
+        <translation>Ctrl+Shift+M</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1160"/>
+        <source>Ctrl+Shift+O</source>
+        <translation>Ctrl+Shift+O</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1196"/>
+        <source>Ctrl+Shift+P</source>
+        <translation>Ctrl+Shift+P</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1136"/>
+        <source>Ctrl+Shift+S</source>
+        <translation>Ctrl+Shift+S</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1208"/>
+        <source>Ctrl+Shift+T</source>
+        <translation>Ctrl+Shift+T</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="870"/>
+        <source>Ctrl+Shift+V</source>
+        <translation>Ctrl+Shift+V</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1134"/>
+        <source>Open project file</source>
+        <translation>プロジェクトファイルを開く</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1043"/>
+        <source>Save QGifer palette file</source>
+        <translation>QGifer パレットファイルを保存</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="156"/>
+        <source>Project toolbar</source>
+        <translation>プロジェクトツールバー</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="367"/>
+        <location filename="../src/mainwindow.cpp" line="819"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1029"/>
+        <source>Open QGifer palette file</source>
+        <translation>QGifer パレットファイルを開く</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="1210"/>
+        <source> [modified] </source>
+        <translation> [変更有] </translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="211"/>
+        <source>The object &quot;</source>
+        <translation>オブジェクト &quot;</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="673"/>
+        <source>Height:</source>
+        <translation>高さ:</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="528"/>
+        <source>Color correction</source>
+        <translation>色補正</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="263"/>
+        <source>Preview properties</source>
+        <translation>プレビューのプロパティ</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="828"/>
+        <source>The minimum difference between frames required to generate the new palette</source>
+        <translation>新規パレットを作成するには、フレーム間に最小限の差異が存在する必要があります</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="554"/>
+        <source>Saturation (0):</source>
+        <translation>彩度 (0):</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="465"/>
+        <source>Brightness (</source>
+        <translation>明るさ (</translation>
+    </message>
+    <message>
+        <location filename="../ui/mainwindow.ui" line="1205"/>
+        <source>&amp;Undock toolbox</source>
+        <translation>ツールボックスの格納を解除</translation>
+    </message>
+</context>
+<context>
+    <name>ObjectWidget</name>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="75"/>
+        <source>...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="36"/>
+        <source>To:</source>
+        <translation>To:</translation>
+    </message>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="96"/>
+        <location filename="../src/objectwidget.cpp" line="10"/>
+        <source>Apply</source>
+        <translation>適用</translation>
+    </message>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="85"/>
+        <location filename="../src/objectwidget.cpp" line="11"/>
+        <source>Close</source>
+        <translation>閉じる</translation>
+    </message>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="26"/>
+        <source>From:</source>
+        <translation>From:</translation>
+    </message>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="66"/>
+        <source>Image</source>
+        <translation>イメージ</translation>
+    </message>
+    <message>
+        <location filename="../src/objectwidget.cpp" line="71"/>
+        <source>Open image</source>
+        <translation>イメージを開く</translation>
+    </message>
+    <message>
+        <location filename="../src/objectwidget.cpp" line="25"/>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="20"/>
+        <source>Frames</source>
+        <translation>フレーム</translation>
+    </message>
+    <message>
+        <location filename="../src/objectwidget.cpp" line="24"/>
+        <source>Insert</source>
+        <translation>挿入</translation>
+    </message>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="14"/>
+        <location filename="../src/objectwidget.h" line="32"/>
+        <source>Insert object</source>
+        <translation>オブジェクトを挿入</translation>
+    </message>
+    <message>
+        <location filename="../ui/objectwidget.ui" line="49"/>
+        <location filename="../ui/objectwidget.ui" line="56"/>
+        <source>Current</source>
+        <translation>現在</translation>
+    </message>
+    <message>
+        <location filename="../src/objectwidget.h" line="32"/>
+        <source>Object properties</source>
+        <translation>オブジェクトのプロパティ</translation>
+    </message>
+</context>
+<context>
+    <name>OptimizerDialog</name>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="53"/>
+        <source>%</source>
+        <translation>%</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="98"/>
+        <location filename="../ui/optimizerdialog.ui" line="117"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="156"/>
+        <source>Can not write to destination file! (access denied?)</source>
+        <translation>対象ファイルに書き込めません! (アクセス違反?)</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="127"/>
+        <source>Close</source>
+        <translation>閉じる</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="153"/>
+        <source>Done!</source>
+        <translation>完了!</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="67"/>
+        <location filename="../src/optimizerdialog.cpp" line="102"/>
+        <source>Error</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="102"/>
+        <source>The chosen directory does not contain &quot;convert&quot; executable!</source>
+        <translation>選択されたディレクトリには &quot;変換&quot; を実行するファイルが含まれていません!</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="76"/>
+        <source>Choose the ImageMagick directory with &quot;convert&quot; executable</source>
+        <translation>&quot;変換&quot; を実行するための ImageMagick ディレクトリを選択</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="140"/>
+        <source>Error: this operation requires the ImageMagick installed on your system. Please install ImageMagick or choose the directory with &quot;convert&quot; executable file.</source>
+        <translation>エラー: この操作を行うためには、システムに ImageMagick が存在する必要があります。  ImageMagick をインストールするか、または &quot;変換&quot; を実行するためのプログラムを選択してください。</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="122"/>
+        <source>Save GIF file</source>
+        <translation>GIF ファイルを保存</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="79"/>
+        <source>Set IM directory...</source>
+        <translation>IM ディレクトリの設定...</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="76"/>
+        <source>Optimizing, please wait...</source>
+        <translation>最適化しています, お待ちください...</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="14"/>
+        <source>Gif Optimizer</source>
+        <translation>GIF の最適化</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="69"/>
+        <source>Optimize</source>
+        <translation>最適化</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="46"/>
+        <source>Fuzz factor:</source>
+        <translation>あいまい係数:</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="89"/>
+        <source>Source file</source>
+        <translation>ソースファイル</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="134"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;Message&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;メッセージ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="144"/>
+        <source>Show this dialog whenever you save a GIF</source>
+        <translation>GIF を保存する度にこのメッセージを表示</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="112"/>
+        <source>Open GIF file</source>
+        <translation>GIF ファイルを開く</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="159"/>
+        <source>Error: </source>
+        <translation>エラー: </translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="88"/>
+        <source>Select ImageMagick binary directory</source>
+        <translation>ImageMagick 実行ファイルのディレクトリを選択</translation>
+    </message>
+    <message>
+        <location filename="../ui/optimizerdialog.ui" line="108"/>
+        <source>Destination file</source>
+        <translation>出力ファイル</translation>
+    </message>
+    <message>
+        <location filename="../src/optimizerdialog.cpp" line="67"/>
+        <source>The chosen source file does not exist!</source>
+        <translation>選択されたソースファイルが存在しません!</translation>
+    </message>
+</context>
+<context>
+    <name>QGifCreator</name>
+    <message>
+        <location filename="../src/qgifcreator.cpp" line="150"/>
+        <source>Saving GIF file...</source>
+        <translation>GIF ファイルを保存中...</translation>
+    </message>
+    <message>
+        <location filename="../src/qgifcreator.cpp" line="150"/>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+</context>
+<context>
+    <name>TextWidget</name>
+    <message>
+        <location filename="../ui/textwidget.ui" line="46"/>
+        <location filename="../ui/textwidget.ui" line="76"/>
+        <source>...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="174"/>
+        <source>To:</source>
+        <translation>終点:</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="26"/>
+        <source>Bold</source>
+        <translation>太字</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="20"/>
+        <source>Text</source>
+        <translation>テキスト</translation>
+    </message>
+    <message>
+        <location filename="../src/textwidget.cpp" line="41"/>
+        <source>Apply</source>
+        <translation>適用</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="228"/>
+        <location filename="../src/textwidget.cpp" line="42"/>
+        <source>Close</source>
+        <translation>閉じる</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="164"/>
+        <source>From:</source>
+        <translation>始点:</translation>
+    </message>
+    <message>
+        <location filename="../src/textwidget.cpp" line="128"/>
+        <source>Set outline color</source>
+        <translation>輪郭の色設定</translation>
+    </message>
+    <message>
+        <location filename="../src/textwidget.cpp" line="42"/>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="158"/>
+        <source>Frames</source>
+        <translation>フレーム</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="217"/>
+        <location filename="../src/textwidget.cpp" line="41"/>
+        <source>Insert</source>
+        <translation>挿入</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="103"/>
+        <source>Italic</source>
+        <translation>斜体</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="86"/>
+        <source>Font size:</source>
+        <translation>文字サイズ:</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="69"/>
+        <source>Text color:</source>
+        <translation>テキストの色:</translation>
+    </message>
+    <message>
+        <location filename="../src/textwidget.cpp" line="121"/>
+        <source>Set text color</source>
+        <translation>テキストの色設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="36"/>
+        <source>Outline color:</source>
+        <translation>輪郭の色:</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="187"/>
+        <location filename="../ui/textwidget.ui" line="194"/>
+        <source>Current</source>
+        <translation>現在</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="93"/>
+        <source>Outline width:</source>
+        <translation>輪郭の幅:</translation>
+    </message>
+    <message>
+        <location filename="../ui/textwidget.ui" line="14"/>
+        <source>Render text</source>
+        <translation>テキスト描画</translation>
+    </message>
+</context>
+<context>
+    <name>Workspace</name>
+    <message>
+        <location filename="../src/workspace.cpp" line="395"/>
+        <source>&amp;Size</source>
+        <translation>サイズ(&amp;S)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="383"/>
+        <location filename="../src/workspace.cpp" line="396"/>
+        <location filename="../src/workspace.cpp" line="411"/>
+        <source>Apply to &amp;all frames</source>
+        <translation>すべてのフレームに適用(&amp;A)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="373"/>
+        <source>Bring to &amp;front</source>
+        <translation>前に移動(&amp;F)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="382"/>
+        <source>&amp;Position</source>
+        <translation>位置(&amp;P)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="390"/>
+        <location filename="../src/workspace.cpp" line="405"/>
+        <location filename="../src/workspace.cpp" line="418"/>
+        <source>&amp;Interpolate...</source>
+        <translation>補間(&amp;I)...</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="424"/>
+        <source>P&amp;roperties...</source>
+        <translation>プロパティ(&amp;R)...</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="499"/>
+        <source>Do you really want to delete this object?</source>
+        <translation>本当にこのオブジェクトを削除しますか?</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="376"/>
+        <source>Send to &amp;back</source>
+        <translation>後ろに送る(&amp;B)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="447"/>
+        <location filename="../src/workspace.cpp" line="466"/>
+        <location filename="../src/workspace.cpp" line="487"/>
+        <source>Information</source>
+        <translation>インフォメーション</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="385"/>
+        <location filename="../src/workspace.cpp" line="398"/>
+        <location filename="../src/workspace.cpp" line="413"/>
+        <source>Apply to &amp;further frames</source>
+        <translation>後続のフレームに適用(&amp;F)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="448"/>
+        <location filename="../src/workspace.cpp" line="467"/>
+        <location filename="../src/workspace.cpp" line="488"/>
+        <source>There is no enough frames with this object to perform the interpolation</source>
+        <translation>このオブジェクトへ補間するために必要なフレームが足りていません</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="427"/>
+        <source>&amp;Delete</source>
+        <translation>削除(&amp;D)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="498"/>
+        <source>Question</source>
+        <translation>質問</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="402"/>
+        <source>&amp;Restore original size</source>
+        <translation>オリジナルサイズに戻す(&amp;R)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="387"/>
+        <location filename="../src/workspace.cpp" line="400"/>
+        <location filename="../src/workspace.cpp" line="415"/>
+        <source>Apply to &amp;earlier frames</source>
+        <translation>前のフレームに適用(&amp;E)</translation>
+    </message>
+    <message>
+        <location filename="../src/workspace.cpp" line="410"/>
+        <source>Position &amp;and size</source>
+        <translation>位置とサイズ(&amp;A)</translation>
     </message>
 </context>
 </TS>
