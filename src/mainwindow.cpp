@@ -33,7 +33,7 @@
 #include "mainwindow.h"
 #include "objectwidget.h"
 
-MainWindow::MainWindow() : translator(NULL), locked(false)
+MainWindow::MainWindow() : translator(NULL), locked(false), nextFrameButton(NULL), prevFrameButton(NULL)
 {
     setupUi(this);
     // player->controlPanel->hide();
@@ -46,27 +46,29 @@ MainWindow::MainWindow() : translator(NULL), locked(false)
     // upStopButton->setDefaultAction(actionSetAsStop);
     // upStopButton->setIcon(QIcon(":/res/fromimg.png"));
 
-    actionNextFrame = new QPressAction(this);
-    actionNextFrame->setObjectName(QString::fromUtf8("actionNextFrame"));
+    // The toolbar buttons need long-press support, so they use QPressAction.
+    // The menu entries keep the actions created by uic from mainwindow.ui.
+    nextFrameButton = new QPressAction(this);
+    nextFrameButton->setObjectName(QString::fromUtf8("nextFrameButton"));
     QIcon icon4;
     icon4.addFile(QString::fromUtf8(":/res/next.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionNextFrame->setIcon(icon4);
-    actionPrevFrame = new QPressAction(this);
-    actionPrevFrame->setObjectName(QString::fromUtf8("actionPrevFrame"));
+    nextFrameButton->setIcon(icon4);
+    prevFrameButton = new QPressAction(this);
+    prevFrameButton->setObjectName(QString::fromUtf8("prevFrameButton"));
     QIcon icon5;
     icon5.addFile(QString::fromUtf8(":/res/prev.png"), QSize(), QIcon::Normal, QIcon::Off);
-    actionPrevFrame->setIcon(icon5);
+    prevFrameButton->setIcon(icon5);
 
-    playerToolBar->addAction(actionPrevFrame);
-    playerToolBar->addAction(actionNextFrame);
+    playerToolBar->addAction(prevFrameButton);
+    playerToolBar->addAction(nextFrameButton);
 
-    QWidget *widgetForAction = playerToolBar->widgetForAction(actionNextFrame);
+    QWidget *widgetForAction = playerToolBar->widgetForAction(nextFrameButton);
     widgetForAction->setMouseTracking(true);
-    widgetForAction->installEventFilter(actionNextFrame);
+    widgetForAction->installEventFilter(nextFrameButton);
 
-    widgetForAction = playerToolBar->widgetForAction(actionPrevFrame);
+    widgetForAction = playerToolBar->widgetForAction(prevFrameButton);
     widgetForAction->setMouseTracking(true);
-    widgetForAction->installEventFilter(actionPrevFrame);
+    widgetForAction->installEventFilter(prevFrameButton);
 
     // TODO Move to default constructor
 
@@ -116,13 +118,15 @@ MainWindow::MainWindow() : translator(NULL), locked(false)
     connect(actionStop, SIGNAL(triggered()), player, SLOT(stop()));
     connect(actionPause, SIGNAL(triggered()), player, SLOT(pause()));
 
-    connect(actionNextFrame, SIGNAL(press_start()), player, SLOT(play()));
-    connect(actionNextFrame, SIGNAL(press_end()), player, SLOT(pause()));
+    connect(nextFrameButton, SIGNAL(press_start()), player, SLOT(play()));
+    connect(nextFrameButton, SIGNAL(press_end()), player, SLOT(pause()));
+    connect(nextFrameButton, SIGNAL(triggered()), player, SLOT(nextFrame()));
     connect(actionNextFrame, SIGNAL(triggered()), player, SLOT(nextFrame()));
 
+    connect(prevFrameButton, SIGNAL(triggered()), player, SLOT(prevFrame()));
+    connect(prevFrameButton, SIGNAL(press_start()), player, SLOT(reverse_play()));
+    connect(prevFrameButton, SIGNAL(press_end()), player, SLOT(pause()));
     connect(actionPrevFrame, SIGNAL(triggered()), player, SLOT(prevFrame()));
-    connect(actionPrevFrame, SIGNAL(press_start()), player, SLOT(reverse_play()));
-    connect(actionPrevFrame, SIGNAL(press_end()), player, SLOT(pause()));
 
     connect(actionRestoreDefault, SIGNAL(triggered()), this, SLOT(restoreDefault()));
 
@@ -509,6 +513,8 @@ void MainWindow::lock(bool l)
     actionPause->setEnabled(l);
     actionNextFrame->setEnabled(l);
     actionPrevFrame->setEnabled(l);
+    nextFrameButton->setEnabled(l);
+    prevFrameButton->setEnabled(l);
     actionSetAsStart->setEnabled(l);
     actionSetAsStop->setEnabled(l);
     actionExtractGif->setEnabled(l);

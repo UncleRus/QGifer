@@ -1769,7 +1769,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/mainwindow.cpp" line="1319"/>
         <source> to open a video</source>
-        <translation>開啟一影片</translation>
+        <translation> 開啟一影片</translation>
     </message>
 </context>
 <context>

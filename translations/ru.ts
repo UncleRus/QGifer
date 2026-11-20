@@ -1585,7 +1585,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/mainwindow.cpp" line="1319"/>
         <source> to open a video</source>
-        <translation>чтобы открыть видео</translation>
+        <translation> чтобы открыть видео</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="192"/>

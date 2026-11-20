@@ -31,6 +31,7 @@
 #include "textwidget.h"
 #include "retranslatable.h"
 #include "ui_mainwindow.h"
+#include "widgets/QPressAction.h"
 
 class MainWindow : public QMainWindow, private Ui::MainWindow, public Retranslatable
 {
@@ -45,6 +46,10 @@ public:
     {
         QString t = windowTitle();
         retranslateUi(this);
+        if (nextFrameButton) {
+            nextFrameButton->setText(actionNextFrame->text());
+            prevFrameButton->setText(actionPrevFrame->text());
+        }
         renderDefaultText();
         setWindowTitle(t);
     }
@@ -105,6 +110,8 @@ private:
     bool changed;
     QHash<QAction *, QString> langs;
     QTranslator *translator;
+    QPressAction *nextFrameButton;
+    QPressAction *prevFrameButton;
 
 private slots:
 
