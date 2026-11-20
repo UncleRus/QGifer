@@ -188,7 +188,10 @@ public slots:
 
     void setFps(double f)
     {
-        setInterval(1000 / f);
+        if (f <= 0.0)
+            return;
+        const int ms = static_cast<int>(1000.0 / f + 0.5);
+        setInterval(ms > 0 ? ms : 1);
     }
 
 signals:

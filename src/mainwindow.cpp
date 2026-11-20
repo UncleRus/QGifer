@@ -33,7 +33,8 @@
 #include "mainwindow.h"
 #include "objectwidget.h"
 
-MainWindow::MainWindow() : translator(NULL), locked(false), nextFrameButton(NULL), prevFrameButton(NULL)
+MainWindow::MainWindow()
+    : translator(NULL), locked(false), nextFrameButton(NULL), prevFrameButton(NULL)
 {
     setupUi(this);
     // player->controlPanel->hide();
@@ -215,7 +216,7 @@ void MainWindow::openVideo()
             box.addButton(tr("Change frame range..."), QMessageBox::AcceptRole);
             box.exec();
             if (box.clickedButton() == deleteButton) {
-                ol->removeAt(i);
+                player->getWorkspace()->removeObjectAt(i);
                 i--;
             } else
                 showProperties(ol->at(i));
@@ -283,11 +284,12 @@ void MainWindow::extractGif()
     gw->setWindowTitle(sn);
     QProgressDialog pd("Rendering frames...", "Abort", startBox->value(), stopBox->value(), this);
 
-    pd.setAttribute(Qt::WA_DeleteOnClose, true);
     pd.setWindowModality(Qt::WindowModal);
     pd.show();
     qApp->processEvents();
-    ColorMapObject *map = paletteWidget->mapCopy();
+    ColorMapObject *map = varPaletteBox->isChecked() ? NULL : paletteWidget->mapCopy();
+    bool mapTransferred = false;
+    int renderedFrames = 0;
     player->seek(startBox->value() - 1);
     for (long i = startBox->value(); i <= stopBox->value() && !pd.wasCanceled(); i++) {
         pd.setValue(i);
@@ -307,9 +309,20 @@ void MainWindow::extractGif()
             player->nextFrame();
             gw->addFrame(
                 finalFrame(i), i == startBox->value() ? map : NULL, ditherBox->isChecked());
+            if (i == startBox->value())
+                mapTransferred = true;
         }
+        ++renderedFrames;
     }
+    if (!varPaletteBox->isChecked() && map && !mapTransferred)
+        GifFreeMapObject(map);
     pd.setValue(stopBox->value());
+
+    if (renderedFrames == 0) {
+        delete gw;
+        player->pause();
+        return;
+    }
 
     gw->move(x() + width() / 2 - gw->minimumSize().width() / 2,
         y() + height() / 2 - gw->minimumSize().height() / 2);
@@ -796,7 +809,7 @@ QString MainWindow::projectToXml()
 
 bool MainWindow::projectFromXml(const QString &xstr)
 {
-    player->getWorkspace()->getObjectsList()->clear();
+    player->getWorkspace()->clearObjects();
     player->close();
     paletteWidget->clear();
     // clearCache();
@@ -1102,7 +1115,7 @@ void MainWindow::newProject()
 
     player->close();
     paletteWidget->clear();
-    player->getWorkspace()->getObjectsList()->clear();
+    player->getWorkspace()->clearObjects();
     topSpin->setValue(10);
     rightSpin->setValue(10);
     bottomSpin->setValue(10);
@@ -1259,7 +1272,7 @@ QString MainWindow::dataDir()
 #define QGIFER_DATA_DIR "/usr/share/qgifer"
 #endif
     const QString appDir = qApp->applicationDirPath();
-    const QStringList candidates = { QStringLiteral(QGIFER_DATA_DIR), appDir };
+    const QStringList candidates = {QStringLiteral(QGIFER_DATA_DIR), appDir};
     for (const QString &path : candidates) {
         if (QDir(path + "/locale").exists())
             return path + "/";

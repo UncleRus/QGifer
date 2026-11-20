@@ -101,15 +101,9 @@ void PaletteWidget::mouseMoveEvent(QMouseEvent *e)
 
 bool PaletteWidget::fromImage(const QImage &img, int palette_size, float mindiff)
 {
+    if (img.isNull() || palette_size <= 0)
+        return false;
 
-    if (palette && mindiff > 1) {
-        qDebug() << "deleting old palette, size: " << size << ", colors: " << palette->ColorCount;
-        GifFreeMapObject(palette);
-        qDebug() << "done";
-        palette = NULL;
-    }
-
-    size = palette_size;
     QImage fimg = flipImageVertically(img).convertToFormat(QImage::Format_RGB888);
 
     const int npix = fimg.width() * fimg.height();
@@ -117,21 +111,11 @@ bool PaletteWidget::fromImage(const QImage &img, int palette_size, float mindiff
     Frame r(npix), g(npix), b(npix);
     Frame output(npix);
 
-    // Byte* data = fimg.bits();
-    //  for (int i=0, j=0; i<npix; i++)
-    //  {
-    //  	  r[i]=data[j++];
-    //  	  g[i]=data[j++];
-    //  	  b[i]=data[j++];
-    //  }
-
     int cpix = 0;
 
     for (int rw = 0; rw < fimg.height(); rw++) {
         uchar *line = fimg.scanLine(rw);
-        // for(int i=0;i+2<fimg.bytesPerLine();i+=3)
         for (int i = 0; i + 2 < bytesPerLine; i += 3) {
-            // qDebug() << "cpix: " << cpix;
             r[cpix] = line[i];
             g[cpix] = line[i + 1];
             b[cpix] = line[i + 2];
@@ -139,36 +123,44 @@ bool PaletteWidget::fromImage(const QImage &img, int palette_size, float mindiff
         }
     }
 
-    ColorMapObject *previous = palette;
-    palette = GifMakeMapObject(size, NULL);
-    if (!palette) {
+    int quantizedSize = palette_size;
+    ColorMapObject *newPalette = GifMakeMapObject(quantizedSize, NULL);
+    if (!newPalette) {
         qDebug() << "NULL palette!";
         return false;
     }
 
-    if (GifQuantizeBuffer(fimg.width(), fimg.height(), &size, &(r[0]), &(g[0]), &(b[0]),
-            &(output[0]), palette->Colors)
+    if (GifQuantizeBuffer(fimg.width(), fimg.height(), &quantizedSize, &(r[0]), &(g[0]), &(b[0]),
+            &(output[0]), newPalette->Colors)
         == GIF_ERROR) {
         qDebug() << "quentize failed!";
-        palette = NULL;
+        GifFreeMapObject(newPalette);
         return false;
     }
 
-    float df = difference(palette, previous);
-    // qDebug() << "difference: " << df;
-    if (previous && df < mindiff) {
-        GifFreeMapObject(palette);
-        palette = previous;
-    } else if (df >= mindiff)
+    ColorMapObject *previous = palette;
+    if (previous && mindiff > 1) {
+        qDebug() << "deleting old palette, size: " << size << ", colors: " << previous->ColorCount;
         GifFreeMapObject(previous);
+        qDebug() << "done";
+        previous = NULL;
+    }
 
-    // qDebug() << "palette (" << palette->ColorCount << ") :";
-    // for(int i=0;i<size;i++)
-    // 	  qDebug() << i << ": (" << palette->Colors[i].Red << "," <<
-    // 	       palette->Colors[i].Green << "," <<
-    // 	       palette->Colors[i].Blue << ")";
+    size = quantizedSize;
+    float df = difference(newPalette, previous);
+    if (previous && df < mindiff) {
+        GifFreeMapObject(newPalette);
+        palette = previous;
+        size = palette->ColorCount;
+    } else {
+        if (previous)
+            GifFreeMapObject(previous);
+        palette = newPalette;
+    }
 
-    // setFixedSize(width(), (size/cols)*((width()-2)/cols));
+    if (hlIndex >= palette->ColorCount)
+        hlIndex = -1;
+
     setFixedSize(width(), (size / cols) * sqSize + sqSize + 2);
     update();
     return true;

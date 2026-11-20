@@ -27,6 +27,7 @@
 extern "C" {
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
+#include <libavutil/display.h>
 #include <libavutil/imgutils.h>
 #include <libswscale/swscale.h>
 }
@@ -101,6 +102,7 @@ private:
 
     int videoStream = -1;
     QSize frameSize;
+    int rotationAngle = 0;
     double frameRate = 0.0;
     long totalFrames = 0;
     long lastIndex = -1;
@@ -109,6 +111,7 @@ private:
     QImage pendingFrame;
     long pendingIndex = -1;
     bool hasPending = false;
+    bool hasBufferedPacket = false;
     bool eof = false;
 };
 

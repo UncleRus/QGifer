@@ -35,12 +35,19 @@ public:
     void updateFrameIndex(int i)
     {
         frameIndex = i;
+        if (!menuExecuted && hoveredObject
+            && (frameIndex < hoveredObject->getStart() || frameIndex > hoveredObject->getStop())) {
+            hoveredObject->setMode(WO::Normal);
+            hoverObject(-1, Qt::ArrowCursor);
+        }
     }
     int currentFrameIndex() const
     {
         return frameIndex;
     }
     void clear();
+    void clearObjects();
+    void removeObjectAt(int i);
     void drawObjects(QPaintDevice *pd);
     void drawObjects()
     {

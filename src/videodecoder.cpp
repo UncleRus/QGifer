@@ -21,6 +21,7 @@
 
 #include <QDebug>
 #include <QFile>
+#include <QTransform>
 
 #include <algorithm>
 #include <cmath>
@@ -111,7 +112,25 @@ bool VideoDecoder::open(const QString &path)
         return false;
     }
 
-    frameSize = QSize(stream->codecpar->width, stream->codecpar->height);
+    rotationAngle = 0;
+    const AVPacketSideData *displayMatrix =
+        av_packet_side_data_get(stream->codecpar->coded_side_data,
+            stream->codecpar->nb_coded_side_data, AV_PKT_DATA_DISPLAYMATRIX);
+    if (displayMatrix && displayMatrix->size >= static_cast<size_t>(9 * sizeof(int32_t))) {
+        const double ccwAngle =
+            av_display_rotation_get(reinterpret_cast<const int32_t *>(displayMatrix->data));
+        if (std::isfinite(ccwAngle)) {
+            int cwAngle = static_cast<int>(std::lround(-ccwAngle));
+            cwAngle = ((cwAngle % 360) + 360) % 360;
+            if (cwAngle == 90 || cwAngle == 180 || cwAngle == 270)
+                rotationAngle = cwAngle;
+        }
+    }
+
+    if (rotationAngle == 90 || rotationAngle == 270)
+        frameSize = QSize(stream->codecpar->height, stream->codecpar->width);
+    else
+        frameSize = QSize(stream->codecpar->width, stream->codecpar->height);
 
     AVRational rate = stream->avg_frame_rate;
     if (rate.num <= 0 || rate.den <= 0 || rationalToDouble(rate) <= 0.0)
@@ -133,6 +152,7 @@ bool VideoDecoder::open(const QString &path)
     lastIndex = -1;
     nextIndex = 0;
     hasPending = false;
+    hasBufferedPacket = false;
     pendingIndex = -1;
     eof = false;
 
@@ -167,6 +187,7 @@ void VideoDecoder::reset()
 {
     videoStream = -1;
     frameSize = QSize();
+    rotationAngle = 0;
     frameRate = 0.0;
     totalFrames = 0;
     lastIndex = -1;
@@ -174,6 +195,7 @@ void VideoDecoder::reset()
     pendingFrame = QImage();
     pendingIndex = -1;
     hasPending = false;
+    hasBufferedPacket = false;
     eof = false;
 }
 
@@ -252,6 +274,13 @@ bool VideoDecoder::convertFrame(const AVFrame *src, QImage &image)
 
     image = QImage(dstData[0], width, height, dstLinesize[0], QImage::Format_RGB888).copy();
     av_free(buffer);
+    if (!image.isNull() && rotationAngle != 0) {
+        QTransform transform;
+        transform.rotate(rotationAngle);
+        image = image.transformed(transform);
+        if (image.format() != QImage::Format_RGB888)
+            image = image.convertToFormat(QImage::Format_RGB888);
+    }
     return !image.isNull();
 }
 
@@ -290,25 +319,35 @@ bool VideoDecoder::readDecodedFrame(QImage &image)
 
         bool sentPacket = false;
         while (!sentPacket) {
-            ret = av_read_frame(formatCtx, packet);
-            if (ret < 0) {
-                eof = true;
-                avcodec_send_packet(codecCtx, nullptr);
-                break;
-            }
-
-            if (packet->stream_index == videoStream) {
-                ret = avcodec_send_packet(codecCtx, packet);
-                av_packet_unref(packet);
-                if (ret < 0 && ret != AVERROR(EAGAIN)) {
-                    qWarning(
-                        "VideoDecoder: cannot send packet: %s", qPrintable(avErrorString(ret)));
+            if (!hasBufferedPacket) {
+                ret = av_read_frame(formatCtx, packet);
+                if (ret == AVERROR_EOF) {
+                    eof = true;
+                    avcodec_send_packet(codecCtx, nullptr);
+                    break;
+                }
+                if (ret < 0) {
+                    qWarning("VideoDecoder: read error: %s", qPrintable(avErrorString(ret)));
                     return false;
                 }
-                sentPacket = true;
-            } else {
-                av_packet_unref(packet);
+                if (packet->stream_index != videoStream) {
+                    av_packet_unref(packet);
+                    continue;
+                }
             }
+
+            ret = avcodec_send_packet(codecCtx, packet);
+            if (ret == AVERROR(EAGAIN)) {
+                hasBufferedPacket = true;
+                break;
+            }
+            av_packet_unref(packet);
+            hasBufferedPacket = false;
+            if (ret < 0) {
+                qWarning("VideoDecoder: cannot send packet: %s", qPrintable(avErrorString(ret)));
+                return false;
+            }
+            sentPacket = true;
         }
     }
 }
@@ -346,10 +385,22 @@ bool VideoDecoder::seekTo(long frame)
     if (!hasPending && nextIndex == frame)
         return true;
 
-    const int64_t timestamp =
-        static_cast<int64_t>(std::llround(static_cast<double>(frame) * AV_TIME_BASE / frameRate));
-
-    const int ret = av_seek_frame(formatCtx, -1, timestamp, AVSEEK_FLAG_BACKWARD);
+    const AVStream *stream = formatCtx->streams[videoStream];
+    const double targetSeconds = static_cast<double>(frame) / frameRate;
+    const double tb = rationalToDouble(stream->time_base);
+    int ret = -1;
+    if (tb > 0.0) {
+        const int64_t startTime = stream->start_time != AV_NOPTS_VALUE ? stream->start_time : 0;
+        const int64_t streamTs = startTime + static_cast<int64_t>(std::llround(targetSeconds / tb));
+        ret = av_seek_frame(formatCtx, videoStream, streamTs, AVSEEK_FLAG_BACKWARD);
+    }
+    if (ret < 0) {
+        const int64_t globalStart =
+            formatCtx->start_time != AV_NOPTS_VALUE ? formatCtx->start_time : 0;
+        const int64_t globalTs =
+            globalStart + static_cast<int64_t>(std::llround(targetSeconds * AV_TIME_BASE));
+        ret = av_seek_frame(formatCtx, -1, globalTs, AVSEEK_FLAG_BACKWARD);
+    }
     if (ret < 0) {
         qWarning(
             "VideoDecoder: seek to frame %ld failed: %s", frame, qPrintable(avErrorString(ret)));
@@ -357,6 +408,10 @@ bool VideoDecoder::seekTo(long frame)
     }
 
     avcodec_flush_buffers(codecCtx);
+    if (hasBufferedPacket) {
+        av_packet_unref(packet);
+        hasBufferedPacket = false;
+    }
     hasPending = false;
     pendingFrame = QImage();
     pendingIndex = -1;
