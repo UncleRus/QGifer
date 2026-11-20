@@ -24,7 +24,6 @@
 
 #include <algorithm>
 #include <cmath>
-#include <vector>
 
 namespace {
 
@@ -228,22 +227,31 @@ bool VideoDecoder::convertFrame(const AVFrame *src, QImage &image)
 
     const int width = src->width;
     const int height = src->height;
-    const int bytes = av_image_get_buffer_size(AV_PIX_FMT_RGB24, width, height, 1);
+    // swscale may write a few bytes past the last pixel of a row (SIMD
+    // stores are wider than one pixel), so the buffer needs aligned strides
+    // and some slack at the end. A tightly packed width * 3 * height buffer
+    // is not enough and results in heap corruption.
+    const int align = 32;
+    const int bytes = av_image_get_buffer_size(AV_PIX_FMT_RGB24, width, height, align);
     if (bytes <= 0)
         return false;
 
-    std::vector<uint8_t> buffer(static_cast<size_t>(bytes));
+    uint8_t *buffer = static_cast<uint8_t *>(av_malloc(bytes + AV_INPUT_BUFFER_PADDING_SIZE));
+    if (!buffer)
+        return false;
+
     uint8_t *dstData[4] = {nullptr, nullptr, nullptr, nullptr};
     int dstLinesize[4] = {0, 0, 0, 0};
-    if (av_image_fill_arrays(
-            dstData, dstLinesize, buffer.data(), AV_PIX_FMT_RGB24, width, height, 1)
+    if (av_image_fill_arrays(dstData, dstLinesize, buffer, AV_PIX_FMT_RGB24, width, height, align)
         < 0) {
+        av_free(buffer);
         return false;
     }
 
     sws_scale(swsCtx, src->data, src->linesize, 0, height, dstData, dstLinesize);
 
     image = QImage(dstData[0], width, height, dstLinesize[0], QImage::Format_RGB888).copy();
+    av_free(buffer);
     return !image.isNull();
 }
 
