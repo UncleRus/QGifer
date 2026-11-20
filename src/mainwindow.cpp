@@ -645,8 +645,8 @@ void MainWindow::loadSettings()
     restoreGeometry(set->value("geometry").toByteArray());
     loadLanguages();
     QString qm = set->value("qmfile", "").toString();
-    if (!qm.isEmpty() && QFile::exists(dataDir() + "/locale/" + qm + ".qm"))
-        loadLanguage(qm, dataDir() + "/locale/");
+    if (!qm.isEmpty() && QFile::exists(dataDir() + "locale/" + qm + ".qm"))
+        loadLanguage(qm, dataDir() + "locale/");
 }
 
 void MainWindow::saveSettings()
@@ -1252,8 +1252,13 @@ QString MainWindow::dataDir()
 #ifndef QGIFER_DATA_DIR
 #define QGIFER_DATA_DIR "/usr/share/qgifer"
 #endif
-    QDir dir(QStringLiteral(QGIFER_DATA_DIR));
-    return (dir.exists() ? dir.absolutePath() : qApp->applicationDirPath()) + "/";
+    const QString appDir = qApp->applicationDirPath();
+    const QStringList candidates = { QStringLiteral(QGIFER_DATA_DIR), appDir };
+    for (const QString &path : candidates) {
+        if (QDir(path + "/locale").exists())
+            return path + "/";
+    }
+    return appDir + "/";
 }
 
 void MainWindow::loadLanguages()
@@ -1303,7 +1308,7 @@ void MainWindow::languageChanged(QAction *a)
 {
     QString langfile = langs.value(a);
     qDebug() << "new language file: " << langfile;
-    loadLanguage(langfile, dataDir() + "/locale");
+    loadLanguage(langfile, dataDir() + "locale");
 }
 
 void MainWindow::workspaceWheelRotated(int delta)

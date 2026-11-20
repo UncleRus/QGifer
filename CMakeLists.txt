@@ -177,6 +177,15 @@ TARGET_INCLUDE_DIRECTORIES(${TARGET_NAME} PRIVATE
     ui
 )
 
+# Make the compiled translations available when running from the build tree.
+ADD_CUSTOM_TARGET(copy_translations ALL
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/locale"
+        "${CMAKE_CURRENT_BINARY_DIR}/locale"
+    COMMENT "Copying translations into the build directory"
+)
+ADD_DEPENDENCIES(${TARGET_NAME} copy_translations)
+
 TARGET_LINK_LIBRARIES(${TARGET_NAME} PRIVATE
     Qt6::Widgets
     ${GIF_TARGET}

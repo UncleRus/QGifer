@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/mainwindow.cpp" line="1278"/>
         <source>LANGUAGE_NAME</source>
-        <translation>Pусский</translation>
+        <translation>Русский</translation>
     </message>
 </context>
 <context>
